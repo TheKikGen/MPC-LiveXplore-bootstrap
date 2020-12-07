@@ -10,7 +10,7 @@ You need to update your MPC/Force with a modded image that will launch the boots
 
 How to install :
 
-1. Copy to the tkgl_bootstrap directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
+1. Copy to the ".tkgl_bootstrap" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
 
    Important : the directory name MUST be ".tkgl_bootstrap" to effectively launch the bootstrap and hide it, when browsing files on the sdcard.
 

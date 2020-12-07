@@ -20,6 +20,7 @@ How to install :
 
   [Force 3.0.6](https://drive.google.com/drive/folders/1AqEcxZnJkUNG-8yA7DVGSTJy_sd6ijqr?usp=sharing)
 
+   Rename the image file before copying it to the usb key by removing the ".bootstrapxx" after ".img".
    The launch script on the internal ssd will find the tkgl_bootstrap script automatically. 
 
 3. Create your module and adapt the /tkgl_bootstrap/scripts/tkgl_bootstrap script to your needs 

@@ -10,9 +10,9 @@ You need to update your MPC/Force with a modded image that will launch the boots
 
 How to install :
 
-1. Copy to the tkgl_bootstrap directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
+1. Copy to the ".tkgl_bootstrap" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
 
-   Important : the directory name MUST be ".tkgl_bootstrap" to effectively launch the bootstrap and hide it, when browsing files on the sdcard.
+   Important : the directory MUST be named ".tkgl_bootstrap" to be hidden and for the bootstrap to be launched on the sdcard.
 
 2. Update as usual (usb procedure) with the last MPC / Force modded image to enable the bootstrap script :
 
@@ -20,6 +20,7 @@ How to install :
 
   [Force 3.0.6](https://drive.google.com/drive/folders/1AqEcxZnJkUNG-8yA7DVGSTJy_sd6ijqr?usp=sharing)
 
+   Rename the image file before copying it to the usb key by removing the ".bootstrapxx" after ".img".
    The launch script on the internal ssd will find the tkgl_bootstrap script automatically. 
 
 3. Create your module and adapt the /tkgl_bootstrap/scripts/tkgl_bootstrap script to your needs 

@@ -55,6 +55,7 @@ then
    TKGL_ROOT=$MOUNT_POINT/.tkgl_bootstrap # note the dot before the name = hidden
    TKGL_SCRIPT=$TKGL_ROOT/scripts
    TKGL_BIN=$TKGL_ROOT/bin
+   TKGL_LIB=$TKGL_ROOT/lib
    TKGL_CONF=$TKGL_ROOT/conf
    TKGL_LOGS=$TKGL_ROOT/logs
    TKGL_LOG=$TKGL_LOGS/tkgl_log.txt
@@ -75,10 +76,13 @@ then
      echo "TKGL_ROOT=\"$TKGL_ROOT\"">>$TKGL_PATH_FILE
      echo "TKGL_SCRIPT=\"$TKGL_SCRIPT\"">>$TKGL_PATH_FILE
      echo "TKGL_BIN=\"$TKGL_BIN\"">>$TKGL_PATH_FILE
+     echo "TKGL_LIB=\"$TKGL_LIB\"">>$TKGL_PATH_FILE
      echo "TKGL_CONF=\"$TKGL_CONF\"">>$TKGL_PATH_FILE
      echo "TKGL_LOGS=\"$TKGL_LOGS\"">>$TKGL_PATH_FILE
      echo "TKGL_LOG=\"$TKGL_LOG\"">>$TKGL_PATH_FILE
      echo "TKGL_BOOTSTRAP=\"$TKGL_BOOTSTRAP\"">>$TKGL_PATH_FILE
+     echo "TKGL_PATH_FILE=\"$TKGL_PATH_FILE\"">>$TKGL_PATH_FILE
+
 
      "$TKGL_BOOTSTRAP"
      break # only the first one

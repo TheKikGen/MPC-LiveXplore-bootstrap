@@ -13,8 +13,9 @@ How to install :
 1. Copy to the ".tkgl_bootstrap" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
 
    Important : the directory MUST be named ".tkgl_bootstrap" to be hidden and for the bootstrap to be launched on the sdcard.
-   You should change permissions and ownership of binaries and scripts files as follow :
-        - cd to .tkgl_bootstrap on the sdcard (you can do it with an ssh on your MPC, the smartcard it at /media)
+   You should change permissions and ownership of binaries and scripts files as follow (locally or in a ssh root session) : 
+   
+        - cd /media/(your smartcard name)/.tkgl_bootstrap
         - chmod 755 ./lib/* ./bin/* ./scripts/*
         - chown root:root ./lib/* ./bin/* ./scripts/*
 

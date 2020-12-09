@@ -23,6 +23,9 @@ source $TKGL_PATH_FILE
 # Add tkgl bin first into the path only one time
 echo $PATH | grep /tkgl >/dev/null || export PATH=$TKGL_BIN:$PATH
 
+# Add tkgl library path
+export LD_LIBRARY_PATH=/lib:/usr/lib:$TKGL_LIB
+
 echo "*** In bootstrap script $TKGL_BOOTSTRAP ***">$TKGL_LOG
 date>>$TKGL_LOG
 uname -a>>$TKGL_LOG

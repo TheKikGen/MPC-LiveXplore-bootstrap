@@ -24,12 +24,23 @@ echo "*** $0 module">>$TKGL_LOG
 
 echo "Changing permission and ownership in /bin /scripts..."
 
-chown root:root $TKGL_BIN/*
-chmod 755 $TKGL_BIN/*
-chown root:root $TKGL_SCRIPT/*
-chmod 755 $TKGL_SCRIPT/*
-chown root:root $TKGL_LIB/*
-chmod 755 $TKGL_LIB/*
+if [ -d "$TKGL_BIN" ]
+then
+  chown root:root $TKGL_BIN/*
+  chmod 755 $TKGL_BIN/*
+fi
+
+if [ -d "$TKGL_SCRIPT" ]
+then
+  chown root:root $TKGL_SCRIPT/*
+  chmod 755 $TKGL_SCRIPT/*
+fi
+
+if [ -d "$TKGL_LIB" ]
+then
+  chown root:root $TKGL_LIB/*
+  chmod 755 $TKGL_LIB/*
+fi
 
 ls $TKGL_ROOT>>$TKGL_LOG
 ls -l $TKGL_BIN>>$TKGL_LOG

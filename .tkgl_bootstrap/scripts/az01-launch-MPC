@@ -83,7 +83,11 @@ then
      echo "TKGL_BOOTSTRAP=\"$TKGL_BOOTSTRAP\"">>$TKGL_PATH_FILE
      echo "TKGL_PATH_FILE=\"$TKGL_PATH_FILE\"">>$TKGL_PATH_FILE
 
+     # Ensure execution of the bootstrap script if permissions not set
+     chown root:root  "$TKGL_BOOTSTRAP"
+     chmod 755 "$TKGL_BOOTSTRAP"
 
+     # Launch bootstrapscript
      "$TKGL_BOOTSTRAP"
      break # only the first one
    fi

@@ -32,15 +32,21 @@ How to install :
 
    Copy paste a script module example (for example the mod_telnetd) to create your own. 
    Your module must be then added to the $DOER variable in the tkgl_bootstrap script.
-   
-        # submodules launcher : add to the doer , separated by space
-        # install      : setup some directories and permissions on the filesystem
-        # arp_overlay  : create an overlay of Arp Patterns on the sdcard (if ext4)
-        # telnetd      : launch a telnetd server (root access)
-        # etcovr_clean : clean passwords files and ssh config on the /etc overlay
+````  
+# submodules launcher : add to the doer , separated by space
+#
+# install      : setup some directories and permissions on the filesystem
+# arp_overlay  : create an overlay of Arp Patterns on the sdcard (if ext4)
+# telnetd      : launch a telnetd server (root access)
+# nomoressh    : stop the ssh temporarily for security reasons.
+#                You'll need to remove the usb key to reactivate ssh.
+# etcovr_clean : clean passwords files and ssh config on the /etc overlay
+# anyctrl      : use any midi controller as MPC/Force control surface (full ports)
+# anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
+# iamforcectrl : Force binary launcher on a MPC (binary not provided)
+````
+TKGL_DOER=""
 
-        TKGL_DOER="install etcovr_clean arp_overlay telnetd"
-   
    Have a look to the tkgl_mod_kgl_mod_arp_overlay.sh : it creates an overlay on the Arp Patterns/Progression directory to allow you to load 
    your own patterns from the sdcard (check "Arp Patterns" and "Progressions" links at the root directory that will be created after a first boot).
    

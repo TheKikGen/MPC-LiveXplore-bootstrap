@@ -1,0 +1,7 @@
+*** In bootstrap script /media/tkgl/.tkgl_bootstrap/scripts/tkgl_bootstrap ***
+Wed Feb 10 18:33:10 CET 2021
+Linux mpc-live 4.19.150-inmusic-2020-11-04-rt64 #1 SMP PREEMPT RT Sat Dec 5 21:15:12 UTC 2020 armv7l GNU/Linux
+-- Module telnet --
+-- Module nomoressh --
+*** /media/tkgl/.tkgl_bootstrap/scripts/tkgl_mod_nomoressh.sh module
+systemctl stop sshd.service done !

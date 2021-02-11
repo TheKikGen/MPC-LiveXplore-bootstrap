@@ -29,9 +29,10 @@ How to install :
    The launch script on the internal ssd will find the tkgl_bootstrap script automatically. 
 
    Concerning these images: very little has been changed. It is mainly about enabling SSH, a standard feature of Linux, and checking  
-   if a script exists on a usb key at boot time. That's all.  Upgrading your MPC or Force with one of these images will not brick your   
-   hardware.  The update procedure is strictly the same as the one you use for the official images but of course, I can't be held 
-   responsible for any problem.   
+   if a script exists on a usb key at boot time. That's all. I use it everyday on my MPC Live and my MPC X.
+   Upgrading your MPC or Force with one of these images will not brick your hardware.  The update procedure is strictly the same 
+   as the one you use for the official images but of course, I can't be held responsible for any problem. 
+   You can update again to come back to an official image at any time.
 
 3. Create your module and adapt the /tkgl_bootstrap/scripts/tkgl_bootstrap script to your needs 
 

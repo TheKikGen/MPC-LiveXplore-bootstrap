@@ -51,8 +51,6 @@ How to install :
 # anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
 # iamforcectrl : Force binary launcher on a MPC (binary not provided)
 ````
-TKGL_DOER=""
-
    Have a look to the tkgl_mod_kgl_mod_arp_overlay.sh : it creates an overlay on the Arp Patterns/Progression directory to allow you to load 
    your own patterns from the sdcard (check "Arp Patterns" and "Progressions" links at the root directory that will be created after a first boot).
    

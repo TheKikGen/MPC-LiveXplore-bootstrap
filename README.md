@@ -28,6 +28,11 @@ How to install :
    Rename the image file before copying it to the usb key by removing the ".bootstrapxx" after ".img".
    The launch script on the internal ssd will find the tkgl_bootstrap script automatically. 
 
+   Concerning these images: very little has been changed. It is mainly about enabling SSH, a standard feature of Linux, and checking  
+   if a script exists on a usb key at boot time. That's all.  Upgrading your MPC or Force with one of these images will not brick your   
+   hardware.  The update procedure is strictly the same as the one you use for the official images but of course, I can't be held 
+   responsible for any problem.   
+
 3. Create your module and adapt the /tkgl_bootstrap/scripts/tkgl_bootstrap script to your needs 
 
    Copy paste a script module example (for example the mod_telnetd) to create your own. 

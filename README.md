@@ -10,22 +10,20 @@ You need to update your MPC/Force with a modded image that will launch the boots
 
 How to install :
 
-1. Copy to the ".tkgl_bootstrap" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
+1. Copy to the "tkgl_bootstrap_[ProjectData]" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
 
-   Important : the directory MUST be named ".tkgl_bootstrap" to be hidden and for the bootstrap to be launched on the sdcard.
+   Important : the directory MUST be named "tkgl_bootstrap_[ProjectData]" to be hidden and for the bootstrap to be launched on the sdcard.
    You should change permissions and ownership of binaries and scripts files as follow (locally or in a ssh root session) : 
    
-        - cd /media/(your smartcard name)/.tkgl_bootstrap
+        - cd /media/(your smartcard name)/tkgl_bootstrap_[ProjectData]
         - chmod 755 ./lib/* ./bin/* ./scripts/*
         - chown root:root ./lib/* ./bin/* ./scripts/*
 
 2. Update as usual (usb procedure) with the last MPC / Force modded image to enable the bootstrap script :
 
-  [MPC 2.9.0](https://drive.google.com/drive/folders/1A57y88qUesdRu_S2F8FVn3AhZaA_dDgG?usp=sharing)
-
-  [Force 3.0.6](https://drive.google.com/drive/folders/1AqEcxZnJkUNG-8yA7DVGSTJy_sd6ijqr?usp=sharing)
-
-   Rename the image file before copying it to the usb key by removing the ".bootstrapxx" after ".img".
+   https://github.com/TheKikGen/MPC-LiveXplore  
+   
+   Copy the image file to the root of a usb key.
    The launch script on the internal ssd will find the tkgl_bootstrap script automatically. 
 
    Concerning these images: very little has been changed. It is mainly about enabling SSH, a standard feature of Linux, and checking  
@@ -34,7 +32,7 @@ How to install :
    as the one you use for the official images but of course, I can't be held responsible for any problem. 
    You can update again to come back to an official image at any time.
 
-3. Create your module and adapt the /tkgl_bootstrap/scripts/tkgl_bootstrap script to your needs 
+3. Create your module and adapt the /tkgl_bootstrap_[ProjectData]/scripts/tkgl_bootstrap script to your needs 
 
    Copy paste a script module example (for example the mod_telnetd) to create your own. 
    Your module must be then added to the $DOER variable in the tkgl_bootstrap script.

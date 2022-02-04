@@ -58,8 +58,8 @@ How to install :
    It also allows you to return to normal operation of your MPC by simply removing the external sdcard/usb key.
 
 4. Place any binary in the /tkgl_bootstrap/bin.  
-             Important : binary exec permissions are not possible if stored on a FAT32 parition.  
-             Use preferably an ext4' formated parition on your sdccard.
+             Important : binary exec permissions are not possible if stored on a FAT32 partition.  
+             Use preferably an ext4 formated parition on your sdccard.
    
 5. Test locally via ssh before running in nominal mode
 

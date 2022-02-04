@@ -57,8 +57,10 @@ How to install :
    Instead implement your custom app on the sdcard, to ensure isolation with the filesystem, and to preserve your work.
    It also allows you to return to normal operation of your MPC by simply removing the external sdcard/usb key.
 
-4. Place any binary in the /tkgl_bootstrap/bin
-
+4. Place any binary in the /tkgl_bootstrap/bin.  
+             Important : binary exec permissions are not possible if stored on a FAT32 parition.  
+             Use preferably an ext4' formated parition on your sdccard.
+   
 5. Test locally via ssh before running in nominal mode
 
     ssh root@(your MPC ip addr), then cd to /media(your sdcard name)/tkgl_bootstrap/scripts and run tkgl_bootstrap.

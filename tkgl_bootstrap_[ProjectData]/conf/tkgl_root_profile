@@ -6,4 +6,4 @@ echo
 echo "Welcome to the MPC OS ssh mod !"
 uname -a
 echo "Your IP address is $(ip a s|sed -ne '/127.0.0.1/!{s/^[ \t]*inet[ \t]*\([0-9.]\+\)\/.*$/\1/p}')"
-echo "WARNING : you have root permissions. You could harm your system."
+echo "WARNING : you have root permissions. You may harm your system."

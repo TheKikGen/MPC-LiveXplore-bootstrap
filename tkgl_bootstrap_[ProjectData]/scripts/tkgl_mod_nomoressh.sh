@@ -12,5 +12,5 @@ source $TKGL_PATH_FILE
 
 echo "*** $0 module">>$TKGL_LOG
 
-systemctl stop systemctl stop sshd.service
+systemctl stop sshd.service
 echo "systemctl stop sshd.service done !">>$TKGL_LOG

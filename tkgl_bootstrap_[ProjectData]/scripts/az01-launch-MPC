@@ -87,8 +87,8 @@ then
      chown root:root  "$TKGL_BOOTSTRAP"
      chmod 755 "$TKGL_BOOTSTRAP"
 
-     # Launch bootstrapscript
-     "$TKGL_BOOTSTRAP"
+     # Launch bootstrapscript. We use now use sh in case of FAT32 mountpoint.
+     sh "$TKGL_BOOTSTRAP"
      break # only the first one
    fi
  done

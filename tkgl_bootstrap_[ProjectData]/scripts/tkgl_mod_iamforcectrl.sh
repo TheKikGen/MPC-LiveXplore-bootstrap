@@ -13,7 +13,7 @@
 # Enter here the name (or a substring)  of your external midi controller.
 # You can use the command 'amidi -l' to find it
 
-export ANYCTRL_NAME="nanoKEY Studio"
+export ANYCTRL_NAME="KIKPAD"
 
 #------------------------------------------------------------------------------
 # NB : We totally ignore the DFU mode here.

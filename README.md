@@ -47,7 +47,8 @@ How to install :
 # etcovr_clean : clean passwords files and ssh config on the /etc overlay
 # anyctrl      : use any midi controller as MPC/Force control surface (full ports)
 # anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
-# iamforcectrl : Force binary launcher on a MPC (binary not provided)
+# iamforcectrl : Force binary launcher on a MPC - Kikpad controller version proof of concept. 
+# iamforce     : New Force binary launcher using mpcmpaaer.so
 ````
    Have a look to the tkgl_mod_kgl_mod_arp_overlay.sh : it creates an overlay on the Arp Patterns/Progression directory to allow you to load 
    your own patterns from the sdcard (check "Arp Patterns" and "Progressions" links at the root directory that will be created after a first boot).
@@ -57,8 +58,10 @@ How to install :
    Instead implement your custom app on the sdcard, to ensure isolation with the filesystem, and to preserve your work.
    It also allows you to return to normal operation of your MPC by simply removing the external sdcard/usb key.
 
-4. Place any binary in the /tkgl_bootstrap/bin
-
+4. Place any binary in the /tkgl_bootstrap/bin.  
+             Important : binary exec permissions are not possible if stored on a FAT32 partition.  
+             Use preferably an ext4 formated parition on your sdccard.
+   
 5. Test locally via ssh before running in nominal mode
 
     ssh root@(your MPC ip addr), then cd to /media(your sdcard name)/tkgl_bootstrap/scripts and run tkgl_bootstrap.

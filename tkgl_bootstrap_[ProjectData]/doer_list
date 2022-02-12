@@ -1,0 +1,16 @@
+# DOER_LIST : List modules here to run
+#
+# install      : setup some directories and permissions on the filesystem
+# telnetd      : launch a telnetd server (root access)
+# nomoressh    : stop the ssh temporarily for security reasons.
+#                You'll need to remove the usb key to reactivate ssh.
+# arp_overlay  : add your own arp patterns on the sdcard
+# nomoreazmidi : temporary stop of the proprietary Akai network midi (used with the Live remote control)
+# etcovr_clean : clean passwords files and ssh config on the /etc overlay
+# anyctrl      : use any midi controller as MPC/Force control surface (full ports)
+# anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
+# iamforce     : New Force binary launcher on a MPC using mpcmapper.so
+# rtpmidid     : Launch rtpmidi and avahi daemon in the background
+
+# List here module name to launch before the MPC application, separated by a space 
+TKGL_DOER="arp_overlay nomoreazmidi rtpmidid"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<expansion version="1.0">
+    <identifier>com.akaipro.apc.expansion.projects</identifier>    
+    <title>Projects</title>
+    <manufacturer>Akai Professional</manufacturer>
+    <version>1.0.0.0</version>
+    <type>drum</type>
+    <img>com.akaipro.apc.expansion.projects.jpg</img>
+    <directory>com.akaipro.apc.expansion.projects</directory>
+    <separator>-</separator>
+</expansion>
+
+

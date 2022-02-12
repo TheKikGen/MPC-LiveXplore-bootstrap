@@ -8,19 +8,18 @@
 # BOOTSTRAP script for MPC device.
 # POST AZ01-LAUNCH-MPC script
 
-# -----------------------------------------------------------------------------
-# submodules launcher : add to the doer , separated by space
-#
-# install      : setup some directories and permissions on the filesystem
-# telnetd      : launch a telnetd server (root access)
-# nomoressh    : stop the ssh temporarily for security reasons.
-#                You'll need to remove the usb key to reactivate ssh.
-# etcovr_clean : clean passwords files and ssh config on the /etc overlay
-# anyctrl      : use any midi controller as MPC/Force control surface (full ports)
-# anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
-# iamforce     : New Force binary launcher on a MPC using mpcmapper.so
+SCRIPT_NAME=$(readlink -f "$0")
+SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
+source "$SCRIPT_DIR/tkgl_path"
 
-TKGL_DOER="iamforce"
+# -----------------------------------------------------------------------------
+# Read the doer_list at the tkgl_root dir
+
+[ -f "$TKGL_ROOT/doer_list" ] || exit 1 
+
+
+cat "$TKGL_ROOT/doer_list">>$TKGL_LOG
+source "$TKGL_ROOT/doer_list"
 
 # -----------------------------------------------------------------------------
 
@@ -32,17 +31,13 @@ fi
 
 source $TKGL_PATH_FILE
 
-# Add tkgl bin first into the path only one time
-echo $PATH | grep /tkgl >/dev/null || export PATH=$TKGL_BIN:$PATH
 
-# Add tkgl library path
-export LD_LIBRARY_PATH=/lib:/usr/lib:$TKGL_LIB
-
-echo "*** In bootstrap script $TKGL_BOOTSTRAP ***">$TKGL_LOG
+echo "-------------------------------------------------------------------------">$TKGL_LOG
+echo " In bootstrap script $TKGL_BOOTSTRAP ***">>$TKGL_LOG
 date>>$TKGL_LOG
 uname -a>>$TKGL_LOG
 
 for MODULE in $TKGL_DOER ; do
    echo "-- Module $MODULE --">>$TKGL_LOG
-   sh "$TKGL_SCRIPT/tkgl_mod_$MODULE.sh">>$TKGL_LOG
+   sh "$TKGL_ROOT/modules/mod_$MODULE/tkgl_mod_$MODULE.sh"
 done

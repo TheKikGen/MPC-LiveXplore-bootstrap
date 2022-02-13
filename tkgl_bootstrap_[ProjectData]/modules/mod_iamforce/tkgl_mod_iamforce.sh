@@ -82,6 +82,7 @@ MPC_CRASHINFO=/media/az01-internal/Settings/MPC/*.crashinfo
 # Message displayed in a popup when the MPC app start
 MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 
+
 # Prepare the chroot "Sandbox" -------------------------------------------------
 
 echo "Prepare the chroot..." >>  $TKGL_LOG
@@ -119,6 +120,12 @@ mount --rbind $TKGL_SETTINGS_MPC $ROOT_DIR_MEDIA/az01-internal/Settings/MPC
 # Finally bind with the chroot /media
 mount --rbind $ROOT_DIR_MEDIA $ROOT_DIR/media
 
+# bind the MPC bin to our bin
+#mount --bind $ROOT_DIR/usr/bin/MPC /usr/bin/MPC
+
+
+
+
 # Sanitary checks -------------------------------------------------------------
 
 # Clear crash files
@@ -131,6 +138,23 @@ mount -t sysfs /sys $ROOT_DIR/sys
 mount --rbind /run  $ROOT_DIR/run
 mount --rbind /dev  $ROOT_DIR/dev
 mount --bind /tmp   $ROOT_DIR/tmp
+
+# Power supply faking ----------------------------------------------------------
+# The Force checks the power status permanently, so the usage on battery is
+# not possible, notably on the Live, Live2.
+# Here we fake the /sys/class/power_supply
+
+echo "1" > /tmp/value-1
+echo "100" > /tmp/value-100
+echo "Full" > /tmp/value-full
+echo "18608000" > /tmp/value-voltnow
+
+PWS_DIR=$ROOT_DIR/sys/class/power_supply/
+mount --bind /tmp/value-1       $PWS_DIR/az01-ac-power/online
+mount --bind /tmp/value-voltnow $PWS_DIR/az01-ac-power/voltage_now
+mount --bind /tmp/value-1       $PWS_DIR/sbs-3-000b/present
+mount --bind /tmp/value-full    $PWS_DIR/sbs-3-000b/status
+mount --bind /tmp/value-100     $PWS_DIR/sbs-3-000b/capacity
 
 # Mount overlays /etc /var from the internal part ------------------------------
 echo $ROOT_DIR/media/az01-internal/system/etc/overlay

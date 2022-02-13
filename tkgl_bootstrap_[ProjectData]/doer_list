@@ -1,16 +1,44 @@
-# DOER_LIST : List modules here to run
-#
+# DOER_LIST : Bootstrap modules launcher
+# Do not modify the next line. Modiffy the list at the bottom of the file.
+TKGL_DOER=""
+# ---------------------------------------------------------------------------------------------------------
+# Module name  : Description
+# ---------------------------------------------------------------------------------------------------------
 # install      : setup some directories and permissions on the filesystem
-# telnetd      : launch a telnetd server (root access)
-# nomoressh    : stop the ssh temporarily for security reasons.
+# ---------------------------------------------------------------------------------------------------------
+# etcovr_clean : clean passwords files and ssh config on the /etc overlay (/media/internal-sd).
+#              : Even if ssh is enabled on the modified image, the overlay of the /etc directory 
+#              : on internal-sd may restrict its use.  This module deletes any etc configuration files
+#              : on that overlay.  Run once.
+# ---------------------------------------------------------------------------------------------------------
+# telnetd      : launch a telnetd server (root access). Experimental.
+# ---------------------------------------------------------------------------------------------------------
+# nomoressh    : stop the ssh temporarily for security reasons (e.g. during live performance).
 #                You'll need to remove the usb key to reactivate ssh.
-# arp_overlay  : add your own arp patterns on the sdcard
-# nomoreazmidi : temporary stop of the proprietary Akai network midi (used with the Live remote control)
-# etcovr_clean : clean passwords files and ssh config on the /etc overlay
+# ---------------------------------------------------------------------------------------------------------
+# arp_overlay  : add your own arp patterns on the sdcard.
+#              : Arp patterns are patterns are read only when the MPC app starts.  This module creates an
+#              : overlay of the "/usr/share/Akai/SME0/Arp Patterns" directory on the bootstrap sdcard at
+#              : "/media/TKGL_BOOTSTRAP/tkgl_bootstrap_[ProjectData]/modules/mod_arp_overlay/Arp Patterns"
+#              : You must copy your own arp patterns within the "overlay" subdirectory.
+#              : More than 3000 arp patterns are provided by default. 
+# ---------------------------------------------------------------------------------------------------------
+# rtpmidid     : Launch rtpmidi and avahi daemon in the background to enable midi over ethernet.  You can
+#              : use application like TouchDaw or any rtpmidi/Apple midi compatible device to control your
+#              : MPC/Force.  In the midi input/output, you will see a "tkgl remote" midi port.
+# ---------------------------------------------------------------------------------------------------------
+# nomoreazmidi : az01-midi is the proprietary Akai ethernet midi service, used notably to enable Ableton Live
+#              : remote session. This module will stop the service (so will disable also Live remote control).
+#              : If you use rtpmidid module, this is a recommended setting to avoid conflicts.
+# ---------------------------------------------------------------------------------------------------------
 # anyctrl      : use any midi controller as MPC/Force control surface (full ports)
+# ---------------------------------------------------------------------------------------------------------
 # anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
-# iamforce     : New Force binary launcher on a MPC using mpcmapper.so
-# rtpmidid     : Launch rtpmidi and avahi daemon in the background
+# ---------------------------------------------------------------------------------------------------------
+# iamforce     : Force software launcher on a MPC using mpcmapper.so ld_preload library
+# ---------------------------------------------------------------------------------------------------------
 
-# List here module name to launch before the MPC application, separated by a space 
+# List here your modules name to launch before the MPC application, separated by a space 
+
 TKGL_DOER="arp_overlay nomoreazmidi rtpmidid"
+

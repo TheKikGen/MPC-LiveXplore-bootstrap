@@ -8,34 +8,38 @@
 This "bootstrap" implementation allows Akai MPCs / Force system customization at boot time as linux application launching, data rescue, backup settings,... 
 You need to update your MPC/Force with a modded image that will launch the bootstrap from the internal filesystem, before the MPC application starts.
 
-How to install :
+## How to install :
 
-1. Copy to the "tkgl_bootstrap_[ProjectData]" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
-
-   Important : the directory MUST be named "tkgl_bootstrap_[ProjectData]" to be hidden and for the bootstrap to be launched on the sdcard.
-   You should change permissions and ownership of binaries and scripts files as follow (locally or in a ssh root session) : 
-   
-        - cd /media/(your smartcard name)/tkgl_bootstrap_[ProjectData]
-        - chmod 755 ./lib/* ./bin/* ./scripts/*
-        - chown root:root ./lib/* ./bin/* ./scripts/*
-
-2. Update as usual (usb procedure) with the last MPC / Force modded image to enable the bootstrap script :
+1. Update as usual (usb procedure) with the last MPC / Force modded image to enable the bootstrap script :
 
    https://github.com/TheKikGen/MPC-LiveXplore  
    
-   Copy the image file to the root of a usb key.
-   The launch script on the internal ssd will find the tkgl_bootstrap script automatically. 
+2. Copy to the "tkgl_bootstrap_[ProjectData]" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
 
-   Concerning these images: very little has been changed. It is mainly about enabling SSH, a standard feature of Linux, and checking  
-   if a script exists on a usb key at boot time. That's all. I use it everyday on my MPC Live and my MPC X.
-   Upgrading your MPC or Force with one of these images will not brick your hardware.  The update procedure is strictly the same 
-   as the one you use for the official images but of course, I can't be held responsible for any problem. 
-   You can update again to come back to an official image at any time.
+   You can download the last version in a zip file here : https://github.com/TheKikGen/MPC-LiveXplore-bootstrap/archive/refs/heads/main.zip  
+   (remove the prefix "main" after unzip)
 
-3. Create your module and adapt the /tkgl_bootstrap_[ProjectData]/scripts/tkgl_bootstrap script to your needs 
+   The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image.  
+   This suffix allows to hide the directory when you are using the MPC app.
+   
+## Activation of modules at boot
 
-   Copy paste a script module example (for example the mod_telnetd) to create your own. 
-   Your module must be then added to the $DOER variable in the tkgl_bootstrap script.
+You need to edit the file tkgl_bootstrap_[ProjectData]/doer_list to add a modules list you want to launch at boot time.  
+Follow instructions within the file itself.
+
+## Creating your own module 
+
+Copy paste an existing module example (for example the arp_overlay) to create your own.  
+The module name must have a directory at tkgl_bootstrap_[ProjectData]/modules/mod_(your module name).
+
+Within the module directory, the start script must be named tkgl_mod_<your module name>.sh.  
+
+Your module must be then added to the $DOER variable in the tkgl_bootstrap script.  
+        
+If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the tkgl_bootstrap/logs.  
+        
+## Availables modules
+        
 ````  
 # ---------------------------------------------------------------------------------------------------------
 # Module name  : Description
@@ -74,26 +78,5 @@ How to install :
 # iamforce     : Force software launcher on a MPC using mpcmapper.so ld_preload library
 # ---------------------------------------------------------------------------------------------------------
 ````
-   Have a look to the tkgl_mod_kgl_mod_arp_overlay.sh : it creates an overlay on the Arp Patterns/Progression directory to allow you to load 
-   your own patterns from the sdcard (check "Arp Patterns" and "Progressions" links at the root directory that will be created after a first boot).
-   
-   A full root access to the system is granted within tkgl_bootstrap, however the file system is mounted read-only for security reasons.
-   I do not recommend to install software to (and/or deeply customize) the internal file system. You will loose everything at the next update.
-   Instead implement your custom app on the sdcard, to ensure isolation with the filesystem, and to preserve your work.
-   It also allows you to return to normal operation of your MPC by simply removing the external sdcard/usb key.
-
-4. Place any binary in the /tkgl_bootstrap/bin.  
-             Important : binary exec permissions are not possible if stored on a FAT32 partition.  
-             Use preferably an ext4 formated parition on your sdccard.
-   
-5. Test locally via ssh before running in nominal mode
-
-    ssh root@(your MPC ip addr), then cd to /media(your sdcard name)/tkgl_bootstrap/scripts and run tkgl_bootstrap.
-    
-6. Reboot your MPC !
-
-    ssh root@(your MPC ip addr) reboot
-    
-    if your MPC is stuck, remove the sdcard and reboot.  You will find a log in the tkgl_bootstrap/logs.
 
 

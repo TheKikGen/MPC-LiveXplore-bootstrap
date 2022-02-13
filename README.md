@@ -35,7 +35,7 @@ The module name must have a directory at tkgl_bootstrap_[ProjectData]/modules/mo
 
 Within the module directory, the start script must be named tkgl_mod_your-module-name.sh.  
 
-Your module must be then added to the $DOER variable in the tkgl_bootstrap script.  
+Your module must be then added to the tkgl_bootstrap_[ProjectData]/doer_list file.  
         
 If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the tkgl_bootstrap_[ProjectData]/logs.  
         

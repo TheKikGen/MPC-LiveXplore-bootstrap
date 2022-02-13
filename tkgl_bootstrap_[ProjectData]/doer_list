@@ -25,7 +25,7 @@ TKGL_DOER=""
 # ---------------------------------------------------------------------------------------------------------
 # rtpmidid     : Launch rtpmidi and avahi daemon in the background to enable midi over ethernet.  You can
 #              : use application like TouchDaw or any rtpmidi/Apple midi compatible device to control your
-#              : MPC/Force.  In the midi input/output, you will see a "tkgl remote" midi port.
+#              : MPC/Force.  In the midi input/output, you will see a "rtpmidi tkgl Network" midi port.
 # ---------------------------------------------------------------------------------------------------------
 # nomoreazmidi : az01-midi is the proprietary Akai ethernet midi service, used notably to enable Ableton Live
 #              : remote session. This module will stop the service (so will disable also Live remote control).

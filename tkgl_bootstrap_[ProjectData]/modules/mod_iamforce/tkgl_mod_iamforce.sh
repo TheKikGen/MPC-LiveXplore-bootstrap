@@ -172,7 +172,7 @@ ulimit -S -s 1024
 LD_PRELOAD=$CHROOT_BOOTSTRAP/lib/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV
 #EOF
 
-shut down
+shutdown
 
 # umount fs --------------------------------------------------------------------
 # umount $ROOT_DIR/tmp

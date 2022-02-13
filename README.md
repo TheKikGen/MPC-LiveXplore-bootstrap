@@ -80,4 +80,7 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 # ---------------------------------------------------------------------------------------------------------
 ````
 
+rtpmidi : Credit to David Moreno.  https://github.com/davidmoreno/rtpmidid
+
+
 

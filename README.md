@@ -29,14 +29,15 @@ Follow instructions within the file itself.
 
 ## Creating your own module 
 
-Copy paste an existing module example (for example the arp_overlay) to create your own.  
-The module name must have a directory at tkgl_bootstrap_[ProjectData]/modules/mod_(your module name).
+Copy paste an existing module (for example the arp_overlay) to create your own.  
 
-Within the module directory, the start script must be named tkgl_mod_<your module name>.sh.  
+The module name must have a directory at tkgl_bootstrap_[ProjectData]/modules/mod_your-module-name.
+
+Within the module directory, the start script must be named tkgl_mod_your-module-name.sh.  
 
 Your module must be then added to the $DOER variable in the tkgl_bootstrap script.  
         
-If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the tkgl_bootstrap/logs.  
+If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the tkgl_bootstrap_[ProjectData]/logs.  
         
 ## Availables modules
         

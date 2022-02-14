@@ -16,7 +16,8 @@ OVR_ARP_DIR="$SCRIPT_DIR/Arp Patterns"
 
 AKAI_SME0_ARP="/usr/share/Akai/SME0/Arp Patterns"
 
-mkdir -p  "$OVR_ARP_DIR/.work" "$OVR_ARP_DIR/overlay" 
+mkdir -p "$OVR_ARP_DIR/.work" 
+mkdir -p "$OVR_ARP_DIR/overlay" 
 
 # mount the overlay
 mount -t overlay overlay -o \

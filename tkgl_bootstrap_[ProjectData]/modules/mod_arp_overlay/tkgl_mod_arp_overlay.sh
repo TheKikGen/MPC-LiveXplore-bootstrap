@@ -23,7 +23,7 @@ AKAI_SME0_ARP="/usr/share/Akai/SME0/Arp Patterns"
 
 mkdir -p "$OVR_ARP_DIR/.work" 
 mkdir -p "$OVR_ARP_DIR/overlay" 
-set >>$TKGL_LOG
+
 # mount the overlay
 mount -t overlay overlay -o \
 lowerdir = "$AKAI_SME0_ARP",\

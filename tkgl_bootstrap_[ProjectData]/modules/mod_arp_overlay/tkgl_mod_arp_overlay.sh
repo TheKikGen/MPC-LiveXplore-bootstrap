@@ -18,15 +18,19 @@ echo "-------------------------------------------------------------------------"
 
 
 OVR_ARP_DIR="$SCRIPT_DIR/Arp Patterns"
-
 AKAI_SME0_ARP="/usr/share/Akai/SME0/Arp Patterns"
 
 mkdir -p "$OVR_ARP_DIR/.work" 
 mkdir -p "$OVR_ARP_DIR/overlay" 
 
+echo "lowerdir      : $AKAI_SME0_ARP" >> $TKGL_LOG
+echo "upperdir      : $OVR_ARP_DIR/overlay" >> $TKGL_LOG
+echo "workdir       : $OVR_ARP_DIR/.work" >> $TKGL_LOG  
+
 # mount the overlay
+
 mount -t overlay overlay -o \
-lowerdir = "$AKAI_SME0_ARP",\
-upperdir = "$OVR_ARP_DIR/overlay",\
-workdir  = "$OVR_ARP_DIR/.work" \
-"$AKAI_SME0_ARP">>$TKGL_LOG
+lowerdir="$AKAI_SME0_ARP",\
+upperdir="$OVR_ARP_DIR/overlay",\
+workdir="$OVR_ARP_DIR/.work" \
+"$AKAI_SME0_ARP"

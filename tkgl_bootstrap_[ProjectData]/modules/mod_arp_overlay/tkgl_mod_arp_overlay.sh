@@ -12,16 +12,21 @@ SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
+echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
+echo "MODULE $SCRIPT_NAME" >> $TKGL_LOG
+echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
+
+
 OVR_ARP_DIR="$SCRIPT_DIR/Arp Patterns"
 
 AKAI_SME0_ARP="/usr/share/Akai/SME0/Arp Patterns"
 
 mkdir -p "$OVR_ARP_DIR/.work" 
 mkdir -p "$OVR_ARP_DIR/overlay" 
-
+set >>$TKGL_LOG
 # mount the overlay
 mount -t overlay overlay -o \
-lowerdir="$AKAI_SME0_ARP",\
-upperdir="$OVR_ARP_DIR/overlay",\
-workdir="$OVR_ARP_DIR/.work" \
-"$AKAI_SME0_ARP"
+lowerdir = "$AKAI_SME0_ARP",\
+upperdir = "$OVR_ARP_DIR/overlay",\
+workdir  = "$OVR_ARP_DIR/.work" \
+"$AKAI_SME0_ARP">>$TKGL_LOG

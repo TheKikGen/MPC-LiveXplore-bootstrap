@@ -40,6 +40,9 @@ cat /etc/dbus-1/system-local.conf >> $TKGL_LOG
 
 # Mount 2nd /etc overlays (the first one is at /media/az01-internal/system)
 # this will avoid /etc pollution on the lower etc overlay
+mkdir -p $SCRIPT_DIR/etc/overlay
+mkdir -p $SCRIPT_DIR/etc/.work
+
 mount -t overlay overlay -o \
 lowerdir=/etc,\
 upperdir=$SCRIPT_DIR/etc/overlay,\
@@ -67,4 +70,4 @@ mkdir -p /var/run/rtpmidid
 
 # Start fork of rtpmidi and leave the script
 $SCRIPT_DIR/sbin/rtpmidid --name "tkgl" &
-exit 0 
+exit 0

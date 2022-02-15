@@ -69,5 +69,5 @@ sleep 4
 mkdir -p /var/run/rtpmidid
 
 # Start fork of rtpmidi and leave the script
-$SCRIPT_DIR/sbin/rtpmidid --name "tkgl" &
+$SCRIPT_DIR/sbin/rtpmidid &
 exit 0

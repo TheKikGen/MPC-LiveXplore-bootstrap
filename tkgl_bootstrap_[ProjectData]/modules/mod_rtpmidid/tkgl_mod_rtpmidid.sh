@@ -61,7 +61,7 @@ grep "avahi" /etc/group  || echo "$AVAHI_GROUP" | tee -a  /etc/group
 # Add avahi midi libs in the lib path
 export LD_LIBRARY_PATH=$SCRIPT_DIR/lib:$LD_LIBRARY_PATH
 
-# Make system directories
+# Launch Avahi daemon
 $SCRIPT_DIR/sbin/avahi-daemon -f /etc/avahi/avahi-daemon.conf -D
 sleep 4
 

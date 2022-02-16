@@ -17,10 +17,6 @@ SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-echo "MODULE $SCRIPT_NAME" >> $TKGL_LOG
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-
 # Settings ---------------------------------------------------------------------
 
 # exit if no settings present for the bus (must exists in the update img)
@@ -61,7 +57,7 @@ grep "avahi" /etc/group  || echo "$AVAHI_GROUP" | tee -a  /etc/group
 # Add avahi midi libs in the lib path
 export LD_LIBRARY_PATH=$SCRIPT_DIR/lib:$LD_LIBRARY_PATH
 
-# Launch Avahi daemon
+# Make system directories
 $SCRIPT_DIR/sbin/avahi-daemon -f /etc/avahi/avahi-daemon.conf -D
 sleep 4
 
@@ -70,4 +66,6 @@ mkdir -p /var/run/rtpmidid
 
 # Start fork of rtpmidi and leave the script
 $SCRIPT_DIR/sbin/rtpmidid &
-exit 0
+
+if ps | grep avahi-daemon | grep -v grep ; then echo "avahi-daemon is running" >> $TKGL_LOG ; fi
+if ps | grep rtpmidid | grep -v grep ; then echo "rtpmidid is running" >> $TKGL_LOG ; fi

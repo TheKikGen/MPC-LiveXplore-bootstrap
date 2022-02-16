@@ -15,8 +15,9 @@ source "$SCRIPT_DIR/tkgl_path"
 # -----------------------------------------------------------------------------
 # Read the doer_list at the tkgl_root dir
 
-[ -f "$TKGL_ROOT/doer_list" ] || exit 1 
+[ -f "$TKGL_ROOT/doer_list" ] || exit 1
 
+cat "$TKGL_ROOT/doer_list">>$TKGL_LOG
 source "$TKGL_ROOT/doer_list"
 
 # -----------------------------------------------------------------------------
@@ -29,25 +30,23 @@ fi
 
 source $TKGL_PATH_FILE
 
-echo "-------------------------------------------------------------------------" > $TKGL_LOG
-echo "-- In bootstrap script $TKGL_BOOTSTRAP --" >> $TKGL_LOG
-echo "-------------------------------------------------------------------------" >> $TKGL_LOG
-echo >> $TKGL_LOG
+
+echo "-------------------------------------------------------------------------">$TKGL_LOG
+echo " TKGL_BOOTSTARP SCRIPT : $TKGL_BOOTSTRAP" >> $TKGL_LOG
 date >> $TKGL_LOG
 uname -a >> $TKGL_LOG
 echo >> $TKGL_LOG
-echo  "TKGL_DOER = $TKGL_DOER " >> $TKGL_LOG
-echo  >> $TKGL_LOG
-
 for MODULE in $TKGL_DOER ; do
-   echo "---- DOER Module $MODULE ----" >> $TKGL_LOG
-   MODULE_SCRIPT="$TKGL_ROOT/modules/mod_$MODULE/tkgl_mod_$MODULE.sh"
-   if [ -f "$MODULE_SCRIPT" ]
+   echo  >> $TKGL_LOG
+   echo "-------------------------------------------------------------------------" >>$TKGL_LOG
+   echo "-- Module $MODULE --">>$TKGL_LOG
+   echo "-------------------------------------------------------------------------" >>$TKGL_LOG
+   _MODULE_LAUNCH_SCRIPT="$TKGL_ROOT/modules/mod_$MODULE/tkgl_mod_$MODULE.sh"
+  if [ -f "$_MODULE_LAUNCH_SCRIPT" ]
    then
-      sh "$MODULE_SCRIPT"
+      echo "Launch script $_MODULE_LAUNCH_SCRIPT found."
+      sh "$TKGL_ROOT/modules/mod_$MODULE/tkgl_mod_$MODULE.sh"
    else
-      echo "$MODULE_SCRIPT module script not found"  >> $TKGL_LOG
+      echo "*** Error : launch script $_MODULE_LAUNCH_SCRIPT not found"
    fi
 done
-
-echo "-------------------------------------------------------------------------" >> $TKGL_LOG

@@ -12,8 +12,6 @@ SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
-echo "*** $0 module">>$TKGL_LOG
-
 # /etc overlay on the internal system sd card
 ETC_OVR="/media/az01-internal/system/etc/overlay"
 
@@ -33,3 +31,4 @@ rm "$ETC_OVR/group-">>$TKGL_LOG
 rm -rf "$ETC_OVR/dbus-1/*">>$TKGL_LOG
 
 echo "/etc overlay cleansing done.">>$TKGL_LOG
+

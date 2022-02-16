@@ -12,11 +12,6 @@ SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-echo "MODULE $SCRIPT_NAME" >> $TKGL_LOG
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-
-
 OVR_ARP_DIR="$SCRIPT_DIR/Arp Patterns"
 AKAI_SME0_ARP="/usr/share/Akai/SME0/Arp Patterns"
 
@@ -27,6 +22,12 @@ echo "lowerdir      : $AKAI_SME0_ARP" >> $TKGL_LOG
 echo "upperdir      : $OVR_ARP_DIR/overlay" >> $TKGL_LOG
 echo "workdir       : $OVR_ARP_DIR/.work" >> $TKGL_LOG  
 
+if [ -f "$AKAI_SME0_ARP\.flagarpovr" ]
+then
+  echo "Arp patterns overlay already mounted" >> $TKGL_LOG
+  exit
+fi
+
 # mount the overlay
 
 mount -t overlay overlay -o \
@@ -34,3 +35,5 @@ lowerdir="$AKAI_SME0_ARP",\
 upperdir="$OVR_ARP_DIR/overlay",\
 workdir="$OVR_ARP_DIR/.work" \
 "$AKAI_SME0_ARP"
+
+touch "$AKAI_SME0_ARP\.flagarpovr"

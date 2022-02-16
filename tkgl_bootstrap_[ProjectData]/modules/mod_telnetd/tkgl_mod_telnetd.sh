@@ -7,8 +7,11 @@
 #
 # BOOTSTRAP script for MPC device.
 # Telnet launcher module
-source $TKGL_PATH_FILE
+#------------------------------------------------------------------------------
 
-# Use Busybox telnetd,a light telnet server.
-echo "*** $0 module">>$TKGL_LOG
-busybox telnetd>>$TKGL_LOG
+SCRIPT_NAME=$(readlink -f "$0")
+SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
+source "$SCRIPT_DIR/../../scripts/tkgl_path"
+
+# Use our Busybox telnetd,a light telnet server.
+$TKGL_BIN/busybox telnetd>>$TKGL_LOG

@@ -12,7 +12,5 @@ SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
-echo "*** $0 module">>$TKGL_LOG
-
 systemctl stop sshd.service
 echo "systemctl stop sshd.service done !">>$TKGL_LOG

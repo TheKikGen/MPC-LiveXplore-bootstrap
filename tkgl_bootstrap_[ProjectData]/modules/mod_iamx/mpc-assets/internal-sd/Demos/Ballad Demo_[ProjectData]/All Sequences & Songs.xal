@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MPCVObject>
+  <Version>
+    <File_Version>1.7</File_Version>
+    <Application>MPC-V</Application>
+    <Application_Version>1.8.3.191</Application_Version>
+    <Platform>OSX</Platform>
+  </Version>
+  <AllSeqSamps>
+    <Sequences>
+      <Count>128</Count>
+      <Sequence number="1">
+        <Active>True</Active>
+        <Name>Ballad Template</Name>
+      </Sequence>
+    </Sequences>
+    <Songs>
+      <Count>32</Count>
+      <Song number="1">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="2">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="3">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="4">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="5">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="6">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="7">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="8">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="9">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="10">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="11">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="12">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="13">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="14">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="15">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="16">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="17">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="18">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="19">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="20">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="21">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="22">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="23">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="24">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="25">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="26">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="27">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="28">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="29">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="30">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="31">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+      <Song number="32">
+        <Name>(unnamed)</Name>
+        <TempoIgnore>False</TempoIgnore>
+      </Song>
+    </Songs>
+    <Locators>
+      <Locator>
+        <LocatorBar>0</LocatorBar>
+        <LocatorBeat>0</LocatorBeat>
+        <LocatorPulse>0</LocatorPulse>
+      </Locator>
+      <Locator>
+        <LocatorBar>0</LocatorBar>
+        <LocatorBeat>0</LocatorBeat>
+        <LocatorPulse>0</LocatorPulse>
+      </Locator>
+      <Locator>
+        <LocatorBar>0</LocatorBar>
+        <LocatorBeat>0</LocatorBeat>
+        <LocatorPulse>0</LocatorPulse>
+      </Locator>
+      <Locator>
+        <LocatorBar>0</LocatorBar>
+        <LocatorBeat>0</LocatorBeat>
+        <LocatorPulse>0</LocatorPulse>
+      </Locator>
+      <Locator>
+        <LocatorBar>0</LocatorBar>
+        <LocatorBeat>0</LocatorBeat>
+        <LocatorPulse>0</LocatorPulse>
+      </Locator>
+      <Locator>
+        <LocatorBar>0</LocatorBar>
+        <LocatorBeat>0</LocatorBeat>
+        <LocatorPulse>0</LocatorPulse>
+      </Locator>
+    </Locators>
+  </AllSeqSamps>
+</MPCVObject>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PROPERTIES>
+  <VALUE name="pluginList">
+    <KNOWNPLUGINS/>
+  </VALUE>
+  <VALUE name="PadSceneQLink1" val="518"/>
+  <VALUE name="PadSceneQLink1Momentary" val="0"/>
+  <VALUE name="PadSceneQLink2" val="517"/>
+  <VALUE name="PadSceneQLink2Momentary" val="0"/>
+  <VALUE name="PadSceneQLink3" val="527"/>
+  <VALUE name="PadSceneQLink3Momentary" val="0"/>
+  <VALUE name="PadSceneQLink4" val="526"/>
+  <VALUE name="PadSceneQLink4Momentary" val="0"/>
+  <VALUE name="PadSceneQLink5" val="522"/>
+  <VALUE name="PadSceneQLink5Momentary" val="0"/>
+  <VALUE name="PadSceneQLink6" val="523"/>
+  <VALUE name="PadSceneQLink6Momentary" val="0"/>
+  <VALUE name="PadSceneQLink7" val="524"/>
+  <VALUE name="PadSceneQLink7Momentary" val="0"/>
+  <VALUE name="PadSceneQLink8" val="525"/>
+  <VALUE name="PadSceneQLink8Momentary" val="0"/>
+  <VALUE name="PadSceneQLink9" val="514"/>
+  <VALUE name="PadSceneQLink9Momentary" val="0"/>
+  <VALUE name="PadSceneQLink10" val="515"/>
+  <VALUE name="PadSceneQLink10Momentary" val="0"/>
+  <VALUE name="PadSceneQLink11" val="516"/>
+  <VALUE name="PadSceneQLink11Momentary" val="0"/>
+  <VALUE name="PadSceneQLink12" val="513"/>
+  <VALUE name="PadSceneQLink12Momentary" val="0"/>
+  <VALUE name="PadSceneQLink13" val="519"/>
+  <VALUE name="PadSceneQLink13Momentary" val="0"/>
+  <VALUE name="PadSceneQLink14" val="520"/>
+  <VALUE name="PadSceneQLink14Momentary" val="0"/>
+  <VALUE name="PadSceneQLink15" val="529"/>
+  <VALUE name="PadSceneQLink15Momentary" val="0"/>
+  <VALUE name="PadSceneQLink16" val="521"/>
+  <VALUE name="PadSceneQLink16Momentary" val="0"/>
+  <VALUE name="folder1" val="/media/az01-internal-sd/Expansions/The Vault 2"/>
+  <VALUE name="folder2" val="/media/az01-internal-sd/Expansions/Instruments"/>
+  <VALUE name="folder3" val="/media/az01-internal-sd/Expansions"/>
+  <VALUE name="folder4" val="/media/az01-internal-sd/Force Documents/Projects"/>
+  <VALUE name="folder5" val="/media/az01-internal-sd/Force Documents/Programs"/>
+  <VALUE name="92sdf3" val="EECK7SHUAP55RQB3"/>
+  <VALUE name="audioSetup">
+    <DEVICESETUP audioOutputDeviceName="Internal" audioInputDeviceName="Internal"/>
+  </VALUE>
+  <VALUE name="StandaloneWindowBounds" val="0 0 1280 800"/>
+  <VALUE name="AudioDevices">
+    <AudioDeviceList>
+      <Type name="AZ01 ALSA">
+        <Device name="PreSonus StudioLive AR16c at usb-ff500000.usb-1.1, high speed"/>
+        <Device name="Internal"/>
+      </Type>
+    </AudioDeviceList>
+  </VALUE>
+  <VALUE name="NewPluginDialogSortByManufacturer" val="0"/>
+  <VALUE name="NewPluginDialogSortByType" val="1"/>
+  <VALUE name="ExpansionManager.showInstruments" val="1"/>
+  <VALUE name="ExpansionManager.showFx" val="1"/>
+  <VALUE name="ExpansionManager.showGood" val="1"/>
+  <VALUE name="ExpansionManager.showBad" val="0"/>
+  <VALUE name="ExpansionManager.sortBy" val="2"/>
+  <VALUE name="ExpansionManager.sortAscending" val="1"/>
+  <VALUE name="ExpansionManager.showVST" val="1"/>
+  <VALUE name="ExpansionManager.showLADSPA" val="1"/>
+  <VALUE name="ExpansionManager.showMPC" val="1"/>
+  <VALUE name="MpcEditorLinkEditors" val="0"/>
+  <VALUE name="MpcUIPage.SampleEdit.Q-LINKS" val="1"/>
+  <VALUE name="MpcUIPage.SampleEdit.PADS" val="1"/>
+  <VALUE name="MpcUIPage.SampleEdit.PARAMETERS" val="1"/>
+  <VALUE name="MpcUIPage.SampleEdit.PROJECT" val="1"/>
+  <VALUE name="DialogsAlwaysOnTop" val="0"/>
+  <VALUE name="Inspector.Track.Visibility.Type" val="1"/>
+  <VALUE name="Inspector.Track.Visibility.Midi Input Port" val="1"/>
+  <VALUE name="Inspector.Track.Visibility.Midi Input Channel" val="1"/>
+  <VALUE name="Inspector.Track.Visibility.Midi Out Port" val="1"/>
+  <VALUE name="Inspector.Track.Visibility.Midi Out Channel" val="1"/>
+  <VALUE name="Inspector.Track.Visibility.Midi Send" val="0"/>
+  <VALUE name="Inspector.Track.Visibility.Monitor" val="1"/>
+  <VALUE name="Inspector.Track.Visibility.Length" val="0"/>
+  <VALUE name="Inspector.Track.Visibility.Velocity" val="0"/>
+  <VALUE name="Inspector.Track.Visibility.Transpose" val="0"/>
+  <VALUE name="Inspector.Track.Visibility.Mute / Solo" val="0"/>
+  <VALUE name="Inspector.Track.Visibility.VisibleRows" val="1"/>
+  <VALUE name="Inspector.Sequence.Visibility.Bars" val="1"/>
+  <VALUE name="Inspector.Sequence.Visibility.Bpm" val="1"/>
+  <VALUE name="Inspector.Sequence.Visibility.Transpose" val="0"/>
+  <VALUE name="Inspector.Sequence.Visibility.Loop" val="1"/>
+  <VALUE name="Inspector.Sequence.Visibility.Start" val="0"/>
+  <VALUE name="Inspector.Sequence.Visibility.End" val="0"/>
+  <VALUE name="Inspector.Sequence.Visibility.TimeSignature" val="0"/>
+  <VALUE name="Inspector.Sequence.Visibility.VisibleRows" val="1"/>
+  <VALUE name="Inspector.Program.CV.Visibility.Program Type" val="1"/>
+  <VALUE name="Inspector.Program.CV.Visibility.Edit Mapping" val="1"/>
+  <VALUE name="Inspector.Program.CV.Visibility.CV Port" val="1"/>
+  <VALUE name="Inspector.Program.CV.Visibility.Gate Port" val="1"/>
+  <VALUE name="Inspector.Program.CV.Visibility.Md.Wheel" val="0"/>
+  <VALUE name="Inspector.Program.CV.Visibility.Vel Port" val="0"/>
+  <VALUE name="Inspector.Program.CV.Visibility.Note" val="0"/>
+  <VALUE name="Inspector.Program.CV.Visibility.VisibleRows" val="1"/>
+  <VALUE name="Inspector.Program.Midi.Visibility.Prog Ch" val="0"/>
+  <VALUE name="Inspector.Program.Midi.Visibility.Bank" val="0"/>
+  <VALUE name="Inspector.Program.Midi.Visibility.LSB" val="0"/>
+  <VALUE name="Inspector.Program.Midi.Visibility.VisibleRows" val="1"/>
+  <VALUE name="Inspector.Program.Plugin.Visibility.Plugin" val="1"/>
+  <VALUE name="Inspector.Program.Plugin.Visibility.Preset" val="1"/>
+  <VALUE name="Inspector.Program.Plugin.Visibility.MIDI Channel" val="0"/>
+  <VALUE name="Inspector.Program.Plugin.Visibility.VisibleRows" val="1"/>
+  <VALUE name="recentProject1" val="/media/FORCE500/MPCProjets/AkaNova.xpj"/>
+  <VALUE name="recentProject2" val="/media/FORCE500/MPCProjets/A little stop.xpj"/>
+  <VALUE name="recentProject3" val="/media/FORCE500/MPCProjets/Circonvolutone.xpj"/>
+  <VALUE name="recentProject4" val="&lt;none&gt;"/>
+  <VALUE name="recentProject5" val="&lt;none&gt;"/>
+  <VALUE name="recentProject6" val="&lt;none&gt;"/>
+  <VALUE name="recentProject7" val="&lt;none&gt;"/>
+  <VALUE name="recentProject8" val="&lt;none&gt;"/>
+  <VALUE name="recentProject9" val="&lt;none&gt;"/>
+  <VALUE name="recentProject10" val="&lt;none&gt;"/>
+  <VALUE name="FollowNowType" val="0"/>
+  <VALUE name="EnableMirrorDisplays" val="1"/>
+  <VALUE name="PlayheadScrollsUsingTC" val="0"/>
+  <VALUE name="MpcEditor.Editor.ShowPadColoursInGrid" val="1"/>
+  <VALUE name="NumThreads" val="4"/>
+  <VALUE name="ShowMidiKeyboard" val="0"/>
+  <VALUE name="MidiKeys" val="0"/>
+  <VALUE name="displayAs96PPQN" val="1"/>
+  <VALUE name="ShowQLinksStatusOverlay" val="1"/>
+  <VALUE name="ImageCapture.SavePath" val="/media/az01-internal-sd/Force Documents/Screenshots"/>
+  <VALUE name="SampleFileAuditionAutoPlay" val="0"/>
+  <VALUE name="SampleFileAuditionVolume" val="0.7079457640647888"/>
+  <VALUE name="SampleFileAuditionAutoPlayLength" val="30"/>
+  <VALUE name="SampleFileAuditionOutputChannel" val="0"/>
+  <VALUE name="SampleFileAuditionWarpEnable" val="1"/>
+  <VALUE name="SampleFileAuditionSync" val="0"/>
+  <VALUE name="PluginScannerTimeout" val="40000"/>
+  <VALUE name="PluginScannerTimeoutSingle" val="300000"/>
+  <VALUE name="PluginScannerParallelScanCount" val="0"/>
+  <VALUE name="PluginScannerMode" val="1"/>
+  <VALUE name="DisabledPlugins.List">
+    <PluginIdList/>
+  </VALUE>
+  <VALUE name="FavouritePlugins.List">
+    <PluginIdList/>
+  </VALUE>
+  <VALUE name="DisabledExpansions.List">
+    <DisabledExpansionList/>
+  </VALUE>
+  <VALUE name="SixteenLevelsType" val="0"/>
+  <VALUE name="TrackMixerShowMidiTrackStrips" val="0"/>
+  <VALUE name="TrackMixerShowAudioTrackStrips" val="1"/>
+  <VALUE name="TrackMixerShowPrograms" val="1"/>
+  <VALUE name="TrackMixerShowUnusedPrograms" val="1"/>
+  <VALUE name="TrackMixerShowAllTracks" val="1"/>
+  <VALUE name="TrackMixerShowReturnStrips" val="1"/>
+  <VALUE name="TrackMixerShowSubmixStrips" val="0"/>
+  <VALUE name="TrackMixerShowOutputPanel" val="1"/>
+  <VALUE name="TrackMixerUsingFixedMaximumIO" val="0"/>
+  <VALUE name="PowerOnMode.Behaviour" val="1"/>
+  <VALUE name="SampleEdit.ChopAuditionMode" val="0"/>
+  <VALUE name="SampleEdit.CuePlayMode" val="1"/>
+  <VALUE name="SampleEdit.CuePreviewOnChange" val="0"/>
+  <VALUE name="SampleEdit.SlicePointPreviewOnChange" val="0"/>
+  <VALUE name="footSwitch1" val="0"/>
+  <VALUE name="footSwitch2" val="0"/>
+  <VALUE name="filterAllNotesOffCC" val="0"/>
+  <VALUE name="AudioRecorder.input" val="0"/>
+  <VALUE name="AudioRecorder.channelMode" val="2"/>
+  <VALUE name="AudioRecorder.outputMono" val="0"/>
+  <VALUE name="AudioRecorder.dbThreshold" val="0.0"/>
+  <VALUE name="AudioRecorder.duration" val="20.0"/>
+  <VALUE name="AudioRecorder.samplingBitDepth" val="16"/>
+  <VALUE name="AudioRecorder.inputSource" val="0"/>
+  <VALUE name="Looper.LoopLengthBars" val="1"/>
+  <VALUE name="Looper.SequencerSync" val="1"/>
+  <VALUE name="Looper.AutoIntoOverdub" val="1"/>
+  <VALUE name="Looper.OutputGain" val="0.7079457640647888"/>
+  <VALUE name="programChange" val="0"/>
+  <VALUE name="recordTrackMute" val="1"/>
+  <VALUE name="playTrackMute" val="1"/>
+  <VALUE name="recordAftertouch" val="1"/>
+  <VALUE name="recordDuringCount" val="1"/>
+  <VALUE name="truncateDuration" val="0"/>
+  <VALUE name="recArmMode" val="0"/>
+  <VALUE name="instantTrackMute" val="0"/>
+  <VALUE name="padThresholdPreset" val="7"/>
+  <VALUE name="padGainPreset" val="7"/>
+  <VALUE name="padCurvePreset" val="0"/>
+  <VALUE name="padBrightness" val="1.0"/>
+  <VALUE name="ProjectDefaults.defaultTempo" val="120"/>
+  <VALUE name="ProjectDefaults.defaultMasterTempo" val="0"/>
+  <VALUE name="ProjectDefaults.defaultSwing" val="50"/>
+  <VALUE name="ProjectDefaults.defaultSequenceLengthBars" val="2"/>
+  <VALUE name="ProjectDefaults.defaultTimeSignatureNumerator" val="4"/>
+  <VALUE name="ProjectDefaults.defaultTimeSignatureDenominator" val="2"/>
+  <VALUE name="ProjectDefaults.defaultpadSlice" val="129"/>
+  <VALUE name="ProjectDefaults.defaultDrumAndKeygroupFilter" val="2"/>
+  <VALUE name="ProjectDefaults.defaultPluginSynth" val="TubeSynth&#10;TubeSynth&#10;MPC&#10;Synth&#10;AIR Music Technology&#10;&#10;MPC:TubeSynth&#10;1 Jan 1970 1:00:00&#10;1415730041&#10;1&#10;0&#10;2&#10;0"/>
+  <VALUE name="ProjectDefaults.defaultProgramPolyphony" val="32"/>
+  <VALUE name="ProjectDefaults.defaultInstrumentPolyphony" val="32"/>
+  <VALUE name="DragDropIncludeVolumePan" val="1"/>
+  <VALUE name="DragDropBypassEffects" val="0"/>
+  <VALUE name="DragDropAudioTailLength" val="1"/>
+  <VALUE name="DragDropRenderSource" val="0"/>
+  <VALUE name="DragDropRenderMidiSource" val="0"/>
+  <VALUE name="DragDropBitDepth" val="3"/>
+  <VALUE name="DragDropBitRate" val="1"/>
+  <VALUE name="defaultProgramPads" val="{&#10;    &quot;defaultProgramPads&quot;: {&#10;        &quot;drum&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: true&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 4&#10;            },&#10;            &quot;universalPad&quot;: 7775,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 0,&#10;                &quot;value1&quot;: 0,&#10;                &quot;value2&quot;: 0,&#10;                &quot;value3&quot;: 0,&#10;                &quot;value4&quot;: 0,&#10;                &quot;value5&quot;: 0,&#10;                &quot;value6&quot;: 0,&#10;                &quot;value7&quot;: 0,&#10;                &quot;value8&quot;: 0,&#10;                &quot;value9&quot;: 0,&#10;                &quot;value10&quot;: 0,&#10;                &quot;value11&quot;: 0,&#10;                &quot;value12&quot;: 0,&#10;                &quot;value13&quot;: 0,&#10;                &quot;value14&quot;: 0,&#10;                &quot;value15&quot;: 0,&#10;                &quot;value16&quot;: 0,&#10;                &quot;value17&quot;: 0,&#10;                &quot;value18&quot;: 0,&#10;                &quot;value19&quot;: 0,&#10;                &quot;value20&quot;: 0,&#10;                &quot;value21&quot;: 0,&#10;                &quot;value22&quot;: 0,&#10;                &quot;value23&quot;: 0,&#10;                &quot;value24&quot;: 0,&#10;                &quot;value25&quot;: 0,&#10;                &quot;value26&quot;: 0,&#10;                &quot;value27&quot;: 0,&#10;                &quot;value28&quot;: 0,&#10;                &quot;value29&quot;: 0,&#10;                &quot;value30&quot;: 0,&#10;                &quot;value31&quot;: 0,&#10;                &quot;value32&quot;: 0,&#10;                &quot;value33&quot;: 0,&#10;                &quot;value34&quot;: 0,&#10;                &quot;value35&quot;: 0,&#10;                &quot;value36&quot;: 0,&#10;                &quot;value37&quot;: 0,&#10;                &quot;value38&quot;: 0,&#10;                &quot;value39&quot;: 0,&#10;                &quot;value40&quot;: 0,&#10;                &quot;value41&quot;: 0,&#10;                &quot;value42&quot;: 0,&#10;                &quot;value43&quot;: 0,&#10;                &quot;value44&quot;: 0,&#10;                &quot;value45&quot;: 0,&#10;                &quot;value46&quot;: 0,&#10;                &quot;value47&quot;: 0,&#10;                &quot;value48&quot;: 0,&#10;                &quot;value49&quot;: 0,&#10;                &quot;value50&quot;: 0,&#10;                &quot;value51&quot;: 0,&#10;                &quot;value52&quot;: 0,&#10;                &quot;value53&quot;: 0,&#10;                &quot;value54&quot;: 0,&#10;                &quot;value55&quot;: 0,&#10;                &quot;value56&quot;: 0,&#10;                &quot;value57&quot;: 0,&#10;                &quot;value58&quot;: 0,&#10;                &quot;value59&quot;: 0,&#10;                &quot;value60&quot;: 0,&#10;                &quot;value61&quot;: 0,&#10;                &quot;value62&quot;: 0,&#10;                &quot;value63&quot;: 0,&#10;                &quot;value64&quot;: 0,&#10;                &quot;value65&quot;: 0,&#10;                &quot;value66&quot;: 0,&#10;                &quot;value67&quot;: 0,&#10;                &quot;value68&quot;: 0,&#10;                &quot;value69&quot;: 0,&#10;                &quot;value70&quot;: 0,&#10;                &quot;value71&quot;: 0,&#10;                &quot;value72&quot;: 0,&#10;                &quot;value73&quot;: 0,&#10;                &quot;value74&quot;: 0,&#10;                &quot;value75&quot;: 0,&#10;                &quot;value76&quot;: 0,&#10;                &quot;value77&quot;: 0,&#10;                &quot;value78&quot;: 0,&#10;                &quot;value79&quot;: 0,&#10;                &quot;value80&quot;: 0,&#10;                &quot;value81&quot;: 0,&#10;                &quot;value82&quot;: 0,&#10;                &quot;value83&quot;: 0,&#10;                &quot;value84&quot;: 0,&#10;                &quot;value85&quot;: 0,&#10;                &quot;value86&quot;: 0,&#10;                &quot;value87&quot;: 0,&#10;                &quot;value88&quot;: 0,&#10;                &quot;value89&quot;: 0,&#10;                &quot;value90&quot;: 0,&#10;                &quot;value91&quot;: 0,&#10;                &quot;value92&quot;: 0,&#10;                &quot;value93&quot;: 0,&#10;                &quot;value94&quot;: 0,&#10;                &quot;value95&quot;: 0,&#10;                &quot;value96&quot;: 0,&#10;                &quot;value97&quot;: 0,&#10;                &quot;value98&quot;: 0,&#10;                &quot;value99&quot;: 0,&#10;                &quot;value100&quot;: 0,&#10;                &quot;value101&quot;: 0,&#10;                &quot;value102&quot;: 0,&#10;                &quot;value103&quot;: 0,&#10;                &quot;value104&quot;: 0,&#10;                &quot;value105&quot;: 0,&#10;                &quot;value106&quot;: 0,&#10;                &quot;value107&quot;: 0,&#10;                &quot;value108&quot;: 0,&#10;                &quot;value109&quot;: 0,&#10;                &quot;value110&quot;: 0,&#10;                &quot;value111&quot;: 0,&#10;                &quot;value112&quot;: 0,&#10;                &quot;value113&quot;: 0,&#10;                &quot;value114&quot;: 0,&#10;                &quot;value115&quot;: 0,&#10;                &quot;value116&quot;: 0,&#10;                &quot;value117&quot;: 0,&#10;                &quot;value118&quot;: 0,&#10;                &quot;value119&quot;: 0,&#10;                &quot;value120&quot;: 0,&#10;                &quot;value121&quot;: 0,&#10;                &quot;value122&quot;: 0,&#10;                &quot;value123&quot;: 0,&#10;                &quot;value124&quot;: 0,&#10;                &quot;value125&quot;: 0,&#10;                &quot;value126&quot;: 0,&#10;                &quot;value127&quot;: 0&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        },&#10;        &quot;keygroup&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: true&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 4&#10;            },&#10;            &quot;universalPad&quot;: 6238976,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 0,&#10;                &quot;value1&quot;: 0,&#10;                &quot;value2&quot;: 0,&#10;                &quot;value3&quot;: 0,&#10;                &quot;value4&quot;: 0,&#10;                &quot;value5&quot;: 0,&#10;                &quot;value6&quot;: 0,&#10;                &quot;value7&quot;: 0,&#10;                &quot;value8&quot;: 0,&#10;                &quot;value9&quot;: 0,&#10;                &quot;value10&quot;: 0,&#10;                &quot;value11&quot;: 0,&#10;                &quot;value12&quot;: 0,&#10;                &quot;value13&quot;: 0,&#10;                &quot;value14&quot;: 0,&#10;                &quot;value15&quot;: 0,&#10;                &quot;value16&quot;: 0,&#10;                &quot;value17&quot;: 0,&#10;                &quot;value18&quot;: 0,&#10;                &quot;value19&quot;: 0,&#10;                &quot;value20&quot;: 0,&#10;                &quot;value21&quot;: 0,&#10;                &quot;value22&quot;: 0,&#10;                &quot;value23&quot;: 0,&#10;                &quot;value24&quot;: 0,&#10;                &quot;value25&quot;: 0,&#10;                &quot;value26&quot;: 0,&#10;                &quot;value27&quot;: 0,&#10;                &quot;value28&quot;: 0,&#10;                &quot;value29&quot;: 0,&#10;                &quot;value30&quot;: 0,&#10;                &quot;value31&quot;: 0,&#10;                &quot;value32&quot;: 0,&#10;                &quot;value33&quot;: 0,&#10;                &quot;value34&quot;: 0,&#10;                &quot;value35&quot;: 0,&#10;                &quot;value36&quot;: 0,&#10;                &quot;value37&quot;: 0,&#10;                &quot;value38&quot;: 0,&#10;                &quot;value39&quot;: 0,&#10;                &quot;value40&quot;: 0,&#10;                &quot;value41&quot;: 0,&#10;                &quot;value42&quot;: 0,&#10;                &quot;value43&quot;: 0,&#10;                &quot;value44&quot;: 0,&#10;                &quot;value45&quot;: 0,&#10;                &quot;value46&quot;: 0,&#10;                &quot;value47&quot;: 0,&#10;                &quot;value48&quot;: 0,&#10;                &quot;value49&quot;: 0,&#10;                &quot;value50&quot;: 0,&#10;                &quot;value51&quot;: 0,&#10;                &quot;value52&quot;: 0,&#10;                &quot;value53&quot;: 0,&#10;                &quot;value54&quot;: 0,&#10;                &quot;value55&quot;: 0,&#10;                &quot;value56&quot;: 0,&#10;                &quot;value57&quot;: 0,&#10;                &quot;value58&quot;: 0,&#10;                &quot;value59&quot;: 0,&#10;                &quot;value60&quot;: 0,&#10;                &quot;value61&quot;: 0,&#10;                &quot;value62&quot;: 0,&#10;                &quot;value63&quot;: 0,&#10;                &quot;value64&quot;: 0,&#10;                &quot;value65&quot;: 0,&#10;                &quot;value66&quot;: 0,&#10;                &quot;value67&quot;: 0,&#10;                &quot;value68&quot;: 0,&#10;                &quot;value69&quot;: 0,&#10;                &quot;value70&quot;: 0,&#10;                &quot;value71&quot;: 0,&#10;                &quot;value72&quot;: 0,&#10;                &quot;value73&quot;: 0,&#10;                &quot;value74&quot;: 0,&#10;                &quot;value75&quot;: 0,&#10;                &quot;value76&quot;: 0,&#10;                &quot;value77&quot;: 0,&#10;                &quot;value78&quot;: 0,&#10;                &quot;value79&quot;: 0,&#10;                &quot;value80&quot;: 0,&#10;                &quot;value81&quot;: 0,&#10;                &quot;value82&quot;: 0,&#10;                &quot;value83&quot;: 0,&#10;                &quot;value84&quot;: 0,&#10;                &quot;value85&quot;: 0,&#10;                &quot;value86&quot;: 0,&#10;                &quot;value87&quot;: 0,&#10;                &quot;value88&quot;: 0,&#10;                &quot;value89&quot;: 0,&#10;                &quot;value90&quot;: 0,&#10;                &quot;value91&quot;: 0,&#10;                &quot;value92&quot;: 0,&#10;                &quot;value93&quot;: 0,&#10;                &quot;value94&quot;: 0,&#10;                &quot;value95&quot;: 0,&#10;                &quot;value96&quot;: 0,&#10;                &quot;value97&quot;: 0,&#10;                &quot;value98&quot;: 0,&#10;                &quot;value99&quot;: 0,&#10;                &quot;value100&quot;: 0,&#10;                &quot;value101&quot;: 0,&#10;                &quot;value102&quot;: 0,&#10;                &quot;value103&quot;: 0,&#10;                &quot;value104&quot;: 0,&#10;                &quot;value105&quot;: 0,&#10;                &quot;value106&quot;: 0,&#10;                &quot;value107&quot;: 0,&#10;                &quot;value108&quot;: 0,&#10;                &quot;value109&quot;: 0,&#10;                &quot;value110&quot;: 0,&#10;                &quot;value111&quot;: 0,&#10;                &quot;value112&quot;: 0,&#10;                &quot;value113&quot;: 0,&#10;                &quot;value114&quot;: 0,&#10;                &quot;value115&quot;: 0,&#10;                &quot;value116&quot;: 0,&#10;                &quot;value117&quot;: 0,&#10;                &quot;value118&quot;: 0,&#10;                &quot;value119&quot;: 0,&#10;                &quot;value120&quot;: 0,&#10;                &quot;value121&quot;: 0,&#10;                &quot;value122&quot;: 0,&#10;                &quot;value123&quot;: 0,&#10;                &quot;value124&quot;: 0,&#10;                &quot;value125&quot;: 0,&#10;                &quot;value126&quot;: 0,&#10;                &quot;value127&quot;: 0&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        },&#10;        &quot;clip&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: false&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 5&#10;            },&#10;            &quot;universalPad&quot;: 65280,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 16711680,&#10;                &quot;value1&quot;: 43554,&#10;                &quot;value2&quot;: 16711878,&#10;                &quot;value3&quot;: 255,&#10;                &quot;value4&quot;: 16711680,&#10;                &quot;value5&quot;: 43554,&#10;                &quot;value6&quot;: 16711878,&#10;                &quot;value7&quot;: 255,&#10;                &quot;value8&quot;: 16711680,&#10;                &quot;value9&quot;: 43554,&#10;                &quot;value10&quot;: 16711878,&#10;                &quot;value11&quot;: 255,&#10;                &quot;value12&quot;: 16711680,&#10;                &quot;value13&quot;: 43554,&#10;                &quot;value14&quot;: 16711878,&#10;                &quot;value15&quot;: 255,&#10;                &quot;value16&quot;: 16711680,&#10;                &quot;value17&quot;: 43554,&#10;                &quot;value18&quot;: 16711878,&#10;                &quot;value19&quot;: 255,&#10;                &quot;value20&quot;: 16711680,&#10;                &quot;value21&quot;: 43554,&#10;                &quot;value22&quot;: 16711878,&#10;                &quot;value23&quot;: 255,&#10;                &quot;value24&quot;: 16711680,&#10;                &quot;value25&quot;: 43554,&#10;                &quot;value26&quot;: 16711878,&#10;                &quot;value27&quot;: 255,&#10;                &quot;value28&quot;: 16711680,&#10;                &quot;value29&quot;: 43554,&#10;                &quot;value30&quot;: 16711878,&#10;                &quot;value31&quot;: 255,&#10;                &quot;value32&quot;: 16711680,&#10;                &quot;value33&quot;: 43554,&#10;                &quot;value34&quot;: 16711878,&#10;                &quot;value35&quot;: 255,&#10;                &quot;value36&quot;: 16711680,&#10;                &quot;value37&quot;: 43554,&#10;                &quot;value38&quot;: 16711878,&#10;                &quot;value39&quot;: 255,&#10;                &quot;value40&quot;: 16711680,&#10;                &quot;value41&quot;: 43554,&#10;                &quot;value42&quot;: 16711878,&#10;                &quot;value43&quot;: 255,&#10;                &quot;value44&quot;: 16711680,&#10;                &quot;value45&quot;: 43554,&#10;                &quot;value46&quot;: 16711878,&#10;                &quot;value47&quot;: 255,&#10;                &quot;value48&quot;: 16711680,&#10;                &quot;value49&quot;: 43554,&#10;                &quot;value50&quot;: 16711878,&#10;                &quot;value51&quot;: 255,&#10;                &quot;value52&quot;: 16711680,&#10;                &quot;value53&quot;: 43554,&#10;                &quot;value54&quot;: 16711878,&#10;                &quot;value55&quot;: 255,&#10;                &quot;value56&quot;: 16711680,&#10;                &quot;value57&quot;: 43554,&#10;                &quot;value58&quot;: 16711878,&#10;                &quot;value59&quot;: 255,&#10;                &quot;value60&quot;: 16711680,&#10;                &quot;value61&quot;: 43554,&#10;                &quot;value62&quot;: 16711878,&#10;                &quot;value63&quot;: 255,&#10;                &quot;value64&quot;: 16711680,&#10;                &quot;value65&quot;: 43554,&#10;                &quot;value66&quot;: 16711878,&#10;                &quot;value67&quot;: 255,&#10;                &quot;value68&quot;: 16711680,&#10;                &quot;value69&quot;: 43554,&#10;                &quot;value70&quot;: 16711878,&#10;                &quot;value71&quot;: 255,&#10;                &quot;value72&quot;: 16711680,&#10;                &quot;value73&quot;: 43554,&#10;                &quot;value74&quot;: 16711878,&#10;                &quot;value75&quot;: 255,&#10;                &quot;value76&quot;: 16711680,&#10;                &quot;value77&quot;: 43554,&#10;                &quot;value78&quot;: 16711878,&#10;                &quot;value79&quot;: 255,&#10;                &quot;value80&quot;: 16711680,&#10;                &quot;value81&quot;: 43554,&#10;                &quot;value82&quot;: 16711878,&#10;                &quot;value83&quot;: 255,&#10;                &quot;value84&quot;: 16711680,&#10;                &quot;value85&quot;: 43554,&#10;                &quot;value86&quot;: 16711878,&#10;                &quot;value87&quot;: 255,&#10;                &quot;value88&quot;: 16711680,&#10;                &quot;value89&quot;: 43554,&#10;                &quot;value90&quot;: 16711878,&#10;                &quot;value91&quot;: 255,&#10;                &quot;value92&quot;: 16711680,&#10;                &quot;value93&quot;: 43554,&#10;                &quot;value94&quot;: 16711878,&#10;                &quot;value95&quot;: 255,&#10;                &quot;value96&quot;: 16711680,&#10;                &quot;value97&quot;: 43554,&#10;                &quot;value98&quot;: 16711878,&#10;                &quot;value99&quot;: 255,&#10;                &quot;value100&quot;: 16711680,&#10;                &quot;value101&quot;: 43554,&#10;                &quot;value102&quot;: 16711878,&#10;                &quot;value103&quot;: 255,&#10;                &quot;value104&quot;: 16711680,&#10;                &quot;value105&quot;: 43554,&#10;                &quot;value106&quot;: 16711878,&#10;                &quot;value107&quot;: 255,&#10;                &quot;value108&quot;: 16711680,&#10;                &quot;value109&quot;: 43554,&#10;                &quot;value110&quot;: 16711878,&#10;                &quot;value111&quot;: 255,&#10;                &quot;value112&quot;: 16711680,&#10;                &quot;value113&quot;: 43554,&#10;                &quot;value114&quot;: 16711878,&#10;                &quot;value115&quot;: 255,&#10;                &quot;value116&quot;: 16711680,&#10;                &quot;value117&quot;: 43554,&#10;                &quot;value118&quot;: 16711878,&#10;                &quot;value119&quot;: 255,&#10;                &quot;value120&quot;: 16711680,&#10;                &quot;value121&quot;: 43554,&#10;                &quot;value122&quot;: 16711878,&#10;                &quot;value123&quot;: 255,&#10;                &quot;value124&quot;: 16711680,&#10;                &quot;value125&quot;: 43554,&#10;                &quot;value126&quot;: 16711878,&#10;                &quot;value127&quot;: 255&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        },&#10;        &quot;plugin&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: true&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 4&#10;            },&#10;            &quot;universalPad&quot;: 15420,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 0,&#10;                &quot;value1&quot;: 0,&#10;                &quot;value2&quot;: 0,&#10;                &quot;value3&quot;: 0,&#10;                &quot;value4&quot;: 0,&#10;                &quot;value5&quot;: 0,&#10;                &quot;value6&quot;: 0,&#10;                &quot;value7&quot;: 0,&#10;                &quot;value8&quot;: 0,&#10;                &quot;value9&quot;: 0,&#10;                &quot;value10&quot;: 0,&#10;                &quot;value11&quot;: 0,&#10;                &quot;value12&quot;: 0,&#10;                &quot;value13&quot;: 0,&#10;                &quot;value14&quot;: 0,&#10;                &quot;value15&quot;: 0,&#10;                &quot;value16&quot;: 0,&#10;                &quot;value17&quot;: 0,&#10;                &quot;value18&quot;: 0,&#10;                &quot;value19&quot;: 0,&#10;                &quot;value20&quot;: 0,&#10;                &quot;value21&quot;: 0,&#10;                &quot;value22&quot;: 0,&#10;                &quot;value23&quot;: 0,&#10;                &quot;value24&quot;: 0,&#10;                &quot;value25&quot;: 0,&#10;                &quot;value26&quot;: 0,&#10;                &quot;value27&quot;: 0,&#10;                &quot;value28&quot;: 0,&#10;                &quot;value29&quot;: 0,&#10;                &quot;value30&quot;: 0,&#10;                &quot;value31&quot;: 0,&#10;                &quot;value32&quot;: 0,&#10;                &quot;value33&quot;: 0,&#10;                &quot;value34&quot;: 0,&#10;                &quot;value35&quot;: 0,&#10;                &quot;value36&quot;: 0,&#10;                &quot;value37&quot;: 0,&#10;                &quot;value38&quot;: 0,&#10;                &quot;value39&quot;: 0,&#10;                &quot;value40&quot;: 0,&#10;                &quot;value41&quot;: 0,&#10;                &quot;value42&quot;: 0,&#10;                &quot;value43&quot;: 0,&#10;                &quot;value44&quot;: 0,&#10;                &quot;value45&quot;: 0,&#10;                &quot;value46&quot;: 0,&#10;                &quot;value47&quot;: 0,&#10;                &quot;value48&quot;: 0,&#10;                &quot;value49&quot;: 0,&#10;                &quot;value50&quot;: 0,&#10;                &quot;value51&quot;: 0,&#10;                &quot;value52&quot;: 0,&#10;                &quot;value53&quot;: 0,&#10;                &quot;value54&quot;: 0,&#10;                &quot;value55&quot;: 0,&#10;                &quot;value56&quot;: 0,&#10;                &quot;value57&quot;: 0,&#10;                &quot;value58&quot;: 0,&#10;                &quot;value59&quot;: 0,&#10;                &quot;value60&quot;: 0,&#10;                &quot;value61&quot;: 0,&#10;                &quot;value62&quot;: 0,&#10;                &quot;value63&quot;: 0,&#10;                &quot;value64&quot;: 0,&#10;                &quot;value65&quot;: 0,&#10;                &quot;value66&quot;: 0,&#10;                &quot;value67&quot;: 0,&#10;                &quot;value68&quot;: 0,&#10;                &quot;value69&quot;: 0,&#10;                &quot;value70&quot;: 0,&#10;                &quot;value71&quot;: 0,&#10;                &quot;value72&quot;: 0,&#10;                &quot;value73&quot;: 0,&#10;                &quot;value74&quot;: 0,&#10;                &quot;value75&quot;: 0,&#10;                &quot;value76&quot;: 0,&#10;                &quot;value77&quot;: 0,&#10;                &quot;value78&quot;: 0,&#10;                &quot;value79&quot;: 0,&#10;                &quot;value80&quot;: 0,&#10;                &quot;value81&quot;: 0,&#10;                &quot;value82&quot;: 0,&#10;                &quot;value83&quot;: 0,&#10;                &quot;value84&quot;: 0,&#10;                &quot;value85&quot;: 0,&#10;                &quot;value86&quot;: 0,&#10;                &quot;value87&quot;: 0,&#10;                &quot;value88&quot;: 0,&#10;                &quot;value89&quot;: 0,&#10;                &quot;value90&quot;: 0,&#10;                &quot;value91&quot;: 0,&#10;                &quot;value92&quot;: 0,&#10;                &quot;value93&quot;: 0,&#10;                &quot;value94&quot;: 0,&#10;                &quot;value95&quot;: 0,&#10;                &quot;value96&quot;: 0,&#10;                &quot;value97&quot;: 0,&#10;                &quot;value98&quot;: 0,&#10;                &quot;value99&quot;: 0,&#10;                &quot;value100&quot;: 0,&#10;                &quot;value101&quot;: 0,&#10;                &quot;value102&quot;: 0,&#10;                &quot;value103&quot;: 0,&#10;                &quot;value104&quot;: 0,&#10;                &quot;value105&quot;: 0,&#10;                &quot;value106&quot;: 0,&#10;                &quot;value107&quot;: 0,&#10;                &quot;value108&quot;: 0,&#10;                &quot;value109&quot;: 0,&#10;                &quot;value110&quot;: 0,&#10;                &quot;value111&quot;: 0,&#10;                &quot;value112&quot;: 0,&#10;                &quot;value113&quot;: 0,&#10;                &quot;value114&quot;: 0,&#10;                &quot;value115&quot;: 0,&#10;                &quot;value116&quot;: 0,&#10;                &quot;value117&quot;: 0,&#10;                &quot;value118&quot;: 0,&#10;                &quot;value119&quot;: 0,&#10;                &quot;value120&quot;: 0,&#10;                &quot;value121&quot;: 0,&#10;                &quot;value122&quot;: 0,&#10;                &quot;value123&quot;: 0,&#10;                &quot;value124&quot;: 0,&#10;                &quot;value125&quot;: 0,&#10;                &quot;value126&quot;: 0,&#10;                &quot;value127&quot;: 0&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        },&#10;        &quot;midi&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: true&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 4&#10;            },&#10;            &quot;universalPad&quot;: 16776960,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 0,&#10;                &quot;value1&quot;: 0,&#10;                &quot;value2&quot;: 0,&#10;                &quot;value3&quot;: 0,&#10;                &quot;value4&quot;: 0,&#10;                &quot;value5&quot;: 0,&#10;                &quot;value6&quot;: 0,&#10;                &quot;value7&quot;: 0,&#10;                &quot;value8&quot;: 0,&#10;                &quot;value9&quot;: 0,&#10;                &quot;value10&quot;: 0,&#10;                &quot;value11&quot;: 0,&#10;                &quot;value12&quot;: 0,&#10;                &quot;value13&quot;: 0,&#10;                &quot;value14&quot;: 0,&#10;                &quot;value15&quot;: 0,&#10;                &quot;value16&quot;: 0,&#10;                &quot;value17&quot;: 0,&#10;                &quot;value18&quot;: 0,&#10;                &quot;value19&quot;: 0,&#10;                &quot;value20&quot;: 0,&#10;                &quot;value21&quot;: 0,&#10;                &quot;value22&quot;: 0,&#10;                &quot;value23&quot;: 0,&#10;                &quot;value24&quot;: 0,&#10;                &quot;value25&quot;: 0,&#10;                &quot;value26&quot;: 0,&#10;                &quot;value27&quot;: 0,&#10;                &quot;value28&quot;: 0,&#10;                &quot;value29&quot;: 0,&#10;                &quot;value30&quot;: 0,&#10;                &quot;value31&quot;: 0,&#10;                &quot;value32&quot;: 0,&#10;                &quot;value33&quot;: 0,&#10;                &quot;value34&quot;: 0,&#10;                &quot;value35&quot;: 0,&#10;                &quot;value36&quot;: 0,&#10;                &quot;value37&quot;: 0,&#10;                &quot;value38&quot;: 0,&#10;                &quot;value39&quot;: 0,&#10;                &quot;value40&quot;: 0,&#10;                &quot;value41&quot;: 0,&#10;                &quot;value42&quot;: 0,&#10;                &quot;value43&quot;: 0,&#10;                &quot;value44&quot;: 0,&#10;                &quot;value45&quot;: 0,&#10;                &quot;value46&quot;: 0,&#10;                &quot;value47&quot;: 0,&#10;                &quot;value48&quot;: 0,&#10;                &quot;value49&quot;: 0,&#10;                &quot;value50&quot;: 0,&#10;                &quot;value51&quot;: 0,&#10;                &quot;value52&quot;: 0,&#10;                &quot;value53&quot;: 0,&#10;                &quot;value54&quot;: 0,&#10;                &quot;value55&quot;: 0,&#10;                &quot;value56&quot;: 0,&#10;                &quot;value57&quot;: 0,&#10;                &quot;value58&quot;: 0,&#10;                &quot;value59&quot;: 0,&#10;                &quot;value60&quot;: 0,&#10;                &quot;value61&quot;: 0,&#10;                &quot;value62&quot;: 0,&#10;                &quot;value63&quot;: 0,&#10;                &quot;value64&quot;: 0,&#10;                &quot;value65&quot;: 0,&#10;                &quot;value66&quot;: 0,&#10;                &quot;value67&quot;: 0,&#10;                &quot;value68&quot;: 0,&#10;                &quot;value69&quot;: 0,&#10;                &quot;value70&quot;: 0,&#10;                &quot;value71&quot;: 0,&#10;                &quot;value72&quot;: 0,&#10;                &quot;value73&quot;: 0,&#10;                &quot;value74&quot;: 0,&#10;                &quot;value75&quot;: 0,&#10;                &quot;value76&quot;: 0,&#10;                &quot;value77&quot;: 0,&#10;                &quot;value78&quot;: 0,&#10;                &quot;value79&quot;: 0,&#10;                &quot;value80&quot;: 0,&#10;                &quot;value81&quot;: 0,&#10;                &quot;value82&quot;: 0,&#10;                &quot;value83&quot;: 0,&#10;                &quot;value84&quot;: 0,&#10;                &quot;value85&quot;: 0,&#10;                &quot;value86&quot;: 0,&#10;                &quot;value87&quot;: 0,&#10;                &quot;value88&quot;: 0,&#10;                &quot;value89&quot;: 0,&#10;                &quot;value90&quot;: 0,&#10;                &quot;value91&quot;: 0,&#10;                &quot;value92&quot;: 0,&#10;                &quot;value93&quot;: 0,&#10;                &quot;value94&quot;: 0,&#10;                &quot;value95&quot;: 0,&#10;                &quot;value96&quot;: 0,&#10;                &quot;value97&quot;: 0,&#10;                &quot;value98&quot;: 0,&#10;                &quot;value99&quot;: 0,&#10;                &quot;value100&quot;: 0,&#10;                &quot;value101&quot;: 0,&#10;                &quot;value102&quot;: 0,&#10;                &quot;value103&quot;: 0,&#10;                &quot;value104&quot;: 0,&#10;                &quot;value105&quot;: 0,&#10;                &quot;value106&quot;: 0,&#10;                &quot;value107&quot;: 0,&#10;                &quot;value108&quot;: 0,&#10;                &quot;value109&quot;: 0,&#10;                &quot;value110&quot;: 0,&#10;                &quot;value111&quot;: 0,&#10;                &quot;value112&quot;: 0,&#10;                &quot;value113&quot;: 0,&#10;                &quot;value114&quot;: 0,&#10;                &quot;value115&quot;: 0,&#10;                &quot;value116&quot;: 0,&#10;                &quot;value117&quot;: 0,&#10;                &quot;value118&quot;: 0,&#10;                &quot;value119&quot;: 0,&#10;                &quot;value120&quot;: 0,&#10;                &quot;value121&quot;: 0,&#10;                &quot;value122&quot;: 0,&#10;                &quot;value123&quot;: 0,&#10;                &quot;value124&quot;: 0,&#10;                &quot;value125&quot;: 0,&#10;                &quot;value126&quot;: 0,&#10;                &quot;value127&quot;: 0&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        },&#10;        &quot;audio&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: true&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 4&#10;            },&#10;            &quot;universalPad&quot;: 24350,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 0,&#10;                &quot;value1&quot;: 0,&#10;                &quot;value2&quot;: 0,&#10;                &quot;value3&quot;: 0,&#10;                &quot;value4&quot;: 0,&#10;                &quot;value5&quot;: 0,&#10;                &quot;value6&quot;: 0,&#10;                &quot;value7&quot;: 0,&#10;                &quot;value8&quot;: 0,&#10;                &quot;value9&quot;: 0,&#10;                &quot;value10&quot;: 0,&#10;                &quot;value11&quot;: 0,&#10;                &quot;value12&quot;: 0,&#10;                &quot;value13&quot;: 0,&#10;                &quot;value14&quot;: 0,&#10;                &quot;value15&quot;: 0,&#10;                &quot;value16&quot;: 0,&#10;                &quot;value17&quot;: 0,&#10;                &quot;value18&quot;: 0,&#10;                &quot;value19&quot;: 0,&#10;                &quot;value20&quot;: 0,&#10;                &quot;value21&quot;: 0,&#10;                &quot;value22&quot;: 0,&#10;                &quot;value23&quot;: 0,&#10;                &quot;value24&quot;: 0,&#10;                &quot;value25&quot;: 0,&#10;                &quot;value26&quot;: 0,&#10;                &quot;value27&quot;: 0,&#10;                &quot;value28&quot;: 0,&#10;                &quot;value29&quot;: 0,&#10;                &quot;value30&quot;: 0,&#10;                &quot;value31&quot;: 0,&#10;                &quot;value32&quot;: 0,&#10;                &quot;value33&quot;: 0,&#10;                &quot;value34&quot;: 0,&#10;                &quot;value35&quot;: 0,&#10;                &quot;value36&quot;: 0,&#10;                &quot;value37&quot;: 0,&#10;                &quot;value38&quot;: 0,&#10;                &quot;value39&quot;: 0,&#10;                &quot;value40&quot;: 0,&#10;                &quot;value41&quot;: 0,&#10;                &quot;value42&quot;: 0,&#10;                &quot;value43&quot;: 0,&#10;                &quot;value44&quot;: 0,&#10;                &quot;value45&quot;: 0,&#10;                &quot;value46&quot;: 0,&#10;                &quot;value47&quot;: 0,&#10;                &quot;value48&quot;: 0,&#10;                &quot;value49&quot;: 0,&#10;                &quot;value50&quot;: 0,&#10;                &quot;value51&quot;: 0,&#10;                &quot;value52&quot;: 0,&#10;                &quot;value53&quot;: 0,&#10;                &quot;value54&quot;: 0,&#10;                &quot;value55&quot;: 0,&#10;                &quot;value56&quot;: 0,&#10;                &quot;value57&quot;: 0,&#10;                &quot;value58&quot;: 0,&#10;                &quot;value59&quot;: 0,&#10;                &quot;value60&quot;: 0,&#10;                &quot;value61&quot;: 0,&#10;                &quot;value62&quot;: 0,&#10;                &quot;value63&quot;: 0,&#10;                &quot;value64&quot;: 0,&#10;                &quot;value65&quot;: 0,&#10;                &quot;value66&quot;: 0,&#10;                &quot;value67&quot;: 0,&#10;                &quot;value68&quot;: 0,&#10;                &quot;value69&quot;: 0,&#10;                &quot;value70&quot;: 0,&#10;                &quot;value71&quot;: 0,&#10;                &quot;value72&quot;: 0,&#10;                &quot;value73&quot;: 0,&#10;                &quot;value74&quot;: 0,&#10;                &quot;value75&quot;: 0,&#10;                &quot;value76&quot;: 0,&#10;                &quot;value77&quot;: 0,&#10;                &quot;value78&quot;: 0,&#10;                &quot;value79&quot;: 0,&#10;                &quot;value80&quot;: 0,&#10;                &quot;value81&quot;: 0,&#10;                &quot;value82&quot;: 0,&#10;                &quot;value83&quot;: 0,&#10;                &quot;value84&quot;: 0,&#10;                &quot;value85&quot;: 0,&#10;                &quot;value86&quot;: 0,&#10;                &quot;value87&quot;: 0,&#10;                &quot;value88&quot;: 0,&#10;                &quot;value89&quot;: 0,&#10;                &quot;value90&quot;: 0,&#10;                &quot;value91&quot;: 0,&#10;                &quot;value92&quot;: 0,&#10;                &quot;value93&quot;: 0,&#10;                &quot;value94&quot;: 0,&#10;                &quot;value95&quot;: 0,&#10;                &quot;value96&quot;: 0,&#10;                &quot;value97&quot;: 0,&#10;                &quot;value98&quot;: 0,&#10;                &quot;value99&quot;: 0,&#10;                &quot;value100&quot;: 0,&#10;                &quot;value101&quot;: 0,&#10;                &quot;value102&quot;: 0,&#10;                &quot;value103&quot;: 0,&#10;                &quot;value104&quot;: 0,&#10;                &quot;value105&quot;: 0,&#10;                &quot;value106&quot;: 0,&#10;                &quot;value107&quot;: 0,&#10;                &quot;value108&quot;: 0,&#10;                &quot;value109&quot;: 0,&#10;                &quot;value110&quot;: 0,&#10;                &quot;value111&quot;: 0,&#10;                &quot;value112&quot;: 0,&#10;                &quot;value113&quot;: 0,&#10;                &quot;value114&quot;: 0,&#10;                &quot;value115&quot;: 0,&#10;                &quot;value116&quot;: 0,&#10;                &quot;value117&quot;: 0,&#10;                &quot;value118&quot;: 0,&#10;                &quot;value119&quot;: 0,&#10;                &quot;value120&quot;: 0,&#10;                &quot;value121&quot;: 0,&#10;                &quot;value122&quot;: 0,&#10;                &quot;value123&quot;: 0,&#10;                &quot;value124&quot;: 0,&#10;                &quot;value125&quot;: 0,&#10;                &quot;value126&quot;: 0,&#10;                &quot;value127&quot;: 0&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        },&#10;        &quot;cv&quot;: {&#10;            &quot;Universal&quot;: {&#10;                &quot;value0&quot;: true&#10;            },&#10;            &quot;Type&quot;: {&#10;                &quot;value0&quot;: 4&#10;            },&#10;            &quot;universalPad&quot;: 65280,&#10;            &quot;pads&quot;: {&#10;                &quot;value0&quot;: 0,&#10;                &quot;value1&quot;: 0,&#10;                &quot;value2&quot;: 0,&#10;                &quot;value3&quot;: 0,&#10;                &quot;value4&quot;: 0,&#10;                &quot;value5&quot;: 0,&#10;                &quot;value6&quot;: 0,&#10;                &quot;value7&quot;: 0,&#10;                &quot;value8&quot;: 0,&#10;                &quot;value9&quot;: 0,&#10;                &quot;value10&quot;: 0,&#10;                &quot;value11&quot;: 0,&#10;                &quot;value12&quot;: 0,&#10;                &quot;value13&quot;: 0,&#10;                &quot;value14&quot;: 0,&#10;                &quot;value15&quot;: 0,&#10;                &quot;value16&quot;: 0,&#10;                &quot;value17&quot;: 0,&#10;                &quot;value18&quot;: 0,&#10;                &quot;value19&quot;: 0,&#10;                &quot;value20&quot;: 0,&#10;                &quot;value21&quot;: 0,&#10;                &quot;value22&quot;: 0,&#10;                &quot;value23&quot;: 0,&#10;                &quot;value24&quot;: 0,&#10;                &quot;value25&quot;: 0,&#10;                &quot;value26&quot;: 0,&#10;                &quot;value27&quot;: 0,&#10;                &quot;value28&quot;: 0,&#10;                &quot;value29&quot;: 0,&#10;                &quot;value30&quot;: 0,&#10;                &quot;value31&quot;: 0,&#10;                &quot;value32&quot;: 0,&#10;                &quot;value33&quot;: 0,&#10;                &quot;value34&quot;: 0,&#10;                &quot;value35&quot;: 0,&#10;                &quot;value36&quot;: 0,&#10;                &quot;value37&quot;: 0,&#10;                &quot;value38&quot;: 0,&#10;                &quot;value39&quot;: 0,&#10;                &quot;value40&quot;: 0,&#10;                &quot;value41&quot;: 0,&#10;                &quot;value42&quot;: 0,&#10;                &quot;value43&quot;: 0,&#10;                &quot;value44&quot;: 0,&#10;                &quot;value45&quot;: 0,&#10;                &quot;value46&quot;: 0,&#10;                &quot;value47&quot;: 0,&#10;                &quot;value48&quot;: 0,&#10;                &quot;value49&quot;: 0,&#10;                &quot;value50&quot;: 0,&#10;                &quot;value51&quot;: 0,&#10;                &quot;value52&quot;: 0,&#10;                &quot;value53&quot;: 0,&#10;                &quot;value54&quot;: 0,&#10;                &quot;value55&quot;: 0,&#10;                &quot;value56&quot;: 0,&#10;                &quot;value57&quot;: 0,&#10;                &quot;value58&quot;: 0,&#10;                &quot;value59&quot;: 0,&#10;                &quot;value60&quot;: 0,&#10;                &quot;value61&quot;: 0,&#10;                &quot;value62&quot;: 0,&#10;                &quot;value63&quot;: 0,&#10;                &quot;value64&quot;: 0,&#10;                &quot;value65&quot;: 0,&#10;                &quot;value66&quot;: 0,&#10;                &quot;value67&quot;: 0,&#10;                &quot;value68&quot;: 0,&#10;                &quot;value69&quot;: 0,&#10;                &quot;value70&quot;: 0,&#10;                &quot;value71&quot;: 0,&#10;                &quot;value72&quot;: 0,&#10;                &quot;value73&quot;: 0,&#10;                &quot;value74&quot;: 0,&#10;                &quot;value75&quot;: 0,&#10;                &quot;value76&quot;: 0,&#10;                &quot;value77&quot;: 0,&#10;                &quot;value78&quot;: 0,&#10;                &quot;value79&quot;: 0,&#10;                &quot;value80&quot;: 0,&#10;                &quot;value81&quot;: 0,&#10;                &quot;value82&quot;: 0,&#10;                &quot;value83&quot;: 0,&#10;                &quot;value84&quot;: 0,&#10;                &quot;value85&quot;: 0,&#10;                &quot;value86&quot;: 0,&#10;                &quot;value87&quot;: 0,&#10;                &quot;value88&quot;: 0,&#10;                &quot;value89&quot;: 0,&#10;                &quot;value90&quot;: 0,&#10;                &quot;value91&quot;: 0,&#10;                &quot;value92&quot;: 0,&#10;                &quot;value93&quot;: 0,&#10;                &quot;value94&quot;: 0,&#10;                &quot;value95&quot;: 0,&#10;                &quot;value96&quot;: 0,&#10;                &quot;value97&quot;: 0,&#10;                &quot;value98&quot;: 0,&#10;                &quot;value99&quot;: 0,&#10;                &quot;value100&quot;: 0,&#10;                &quot;value101&quot;: 0,&#10;                &quot;value102&quot;: 0,&#10;                &quot;value103&quot;: 0,&#10;                &quot;value104&quot;: 0,&#10;                &quot;value105&quot;: 0,&#10;                &quot;value106&quot;: 0,&#10;                &quot;value107&quot;: 0,&#10;                &quot;value108&quot;: 0,&#10;                &quot;value109&quot;: 0,&#10;                &quot;value110&quot;: 0,&#10;                &quot;value111&quot;: 0,&#10;                &quot;value112&quot;: 0,&#10;                &quot;value113&quot;: 0,&#10;                &quot;value114&quot;: 0,&#10;                &quot;value115&quot;: 0,&#10;                &quot;value116&quot;: 0,&#10;                &quot;value117&quot;: 0,&#10;                &quot;value118&quot;: 0,&#10;                &quot;value119&quot;: 0,&#10;                &quot;value120&quot;: 0,&#10;                &quot;value121&quot;: 0,&#10;                &quot;value122&quot;: 0,&#10;                &quot;value123&quot;: 0,&#10;                &quot;value124&quot;: 0,&#10;                &quot;value125&quot;: 0,&#10;                &quot;value126&quot;: 0,&#10;                &quot;value127&quot;: 0&#10;            },&#10;            &quot;UnusedPads&quot;: {&#10;                &quot;value0&quot;: 1&#10;            }&#10;        }&#10;    }&#10;}"/>
+  <VALUE name="WarpAlgorithm" val="7"/>
+  <VALUE name="WarpDefault" val="0"/>
+  <VALUE name="bendLocked" val="0"/>
+  <VALUE name="bendUp" val="2"/>
+  <VALUE name="bendDown" val="2"/>
+  <VALUE name="Hardware.ScreenBrightness" val="28"/>
+  <VALUE name="Hardware.WiFiEnabled" val="1"/>
+  <VALUE name="Hardware.EthernetEnabled" val="0"/>
+  <VALUE name="Hardware.EthernetAddressMethod" val="0"/>
+  <VALUE name="Hardware.EthernetIPv4Address" val=""/>
+  <VALUE name="Hardware.EthernetIPv4SubnetMask" val=""/>
+  <VALUE name="Hardware.EthernetIPv4Gateway" val=""/>
+  <VALUE name="Hardware.EthernetIPv4DNS" val="0.0.0.0"/>
+  <VALUE name="Hardware.BluetoothEnabled" val="0"/>
+  <VALUE name="MidiSyncReceiveProtocol" val="0"/>
+  <VALUE name="MidiSyncSendProtocol" val="0"/>
+  <VALUE name="mtcFrameRate" val="29.97002983093262"/>
+  <VALUE name="receiveMMC" val="0"/>
+  <VALUE name="sendMMC" val="0"/>
+  <VALUE name="autoload" val=""/>
+  <VALUE name="template" val=""/>
+  <VALUE name="MpcEditor.Show.NewProjectDialogAtStartup" val="2"/>
+  <VALUE name="AutoSaveEnabled" val="0"/>
+  <VALUE name="AutoSaveTimeout" val="300"/>
+  <VALUE name="Debug.VoiceCountMonitor.Enabled" val="0"/>
+  <VALUE name="Debug.VoiceCountMonitor.Interval" val="5000"/>
+  <VALUE name="MpcEditorShowUnusedTracks" val="0"/>
+  <VALUE name="MpcEditorShowProgramTracks" val="0"/>
+  <VALUE name="MpcEditorShowAudioTracks" val="1"/>
+  <VALUE name="MpcEditorShowMidiTracks" val="1"/>
+  <VALUE name="QLinkSwingAppliedOnRelease" val="0"/>
+  <VALUE name="DriveCache.List">
+    <DriveCacheList>
+      <entry uuid="62E6-BA2B" mountPoint="/media/FORCE500"/>
+    </DriveCacheList>
+  </VALUE>
+  <VALUE name="BPMDetectRangeLow" val="58"/>
+  <VALUE name="BPMDetectRangeHigh" val="195"/>
+  <VALUE name="MidiLearnEnabled" val="1"/>
+  <VALUE name="MidiLearnPreviousMapping" val=""/>
+  <VALUE name="AbletonControlMode.Workspace" val="0"/>
+  <VALUE name="Plugins.AllowMultipleWindows" val="1"/>
+  <VALUE name="SpliceService.Directory" val="/media/az01-internal-sd/Splice"/>
+  <VALUE name="Keyboard.KeyboardProperties.Preset" val="3"/>
+  <VALUE name="Keyboard.KeyboardProperties.VelocityCurve" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Gain" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.BlackSensitivity" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.WhiteSensitivity" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Pedal.0.Type" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Pedal.0.Polarity" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Pedal.1.Type" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Pedal.1.Polarity" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Pedal.2.Type" val="0"/>
+  <VALUE name="Keyboard.KeyboardProperties.Pedal.2.Polarity" val="0"/>
+  <VALUE name="Keybed.iQ.EnableiQMode" val="0"/>
+  <VALUE name="AutomationButtonQlinkTrigger" val="0"/>
+  <VALUE name="TapsToAverage" val="3"/>
+  <VALUE name="TempoLight.enabled" val="1"/>
+  <VALUE name="BanksButtons.PressToSwitchBank" val="0"/>
+  <VALUE name="VuMeterSource" val="0"/>
+  <VALUE name="TouchStripNoteProvider.NumNotes" val="8"/>
+  <VALUE name="PadsSettings" val="0"/>
+  <VALUE name="ScreensaverPreventer.Behaviour" val="1"/>
+  <VALUE name="TUI.Screensaver.Timeout" val="300000"/>
+  <VALUE name="MidiProperties.ControllerModeOutput" val="1670073544"/>
+  <VALUE name="MidiDevices.AutoEnableForTracks" val="1"/>
+  <VALUE name="MidiProperties.EnableSupportedDeviceDialogue" val="1"/>
+  <VALUE name="MidiDevices.Table" val="{&#10;    &quot;value0&quot;: [&#10;        {&#10;            &quot;type&quot;: 0,&#10;            &quot;deviceName&quot;: &quot;Akai Pro Force Public&quot;,&#10;            &quot;deviceId&quot;: &quot;20-0&quot;,&#10;            &quot;displayName&quot;: &quot;Akai Pro Force Public&quot;,&#10;            &quot;track&quot;: false,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 1,&#10;            &quot;deviceName&quot;: &quot;Akai Pro Force Public&quot;,&#10;            &quot;deviceId&quot;: &quot;20-0&quot;,&#10;            &quot;displayName&quot;: &quot;Akai Pro Force Public&quot;,&#10;            &quot;track&quot;: false,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 0,&#10;            &quot;deviceName&quot;: &quot;Akai Pro Force Private&quot;,&#10;            &quot;deviceId&quot;: &quot;20-1&quot;,&#10;            &quot;displayName&quot;: &quot;Akai Pro Force Private&quot;,&#10;            &quot;track&quot;: false,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 1,&#10;            &quot;deviceName&quot;: &quot;Virtual MIDI Output 2 Input in&quot;,&#10;            &quot;deviceId&quot;: &quot;131-0&quot;,&#10;            &quot;displayName&quot;: &quot;Remote&quot;,&#10;            &quot;track&quot;: true,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 1,&#10;            &quot;deviceName&quot;: &quot;Akai Pro Force Private&quot;,&#10;            &quot;deviceId&quot;: &quot;20-1&quot;,&#10;            &quot;displayName&quot;: &quot;Akai Pro Force Private&quot;,&#10;            &quot;track&quot;: false,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 1,&#10;            &quot;deviceName&quot;: &quot;Akai Pro Force MIDI Port&quot;,&#10;            &quot;deviceId&quot;: &quot;20-2&quot;,&#10;            &quot;displayName&quot;: &quot;FORCE&quot;,&#10;            &quot;track&quot;: true,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 0,&#10;            &quot;deviceName&quot;: &quot;Virtual MIDI Input 2 Output out&quot;,&#10;            &quot;deviceId&quot;: &quot;133-0&quot;,&#10;            &quot;displayName&quot;: &quot;Remote&quot;,&#10;            &quot;track&quot;: true,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        },&#10;        {&#10;            &quot;type&quot;: 0,&#10;            &quot;deviceName&quot;: &quot;Akai Pro Force MIDI Port&quot;,&#10;            &quot;deviceId&quot;: &quot;20-2&quot;,&#10;            &quot;displayName&quot;: &quot;FORCE&quot;,&#10;            &quot;track&quot;: true,&#10;            &quot;connected&quot;: true,&#10;            &quot;global&quot;: false,&#10;            &quot;sync&quot;: false,&#10;            &quot;control&quot;: false,&#10;            &quot;ignoreAuto&quot;: false&#10;        }&#10;    ]&#10;}"/>
+  <VALUE name="StartupWizard.Enabled" val="1"/>
+  <VALUE name="StartupWizard.LastVersionShownFor" val="0.0.0.0"/>
+  <VALUE name="DirectoryContent.ColumnsToView.Size" val="0"/>
+  <VALUE name="DirectoryContent.ColumnsToView.DateModified" val="0"/>
+  <VALUE name="DirectoryContent.ColumnsToView.DateCreated" val="0"/>
+  <VALUE name="DirectoryContent.Recursive" val="1"/>
+  <VALUE name="DirectoryContent.HideSpecialDirectories" val="1"/>
+  <VALUE name="DirectoryContent.Sort.Column" val="0"/>
+  <VALUE name="DirectoryContent.Sort.Ascending" val="1"/>
+  <VALUE name="metronomeSound" val="2"/>
+  <VALUE name="metronomePlay" val="2"/>
+  <VALUE name="metronomeCountIn" val="1"/>
+  <VALUE name="metronomeRate" val="960"/>
+  <VALUE name="metronomeVolume" val="0.7079457640647888"/>
+  <VALUE name="metronomeOutput" val="0"/>
+  <VALUE name="Keybed.MidiKeybedControl.Transposition" val="0"/>
+  <VALUE name="Keybed.MidiKeybedControl.Local" val="1"/>
+  <VALUE name="Keybed.MidiKeybedControl.Channel" val="0"/>
+  <VALUE name="Keybed.MidiKeybedControl.Aftertouch" val="0"/>
+  <VALUE name="Keybed.MidiKeybedControl.ChannelPressure" val="0"/>
+  <VALUE name="Keybed.MidiKeybedControl.PitchBend" val="-1"/>
+  <VALUE name="Keybed.MidiKeybedControl.ModWheel" val="-1"/>
+  <VALUE name="Keybed.MidiKeybedControl.FootSwitch1" val="-1"/>
+  <VALUE name="Keybed.MidiKeybedControl.FootSwitch2" val="-1"/>
+  <VALUE name="Keybed.MidiKeybedControl.FootSwitch3" val="-1"/>
+  <VALUE name="Keybed.MidiKeybedControl.NoteOnVelocity.Velocity" val="0.0"/>
+  <VALUE name="Keybed.MidiKeybedControl.NoteOffVelocity.Velocity" val="0.0"/>
+  <VALUE name="midiSendDestinations" val="{&#10;    &quot;value0&quot;: []&#10;}"/>
+  <VALUE name="dontCheckSynthContentForVersion" val="2.10.1"/>
+  <VALUE name="SynthContentLocations">
+    <SynthContentLocations>/media/FORCE500/Synths/media/acvs-synths/Synths/media/az01-internal-sd/Expansions/usr/share/Akai/Content/Synths</SynthContentLocations>
+  </VALUE>
+  <VALUE name="Inspector.Track.Visibility.Clip" val="1"/>
+  <VALUE name="DiskStreamingEnabled" val="1"/>
+  <VALUE name="NewClip.DefaultLengthPulses" val="7680"/>
+  <VALUE name="TrackMixerShowTrackStrips" val="1"/>
+  <VALUE name="TrackMixerBusRoute" val="0"/>
+  <VALUE name="TrackMixerAudioInputMetering" val="2"/>
+  <VALUE name="TrackMixerMidiInputMetering" val="2"/>
+  <VALUE name="TrackMixerMidiInputMeteringType" val="0"/>
+  <VALUE name="playTruncateDuration" val="1"/>
+  <VALUE name="clipRecordLaunch" val="2"/>
+  <VALUE name="fixedLengthRecording" val="1"/>
+  <VALUE name="clipRecordTo" val="0"/>
+  <VALUE name="ProjectDefaults.defaultSequenceLoop" val="1"/>
+  <VALUE name="ProjectDefaults.defaultAudioMonitorState" val="0"/>
+  <VALUE name="ProjectDefaults.defaultMidiMonitorState" val="2"/>
+  <VALUE name="temporaryFileLocation" val="/media/az01-internal-sd/Force Documents/Temporary Files"/>
+  <VALUE name="BPMAutoDetectForLoadedSamples" val="1"/>
+  <VALUE name="LoadProperties.LoadClipsWithTracks" val="0"/>
+  <VALUE name="LoadProperties.LoadArrangementWithTracks" val="0"/>
+  <VALUE name="ClipMatrix.colourEmptySlots" val="1"/>
+  <VALUE name="ClipMatrix.tapSlotSelects" val="1"/>
+  <VALUE name="ClipMatrix.safeTrackSelect" val="1"/>
+  <VALUE name="ClipMatrix.showArrangementInMatrix" val="0"/>
+  <VALUE name="MidiNoteFilterPipe.Behaviour" val="0"/>
+  <VALUE name="writeAutomationOn" val="0"/>
+  <VALUE name="MidiKeybedControl.Transposition" val="0"/>
+  <VALUE name="MidiKeybedControl.Local" val="1"/>
+  <VALUE name="MidiKeybedControl.Channel" val="0"/>
+  <VALUE name="MidiKeybedControl.Aftertouch" val="0"/>
+  <VALUE name="MidiKeybedControl.ChannelPressure" val="0"/>
+  <VALUE name="MidiKeybedControl.PitchBend" val="-1"/>
+  <VALUE name="MidiKeybedControl.ModWheel" val="-1"/>
+  <VALUE name="MidiKeybedControl.FootSwitch1" val="-1"/>
+  <VALUE name="MidiKeybedControl.FootSwitch2" val="-1"/>
+  <VALUE name="MidiKeybedControl.FootSwitch3" val="-1"/>
+  <VALUE name="MidiKeybedControl.NoteOnVelocity.Velocity" val="0.0"/>
+  <VALUE name="MidiKeybedControl.NoteOffVelocity.Velocity" val="0.0"/>
+  <VALUE name="ControlAssignmentProperties.CurrentAssignableMode" val="1"/>
+  <VALUE name="ControlAssignmentProperties.CurrentLearnMode" val="0"/>
+  <VALUE name="ControlAssignmentProperties.LearnRange" val="0"/>
+  <VALUE name="ControlAssignmentProperties.LearnBehaviour" val="0"/>
+  <VALUE name="EnableSetLoopRange" val="0"/>
+  <VALUE name="SamplerPadMode" val="0"/>
+</PROPERTIES>

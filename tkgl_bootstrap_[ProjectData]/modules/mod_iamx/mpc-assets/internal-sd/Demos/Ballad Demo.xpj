@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Project>
+  <Version>
+    <File_Version>1.7</File_Version>
+    <Application>MPC-V</Application>
+    <Application_Version>1.8.3.191</Application_Version>
+    <Platform>OSX</Platform>
+  </Version>
+  <ProductCode>1299211094</ProductCode>
+  <BPM>120.000000</BPM>
+  <MasterVolume>0.707946</MasterVolume>
+  <FileList>
+    <File>./Ballad Demo_[ProjectData]/All Sequences &amp; Songs.xal</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Pad-MC2 Pad A.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 01.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 02.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 03.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 04.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 05.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 06.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 07.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 08.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 09.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 10.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 11.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 12.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 13.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 14.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 15.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-Easy Sine 16.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-MC2 Syn A.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Melodic-Synth-MT Syn Emaj.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Clap-Bby M Clp 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Clap-Bby M Clp 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Clap-MC2 Clap.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Cymbal-MC2 Cymbal.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-HiHat-Bby M Hat 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-HiHat-Bby M Hat 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-HiHat-Bby M Hat 3.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-HiHat-MC2 H Op 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-HiHat-MC2 H Op 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-HiHat-MC2 Hat .WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Kick-Bby M Kik 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Kick-Bby M Kik 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Kick-MC2 Kik 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Kick-MC2 Kik 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Loop-Drum-MC2 Hat Lp.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Melodic-Ballad Piano.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Melodic-Bby M Syn 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Melodic-Bby M Syn 3.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Perc-MC2 Prc.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Perc-MC2 Shak.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Rim-MC2 Rim.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-SFX-MC2 FX.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Snap-MC2 Snap .WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Snare-MC2 Snr 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Bass.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Pno 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Pno 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Pno 3.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Pno 4.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Syn 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Stab-Bby M Syn 4.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-103-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-108-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-33-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-40-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-47-102.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-54-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-61-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-68-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-75-25.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-82-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-89-25.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/SS - 808 Bass 6 Velo-96-127.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Clap-MT Clap 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Clap-MT Clap 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Clap-MT ClapLay.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Cymbal-MT Crash.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-HiHat-MT HatOp.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-HiHat-MT Hats 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-HiHat-MT Hats 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Kick-MT Kik 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Kick-MT Kik 2.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Kick-MT Kik 3.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Kick-MT Kik 4.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Kick-MT Kik 5.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Perc-MT Conga.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-SFX-MT DropFX.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Snap-MT Snap .WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Snare-MT Snr 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Vocal-MT OiiLow.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Urban-Kick-Dirt8 Kik 1.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 01.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 02.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 03.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 04.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 05.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 06.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 07.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 08.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 09.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 10.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 11.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 12.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 13.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 14.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 15.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/Vocal-Soul Fem 16.WAV</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Kit-Baby Maker RnB Kit.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Kit-Magnaa Carter 2 Kit.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/RnB-Melodic-Easy Sine Kit.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Trap-Kit-Mac Trap Kit.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Bass-808 Bass 2.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Special-Vocal-Soul Female Vox.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Midi 001.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Ballad Template-Audio Samples.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Audio 001.xpm</File>
+    <File>./Ballad Demo_[ProjectData]/Midi Controller.mcn</File>
+  </FileList>
+  <Mixer>
+    <Mixer.Input number="1">
+      <Name>Input</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Input>
+    <Mixer.Return number="1">
+      <Name>Return 1</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Insert1>
+        <Is64Bits>1</Is64Bits>
+        <Name>Delay Sync</Name>
+        <DescriptiveName>Delay Sync</DescriptiveName>
+        <FormatName>MPC</FormatName>
+        <Category></Category>
+        <ManufacturerName>Akai Professional</ManufacturerName>
+        <FileOrID>Delay Sync</FileOrID>
+        <UID>1094932054</UID>
+        <IsInstrument>0</IsInstrument>
+        <NumInput>2</NumInput>
+        <NumOutput>2</NumOutput>
+        <Data>92.AT..........................G..........Qg0Fbo41Y...f+X..........DIWdWUFc...f+X..........FUVYjI1ZMyLC+P..........TkVakA...7C</Data>
+        <ProgramNumber>0</ProgramNumber>
+      </Insert1>
+      <InsertEnable1>True</InsertEnable1>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Return>
+    <Mixer.Return number="2">
+      <Name>Return 2</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Return>
+    <Mixer.Return number="3">
+      <Name>Return 3</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Return>
+    <Mixer.Return number="4">
+      <Name>Return 4</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Return>
+    <Mixer.Submix number="1">
+      <Name>Submix 1</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="2">
+      <Name>Submix 2</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="3">
+      <Name>Submix 3</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="4">
+      <Name>Submix 4</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="5">
+      <Name>Submix 5</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="6">
+      <Name>Submix 6</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="7">
+      <Name>Submix 7</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Submix number="8">
+      <Name>Submix 8</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Submix>
+    <Mixer.Output number="1">
+      <Name>Outputs 1/2</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.527094</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="2">
+      <Name>Outputs 3/4</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="3">
+      <Name>Outputs 5/6</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="4">
+      <Name>Outputs 7/8</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="5">
+      <Name>Outputs 9/10</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="6">
+      <Name>Outputs 11/12</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="7">
+      <Name>Outputs 13/14</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="8">
+      <Name>Outputs 15/16</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="9">
+      <Name>Outputs 17/18</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="10">
+      <Name>Outputs 19/20</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="11">
+      <Name>Outputs 21/22</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="12">
+      <Name>Outputs 23/24</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="13">
+      <Name>Outputs 25/26</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="14">
+      <Name>Outputs 27/28</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="15">
+      <Name>Outputs 29/30</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+    <Mixer.Output number="16">
+      <Name>Outputs 31/32</Name>
+      <AudioRoute>
+        <AudioRoute>2</AudioRoute>
+        <AudioRouteSubIndex>0</AudioRouteSubIndex>
+        <InsertsEnabled>True</InsertsEnabled>
+      </AudioRoute>
+      <Send1>0.000000</Send1>
+      <Send2>0.000000</Send2>
+      <Send3>0.000000</Send3>
+      <Send4>0.000000</Send4>
+      <Volume>0.707946</Volume>
+      <Mute>False</Mute>
+      <Pan>0.500000</Pan>
+    </Mixer.Output>
+  </Mixer>
+  <QLinkAssignments>
+    <ProjectMode>
+      <QLink index="1">
+        <Type index="1">Program</Type>
+        <Parameter>91</Parameter>
+      </QLink>
+      <QLink index="2">
+        <Type index="1">Program</Type>
+        <Parameter>7</Parameter>
+      </QLink>
+      <QLink index="3">
+        <Type index="1">Program</Type>
+        <Parameter>10</Parameter>
+      </QLink>
+      <QLink index="4">
+        <Type index="0">Program</Type>
+        <Parameter>91</Parameter>
+      </QLink>
+      <QLink index="5">
+        <Type index="7">Program</Type>
+        <Parameter>91</Parameter>
+      </QLink>
+      <QLink index="6">
+        <Type index="4">Program</Type>
+        <Parameter>7</Parameter>
+      </QLink>
+      <QLink index="7">
+        <Type index="0">Program</Type>
+        <Parameter>10</Parameter>
+      </QLink>
+      <QLink index="8">
+        <Type index="3">Program</Type>
+        <Parameter>91</Parameter>
+      </QLink>
+      <QLink index="9">
+        <Type index="5">Program</Type>
+        <Parameter>91</Parameter>
+      </QLink>
+      <QLink index="10">
+        <Type index="2">Program</Type>
+        <Parameter>7</Parameter>
+      </QLink>
+      <QLink index="11">
+        <Type index="2">Program</Type>
+        <Parameter>10</Parameter>
+      </QLink>
+      <QLink index="12">
+        <Type index="1">Program</Type>
+        <Parameter>1108</Parameter>
+      </QLink>
+      <QLink index="13">
+        <Type index="2">Program</Type>
+        <Parameter>91</Parameter>
+      </QLink>
+      <QLink index="14">
+        <Type index="5">Program</Type>
+        <Parameter>7</Parameter>
+      </QLink>
+      <QLink index="15">
+        <Type index="5">Program</Type>
+        <Parameter>10</Parameter>
+      </QLink>
+      <QLink index="16">
+        <Type index="1">Program</Type>
+        <Parameter>256</Parameter>
+      </QLink>
+    </ProjectMode>
+    <PadSceneMode>
+      <QLink index="1">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="2">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="3">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="4">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="5">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="6">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="7">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="8">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="9">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="10">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="11">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="12">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="13">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="14">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="15">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="16">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+    </PadSceneMode>
+    <PadParameterMode>
+      <QLink index="1">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="2">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="3">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="4">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="5">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="6">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="7">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="8">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="9">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="10">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="11">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="12">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="13">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="14">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="15">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+      <QLink index="16">
+        <Parameter>2147483647</Parameter>
+      </QLink>
+    </PadParameterMode>
+  </QLinkAssignments>
+  <EmulationType type="NONE"/>
+  <MasterTempo.Enabled>0</MasterTempo.Enabled>
+  <MasterTempo.Value>120.000000</MasterTempo.Value>
+  <Notes-Title></Notes-Title>
+  <Notes-Artist></Notes-Artist>
+  <Notes-OriginalArtist></Notes-OriginalArtist>
+  <Notes-Album></Notes-Album>
+  <Notes-Year></Notes-Year>
+  <Notes-Copyright></Notes-Copyright>
+  <Notes-Genre></Notes-Genre>
+  <Notes></Notes>
+</Project>

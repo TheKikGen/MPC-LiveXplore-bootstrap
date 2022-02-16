@@ -12,11 +12,6 @@ SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-echo "MODULE $SCRIPT_NAME" >> $TKGL_LOG
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-
-
 systemctl stop az01-network-midi
 
 echo "systemctl stop az01-network-midi done !">>$TKGL_LOG

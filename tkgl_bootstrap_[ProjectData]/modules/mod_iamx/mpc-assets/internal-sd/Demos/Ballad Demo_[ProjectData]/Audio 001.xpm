@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MPCVObject>
+  <Version>
+    <File_Version>1.7</File_Version>
+    <Application>MPC-V</Application>
+    <Application_Version>1.8.3.191</Application_Version>
+    <Platform>OSX</Platform>
+  </Version>
+  <Program type="Audio">
+    <Name>Audio 001</Name>
+    <inputSource>0</inputSource>
+    <AudioRoute>
+      <AudioRoute>2</AudioRoute>
+      <AudioRouteSubIndex>0</AudioRouteSubIndex>
+      <InsertsEnabled>True</InsertsEnabled>
+    </AudioRoute>
+    <Send1>0.000000</Send1>
+    <Send2>0.000000</Send2>
+    <Send3>0.000000</Send3>
+    <Send4>0.000000</Send4>
+    <Volume>0.707946</Volume>
+    <Mute>False</Mute>
+    <Pan>0.500000</Pan>
+    <QLinkAssignments>
+      <ProgramMode>
+        <QLink index="1">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="2">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="3">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="4">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="5">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="6">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="7">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="8">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="9">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="10">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="11">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="12">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="13">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="14">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="15">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+        <QLink index="16">
+          <Pad>4294967295</Pad>
+          <Parameter>4294967295</Parameter>
+        </QLink>
+      </ProgramMode>
+    </QLinkAssignments>
+  </Program>
+</MPCVObject>

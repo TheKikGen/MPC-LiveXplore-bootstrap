@@ -37,6 +37,12 @@ TKGL_DOER=""
 # ---------------------------------------------------------------------------------------------------------
 # iamforce     : Force software launcher on a MPC using mpcmapper.so ld_preload library
 # ---------------------------------------------------------------------------------------------------------
+# smbnetfs     : Connect to your Windows share from your Force or MPC
+# ---------------------------------------------------------------------------------------------------------
+# playlogo     : Play at intro video at boot with ffmpeg
+# ---------------------------------------------------------------------------------------------------------
+# iamx         : MPC software launcher on a Force using mpcmapper.so ls_preload library
+# ---------------------------------------------------------------------------------------------------------
 
 # List here your modules name to launch before the MPC application, separated by a space 
 

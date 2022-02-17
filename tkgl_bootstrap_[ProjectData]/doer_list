@@ -40,5 +40,5 @@ TKGL_DOER=""
 
 # List here your modules name to launch before the MPC application, separated by a space 
 
-TKGL_DOER="arp_overlay nomoreazmidi rtpmidid"
+TKGL_DOER="playlogo"
 

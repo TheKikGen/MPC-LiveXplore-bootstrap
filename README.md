@@ -78,6 +78,13 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 # ---------------------------------------------------------------------------------------------------------
 # iamforce     : Force software launcher on a MPC using mpcmapper.so ld_preload library
 # ---------------------------------------------------------------------------------------------------------
+# smbnetfs     : Connect to your Windows share from your Force or MPC
+# ---------------------------------------------------------------------------------------------------------
+# playlogo     : Play at intro video at boot with ffmpeg
+# ---------------------------------------------------------------------------------------------------------
+# iamx         : MPC software launcher on a Force using mpcmapper.so ls_preload library
+# ---------------------------------------------------------------------------------------------------------
+
 ````
 
 rtpmidi : Credit to David Moreno.  https://github.com/davidmoreno/rtpmidid

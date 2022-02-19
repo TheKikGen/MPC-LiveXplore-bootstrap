@@ -138,6 +138,7 @@ mount --bind /tmp   $ROOT_DIR/tmp
 # Power supply faking ----------------------------------------------------------
 
 # THIS IS NOW IMPLEMENTED DIRECTLY IN MPCMAPPER.C
+# We keep it for further references.
 
 # The Force checks the power status permanently, so the usage on battery is
 # not possible, notably on the Live, Live2.

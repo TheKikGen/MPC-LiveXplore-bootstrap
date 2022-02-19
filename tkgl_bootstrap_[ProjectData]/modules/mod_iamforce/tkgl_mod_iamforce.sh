@@ -136,21 +136,24 @@ mount --rbind /dev  $ROOT_DIR/dev
 mount --bind /tmp   $ROOT_DIR/tmp
 
 # Power supply faking ----------------------------------------------------------
+
+# THIS IS NOW IMPLEMENTED DIRECTLY IN MPCMAPPER.C
+
 # The Force checks the power status permanently, so the usage on battery is
 # not possible, notably on the Live, Live2.
 # Here we fake the /sys/class/power_supply
 
-echo "1" > /tmp/value-1
-echo "100" > /tmp/value-100
-echo "Full" > /tmp/value-full
-echo "18608000" > /tmp/value-voltnow
-
-PWS_DIR=$ROOT_DIR/sys/class/power_supply/
-mount --bind /tmp/value-1       $PWS_DIR/az01-ac-power/online
-mount --bind /tmp/value-voltnow $PWS_DIR/az01-ac-power/voltage_now
-mount --bind /tmp/value-1       $PWS_DIR/sbs-3-000b/present
-mount --bind /tmp/value-full    $PWS_DIR/sbs-3-000b/status
-mount --bind /tmp/value-100     $PWS_DIR/sbs-3-000b/capacity
+# echo "1" > /tmp/value-1
+# echo "100" > /tmp/value-100
+# echo "Full" > /tmp/value-full
+# echo "18608000" > /tmp/value-voltnow
+#
+# PWS_DIR=$ROOT_DIR/sys/class/power_supply/
+# mount --bind /tmp/value-1       $PWS_DIR/az01-ac-power/online
+# mount --bind /tmp/value-voltnow $PWS_DIR/az01-ac-power/voltage_now
+# mount --bind /tmp/value-1       $PWS_DIR/sbs-3-000b/present
+# mount --bind /tmp/value-full    $PWS_DIR/sbs-3-000b/status
+# mount --bind /tmp/value-100     $PWS_DIR/sbs-3-000b/capacity
 
 # Mount overlays /etc /var from the internal part ------------------------------
 echo $ROOT_DIR/media/az01-internal/system/etc/overlay

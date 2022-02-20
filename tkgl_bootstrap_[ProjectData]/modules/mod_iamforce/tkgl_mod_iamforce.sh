@@ -193,7 +193,7 @@ echo "Welcome to The Kikgen Labs world !">$ROOT_DIR$MPC_MESSAGEINFO
 
 cat << EOF | chroot $ROOT_DIR
 ulimit -S -s 1024
-LD_PRELOAD=$CHROOT_BOOTSTRAP/lib/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV
+LD_PRELOAD=$CHROOT_BOOTSTRAP/lib/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV > $CHROOT_BOOTSTRAP/logs/iamforce.log
 #EOF
 
 shutdown

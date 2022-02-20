@@ -188,7 +188,7 @@ echo "Welcome to The Kikgen Labs world !\nIamX preliminary version">$ROOT_DIR$MP
 
 cat << EOF | chroot $ROOT_DIR
 ulimit -S -s 1024
-LD_PRELOAD=$CHROOT_BOOTSTRAP/lib/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV
+LD_PRELOAD=$CHROOT_BOOTSTRAP/lib/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV > $CHROOT_BOOTSTRAP/logs/iamx.log
 #EOF
 
 shutdown

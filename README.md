@@ -17,7 +17,7 @@ You need to update your MPC/Force with a modded image that will launch the boots
 2. Copy to the "tkgl_bootstrap_[ProjectData]" directory to the root of an sdcard/usb stick, preferably formatted with ext4 filesystem    
 
    You can download the last version in a zip file here : https://github.com/TheKikGen/MPC-LiveXplore-bootstrap/archive/refs/heads/main.zip  
-   (remove the prefix "main" after unzip)
+   (remove the sufix "main" after unzip)
 
    The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image.  
    This suffix allows to hide the directory when you are using the MPC app.

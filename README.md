@@ -19,8 +19,7 @@ You need to update your MPC/Force with a modded image that will launch the boots
    You can download the last version in a zip file here : https://github.com/TheKikGen/MPC-LiveXplore-bootstrap/archive/refs/heads/main.zip  
    (remove the sufix "main" after unzip)
 
-   The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image.  
-   This suffix allows to hide the directory when you are using the MPC app.
+   The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image. This suffix allows to hide the directory when you are using the MPC app.
    
 ## Activation of modules at boot
 

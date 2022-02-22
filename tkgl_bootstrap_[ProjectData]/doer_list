@@ -1,6 +1,4 @@
 # DOER_LIST : Bootstrap modules launcher
-# Do not modify the next line. Modiffy the list at the bottom of the file.
-TKGL_DOER=""
 # ---------------------------------------------------------------------------------------------------------
 # Module name  : Description
 # ---------------------------------------------------------------------------------------------------------
@@ -43,8 +41,11 @@ TKGL_DOER=""
 # ---------------------------------------------------------------------------------------------------------
 # iamx         : MPC software launcher on a Force using mpcmapper.so ls_preload library
 # ---------------------------------------------------------------------------------------------------------
+# bootstrap_update: Automatic update of the bootstrap from the github site.
+#                 : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
+#                 : to trig the update. This is done by exporting a pattern from an empty track. 
+# ---------------------------------------------------------------------------------------------------------
 
 # List here your modules name to launch before the MPC application, separated by a space 
-
 TKGL_DOER="playlogo"
 

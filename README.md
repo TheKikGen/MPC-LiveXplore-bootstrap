@@ -83,7 +83,10 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 # ---------------------------------------------------------------------------------------------------------
 # iamx         : MPC software launcher on a Force using mpcmapper.so ls_preload library
 # ---------------------------------------------------------------------------------------------------------
-
+# bootstrap_update: Automatic update of the bootstrap from the github site.
+#                 : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
+#                 : to trig the update. This is done by exporting a pattern from an empty track. 
+# ---------------------------------------------------------------------------------------------------------
 ````
 
 rtpmidi : Credit to David Moreno.  https://github.com/davidmoreno/rtpmidid

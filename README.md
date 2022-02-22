@@ -21,6 +21,8 @@ You need to update your MPC/Force with a modded image that will launch the boots
 
    The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image. This suffix allows to hide the directory when you are using the MPC app.
    
+ You can also burn an sdcard by download one of the [bootstrap image here](https://drive.google.com/drive/folders/16tqhdznLIwpyl2uw8BjkqHjZw-EEpEF1?usp=sharing)
+
 ## Activation of modules at boot
 
 You need to edit the file tkgl_bootstrap_[ProjectData]/doer_list to add a modules list you want to launch at boot time.  

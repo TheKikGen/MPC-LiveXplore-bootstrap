@@ -19,9 +19,10 @@ You need to update your MPC/Force with a modded image that will launch the boots
    You can download the last version in a zip file here : https://github.com/TheKikGen/MPC-LiveXplore-bootstrap/archive/refs/heads/main.zip  
    (remove the sufix "main" after unzip)
 
-   The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image.  
-   This suffix allows to hide the directory when you are using the MPC app.
+   The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image. This suffix allows to hide the directory when you are using the MPC app.
    
+You can also burn a sdcard by downloading one of the [ready made bootstrap image here](https://drive.google.com/drive/folders/16tqhdznLIwpyl2uw8BjkqHjZw-EEpEF1?usp=sharing).
+
 ## Activation of modules at boot
 
 You need to edit the file tkgl_bootstrap_[ProjectData]/doer_list to add a modules list you want to launch at boot time.  
@@ -84,7 +85,10 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 # ---------------------------------------------------------------------------------------------------------
 # iamx         : MPC software launcher on a Force using mpcmapper.so ls_preload library
 # ---------------------------------------------------------------------------------------------------------
-
+# bootstrap_update: Automatic update of the bootstrap from the github site.
+#                 : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
+#                 : to trig the update. This is done by exporting a pattern from an empty track. 
+# ---------------------------------------------------------------------------------------------------------
 ````
 
 rtpmidi : Credit to David Moreno.  https://github.com/davidmoreno/rtpmidid

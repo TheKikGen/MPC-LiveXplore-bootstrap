@@ -14,7 +14,25 @@
 
 SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
+
 source "$SCRIPT_DIR/../../scripts/tkgl_path"
+
+# Overlay mounting function : make_overlay(low,up)
+make_overlay() {
+
+  target=$3
+  [ "x$target" == "x" ] && target=$1
+
+  #umount $target
+
+  mount -t overlay overlay -o lowerdir=$1,upperdir=$2/merged,workdir=$2/work $target
+  if [ $? -ne 0 ]; then
+    echo "Error while mounting overlay (l=$1,u=$2) $target . Abort." >>$TKGL_LOG
+    return 1
+  fi
+  echo "Overlay (l=$1,u=$2) $target mounted !" >> $TKGL_LOG
+
+}
 
 # Do not launch the mod if we are running on a Force
 [ "$DEVICE" == "Force" ] && exit 0
@@ -27,20 +45,26 @@ then
   exit 1
 fi
 
+# Settings ---------------------------------------------------------------------
+
 # Where all force assets are
 ASSETS_DIR=$SCRIPT_DIR/force-assets
+
+# overlays
+OVERLAY_DIR=$ASSETS_DIR/internal-overlay
+
+# Settings directory. Used to protect the host settings
+TKGL_SETTINGS_MPC=$ASSETS_DIR/Settings_MPC
+
+# Virtual sd card
+TKGL_AZ01_INTERNAL_SD=$ASSETS_DIR/az01-internal-sd
 
 # Splash screen is different for the MPC X (90 degrees rotation)
 SPLASH_SCREEN=$ASSETS_DIR/force_splash270_tkgl.data
 [ "$DEVICE" == "MPC X" ] && SPLASH_SCREEN=$ASSETS_DIR/force_splash90_tkgl.data
 
-# Settings ---------------------------------------------------------------------
-
-# bootstrap dir within the chroot
-CHROOT_BOOTSTRAP=/etc/tkgl_bootstrap
-
-# configuration file name of mpcmapper.so within the chroot
-MPCMAPPER_CONFIG_FILE=$CHROOT_BOOTSTRAP/modules/mod_iamforce/conf/map_force.conf
+# configuration file name of tkgl_mpcmapper.so
+MPCMAPPER_CONFIG_FILE=$SCRIPT_DIR/conf/map_force.conf
 
 # mpcmapper command line arguments
 TKGL_ARGV="--tkgl_iamForce --tkgl_configfile=$MPCMAPPER_CONFIG_FILE"
@@ -49,28 +73,9 @@ TKGL_ARGV="--tkgl_iamForce --tkgl_configfile=$MPCMAPPER_CONFIG_FILE"
 # Use the /run directory
 ROOT_DIR=/run/tkgl_root
 
-# media root dir binding
-ROOT_DIR_MEDIA=/run/tkgl_root_media
-
 # ext4 root fs image name to mount
 # Image must be copied at the root of the tkgl_bootstrap directory
 ROOTFS_IMG_NAME="$ASSETS_DIR/rootfs_force-3.1.3.8.img"
-
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-echo "Settings" >> $TKGL_LOG
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-echo "Bootstrap directory  within the chroot  : $CHROOT_BOOTSTRAP"  >> $TKGL_LOG
-echo "Configuration file of mpcmapper.so      : $MPCMAPPER_CONFIG_FILE"  >> $TKGL_LOG
-echo "Mpcmapper command line arguments        : $TKGL_ARGV" >> $TKGL_LOG
-echo "Mounting point of the Force OS img      : $ROOT_DIR"  >> $TKGL_LOG
-echo "Root fs Force img file (ro)             : $ROOTFS_IMG_NAME" >>  $TKGL_LOG
-echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
-
-# Settings directory. Used to protect the host settings
-TKGL_SETTINGS_MPC=$ASSETS_DIR/Settings_MPC
-
-# Virtual sd card
-TKGL_AZ01_INTERNAL_SD=$ASSETS_DIR/internal-sd
 
 # Crash info files
 MPC_CRASHINFO=/media/az01-internal/Settings/MPC/*.crashinfo
@@ -79,132 +84,86 @@ MPC_CRASHINFO=/media/az01-internal/Settings/MPC/*.crashinfo
 MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 
 
-# Prepare the chroot "Sandbox" -------------------------------------------------
+echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
+echo "Settings" >> $TKGL_LOG
+echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
+echo "Assets directory                        : $ASSETS_DIR"  >> $TKGL_LOG
+echo "Mounting point of the Force OS img      : $ROOT_DIR/mnt"  >> $TKGL_LOG
+echo "Root fs Force img file (ro)             : $ROOTFS_IMG_NAME" >>  $TKGL_LOG
+echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
 
-echo "Prepare the chroot..." >>  $TKGL_LOG
+
+
+# Prepare Force context -------------------------------------------------
+
+echo "Prepare Force context..." >>  $TKGL_LOG
 
 # Show the splash screen
 cat $SPLASH_SCREEN>/dev/fb0
 
-
-if [ ! -f "$ROOTFS_IMG_NAME" ]
-then
-   echo "$ROOTFS_IMG_NAME not found">>$TKGL_LOG
-   exit 1
-fi
-
 # Mount force image, read only
-mkdir -p $ROOT_DIR
-echo "Mounting rootfs img : mount -o ro $ROOTFS_IMG_NAME $ROOT_DIR" >> $TKGL_LOG
-mount -o ro $ROOTFS_IMG_NAME $ROOT_DIR
 
-# Make the media binding directory
-echo "Create $ROOT_DIR_MEDIA media binding" >> $TKGL_LOG
-mkdir -p $ROOT_DIR_MEDIA
-mkdir -p $TKGL_AZ01_INTERNAL_SD
-mkdir -p $TKGL_SETTINGS_MPC
+mkdir -p $ROOT_DIR/work
+mkdir -p $ROOT_DIR/merged
+mkdir -p $ROOT_DIR/mnt
 
-# Bind our media directory with the true /media
-mount --rbind /media $ROOT_DIR_MEDIA
-
-# Bind our pseudo sd card over our media directory (beeing /media)
-mount --rbind $TKGL_AZ01_INTERNAL_SD  $ROOT_DIR_MEDIA/az01-internal-sd
-
-# Bind to separate settings from our host settings
-mount --rbind $TKGL_SETTINGS_MPC $ROOT_DIR_MEDIA/az01-internal/Settings/MPC
-
-# Finally bind with the chroot /media
-mount --rbind $ROOT_DIR_MEDIA $ROOT_DIR/media
-
-# bind the MPC bin to our bin
-#mount --bind $ROOT_DIR/usr/bin/MPC /usr/bin/MPC
-
-
-
-
-# Sanitary checks -------------------------------------------------------------
-
-# Clear crash files
-rm $ROOT_DIR$MPC_CRASHINFO
-
-# Mount necessary file systems -------------------------------------------------
-
-mount -t proc /proc $ROOT_DIR/proc
-mount -t sysfs /sys $ROOT_DIR/sys
-mount --rbind /run  $ROOT_DIR/run
-mount --rbind /dev  $ROOT_DIR/dev
-mount --bind /tmp   $ROOT_DIR/tmp
-
-# Power supply faking ----------------------------------------------------------
-
-# THIS IS NOW IMPLEMENTED DIRECTLY IN MPCMAPPER.C
-# We keep it for further references.
-
-# The Force checks the power status permanently, so the usage on battery is
-# not possible, notably on the Live, Live2.
-# Here we fake the /sys/class/power_supply
-
-# echo "1" > /tmp/value-1
-# echo "100" > /tmp/value-100
-# echo "Full" > /tmp/value-full
-# echo "18608000" > /tmp/value-voltnow
-#
-# PWS_DIR=$ROOT_DIR/sys/class/power_supply/
-# mount --bind /tmp/value-1       $PWS_DIR/az01-ac-power/online
-# mount --bind /tmp/value-voltnow $PWS_DIR/az01-ac-power/voltage_now
-# mount --bind /tmp/value-1       $PWS_DIR/sbs-3-000b/present
-# mount --bind /tmp/value-full    $PWS_DIR/sbs-3-000b/status
-# mount --bind /tmp/value-100     $PWS_DIR/sbs-3-000b/capacity
-
-# Mount overlays /etc /var from the internal part ------------------------------
-echo $ROOT_DIR/media/az01-internal/system/etc/overlay
-if [ !  -d "$ROOT_DIR/media/az01-internal/system/etc/overlay" ] || [ ! -d "$ROOT_DIR/media/az01-internal/system/var/overlay"  ]
-then
-  echo "Overlay directory not found within $ROOT_DIR/media/az01-internal/system">>$TKGL_LOG
+# Mount Force image
+umount $ROOT_DIR/mnt
+mount -o ro $ROOTFS_IMG_NAME $ROOT_DIR/mnt
+if [ $? -ne 0 ]; then
+  echo "Error while mounting $ROOTFS_IMG_NAME $ROOT_DIR/mnt. Abort." >>$TKGL_LOG
   exit 1
 fi
+echo "Mounting rootfs img done ! mount -o ro $ROOTFS_IMG_NAME $ROOT_DIR/mnt" >> $TKGL_LOG
+
+# Make an overlay with the 2 file systems
+# but with Force fs as upper read-only  on top off MPC fs
+
+# Force unmounting of existing /etc /var overlays
+#umount -l /etc
+#umount -l /var
 
 
-# /etc
-mount -t overlay overlay -o \
-lowerdir=$ROOT_DIR/etc,\
-upperdir=$ROOT_DIR/media/az01-internal/system/etc/overlay,\
-workdir=$ROOT_DIR/media/az01-internal/system/etc/.work \
-$ROOT_DIR/etc>>$TKGL_LOG
+#mount --rbind  "$ROOT_DIR/merged/run" /run
+#mount --rbind  "$ROOT_DIR/merged/tmp" /tmp
+#mount --rbind  "$ROOT_DIR/merged/dev" /dev
 
-# /var
-mount -t overlay overlay -o \
-lowerdir=$ROOT_DIR/var,\
-upperdir=$ROOT_DIR/media/az01-internal/system/var/overlay,\
-workdir=$ROOT_DIR/media/az01-internal/system/var/.work \
-$ROOT_DIR/var>>$TKGL_LOG
+# Make our etc ovr on top of existing etc ovr at internal-sd
+make_overlay "/etc" "$OVERLAY_DIR/etc"
+make_overlay "/var" "$OVERLAY_DIR/var"
 
-# start to chroot in the Force image -------------------------------------------
+# Bind to separate settings from our host settings
+mkdir -p $TKGL_SETTINGS_MPC
+mount --bind $TKGL_SETTINGS_MPC /media/az01-internal/Settings/MPC
 
-# Make our bootstrap space in the chroot at /etc/tkgl_bootstrap
-mkdir -p $ROOT_DIR$CHROOT_BOOTSTRAP
-mount --rbind $TKGL_ROOT $ROOT_DIR$CHROOT_BOOTSTRAP>>$TKGL_LOG
+# Bind a virtual sd card
+mkdir -p $TKGL_AZ01_INTERNAL_SD
+mkdir -p /media/az01-internal-sd
+mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
+
+#  Mount read-only fs
+mount --bind  "$ROOT_DIR/mnt/boot" /boot
+mount --bind  "$ROOT_DIR/mnt/usr/bin" /usr/bin
+mount --bind  "$ROOT_DIR/mnt/usr/lib" /usr/lib
+mount --bind  "$ROOT_DIR/mnt/usr/share" /usr/share
+
+
+
+# rebind all ro directories
+# mount --rbind  "$ROOT_DIR/merged/boot" /boot
+# mount --rbind  "$ROOT_DIR/merged/usr/bin" /usr/bin
+# mount --rbind  "$ROOT_DIR/merged/usr/lib" /usr/lib
+# mount --rbind  "$ROOT_DIR/merged/usr/share" /usr/share
+# systemctl daemon-reload
+#
+# make_overlay "$ROOT_DIR/mnt:/" "$ROOT_DIR"  "$ROOT_DIR/merged"
+#
+#
+# exit
+
+# start Force  -------------------------------------------
 
 # Prepare a welcome message
-echo "Welcome to The Kikgen Labs world !">$ROOT_DIR$MPC_MESSAGEINFO
-
-# Prepare the launch script within the chroot
-# then chroot into our image
-
-cat << EOF | chroot $ROOT_DIR
-ulimit -S -s 1024
-LD_PRELOAD=$CHROOT_BOOTSTRAP/lib/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV > $CHROOT_BOOTSTRAP/logs/iamforce.log
-#EOF
-
-shutdown
-
-# umount fs --------------------------------------------------------------------
-# umount $ROOT_DIR/tmp
-# umount $ROOT_DIR/dev
-# umount $ROOT_DIR/run
-# umount $ROOT_DIR/sys
-# umount $ROOT_DIR/proc
-# umount $ROOT_DIR/var
-# umount $ROOT_DIR/etc
-# umount $ROOT_DIR$CHROOT_BOOTSTRAP
-# umount $ROOT_DIR
+echo "Welcome to The Kikgen Labs world !">$MPC_MESSAGEINFO
+LD_PRELOAD=$TKGL_LIB/tkgl_mpcmapper.so exec /usr/bin/MPC $ARGV $TKGL_ARGV > $TKGL_LOGS/iamforce.log
+#LD_PRELOAD=$TKGL_LIB/tkgl_mpcmapper.so /usr/bin/MPC $ARGV $TKGL_ARGV > $TKGL_LOGS/iamforce.log

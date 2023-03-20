@@ -29,21 +29,15 @@
 #              : remote session. This module will stop the service (so will disable also Live remote control).
 #              : If you use rtpmidid module, this is a recommended setting to avoid conflicts.
 # ---------------------------------------------------------------------------------------------------------
-# anyctrl      : use any midi controller as MPC/Force control surface (full ports)
-# ---------------------------------------------------------------------------------------------------------
-# anyctrl_lt   : use any midi controller as MPC/Force control surface (private only)
-# ---------------------------------------------------------------------------------------------------------
-# iamforce     : Force software launcher on a MPC using mpcmapper.so ld_preload library
+# iamforce2    : Force software launcher V2 on a MPC using midimapper.so ld_preload library
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC
 # ---------------------------------------------------------------------------------------------------------
-# playlogo     : Play at intro video at boot with ffmpeg
+# playlogo     : Play an intro video at boot with ffmpeg
 # ---------------------------------------------------------------------------------------------------------
-# iamx         : MPC software launcher on a Force using mpcmapper.so ls_preload library
-# ---------------------------------------------------------------------------------------------------------
-# bootstrap_update: Automatic update of the bootstrap from the github site.
-#                 : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
-#                 : to trig the update. This is done by exporting a pattern from an empty track. 
+# bootstrap_update : Automatic update of the bootstrap from the github site.
+#                  : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
+#                  : to trig the update. This is done by exporting a pattern from an empty track. 
 # ---------------------------------------------------------------------------------------------------------
 
 # List here your modules name to launch before the MPC application, separated by a space 

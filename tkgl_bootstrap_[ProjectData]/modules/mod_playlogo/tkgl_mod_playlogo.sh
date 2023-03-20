@@ -16,7 +16,7 @@ source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
 # Settings ---------------------------------------------------------------------
 
-LOGO_FILE=tkgl_logo.mp4
+LOGO_FILE=TheKikgenLabs.mp4
 
 if [ -f "$SCRIPT_DIR/$LOGO_FILE" ]
 then
@@ -32,5 +32,14 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TKGL_LIB
 # With sound
 # ffmpeg -i $SCRIPT_DIR/$LOGO_FILE -f alsa default -pix_fmt bgra -f fbdev /dev/fb0 &
 
+
+# 0 = 90° counter-clockwise and vertical flip (default)
+# 1 = 90° clockwise
+# 2 = 90° counter-clockwise
+# 3 = 90° clockwise and vertical flip
 # No sound
-ffmpeg -i $SCRIPT_DIR/$LOGO_FILE -pix_fmt bgra -f fbdev /dev/fb0 &
+
+ROTATE="-vf transpose=2"
+[ "$DEVICE" == "MPC X" ] && ROTATE=""
+
+ffmpeg -i $SCRIPT_DIR/$LOGO_FILE $ROTATE -pix_fmt bgra  -f fbdev /dev/fb0

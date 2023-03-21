@@ -25,6 +25,9 @@ IAMFORCE_DRIVER_ID="APCKEY25MK2"
 # Midimapper Plugin - dummy
 #IAMFORCE_DRIVER_ID="NONE"
 
+# Midimapper Plugin for Akai APC Mii mk2
+#IAMFORCE_DRIVER_ID="APCMINIMK2"
+
 # Midimapper Plugin for Launchpad Mini Mk3
 #IAMFORCE_DRIVER_ID="LPMMK3"
 

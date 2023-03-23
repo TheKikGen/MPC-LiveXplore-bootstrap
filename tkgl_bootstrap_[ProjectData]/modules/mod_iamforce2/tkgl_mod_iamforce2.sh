@@ -19,11 +19,12 @@ source "$SCRIPT_DIR/../../scripts/tkgl_path"
 
 # Image file name (must be copied to force-assets directory)
 FORCE_ROOTFS_IMAGE="rootfs_force-3.2.3.3-update.img"
-# Midimapper Plugin for Akai APC Key 25 mk2
-IAMFORCE_DRIVER_ID="APCKEY25MK2"
 
 # Midimapper Plugin - dummy
 #IAMFORCE_DRIVER_ID="NONE"
+
+# Midimapper Plugin for Akai APC Key 25 mk2
+IAMFORCE_DRIVER_ID="APCKEY25MK2"
 
 # Midimapper Plugin for Akai APC Mii mk2
 #IAMFORCE_DRIVER_ID="APCMINIMK2"
@@ -31,6 +32,8 @@ IAMFORCE_DRIVER_ID="APCKEY25MK2"
 # Midimapper Plugin for Launchpad Mini Mk3
 #IAMFORCE_DRIVER_ID="LPMMK3"
 
+# Midimapper Plugin for Launchpad X
+#IAMFORCE_DRIVER_ID="LPX"
 
 # Overlay mounting function : make_overlay(low,up)
 make_overlay() {

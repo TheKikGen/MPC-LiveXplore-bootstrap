@@ -37,16 +37,24 @@ date >> $TKGL_LOG
 uname -a >> $TKGL_LOG
 echo >> $TKGL_LOG
 for MODULE in $TKGL_DOER ; do
+  
+   # Check if a parameter exists in the module name.  Form is <module name>@<parameter value>
+
+   MODULE_PRM=$(echo $MODULE | cut -d@ -f2 )
+   MODULE_NAME=$(echo $MODULE | cut -d@ -f1 )
+
    echo  >> $TKGL_LOG
-   echo "-------------------------------------------------------------------------" >>$TKGL_LOG
-   echo "-- Module $MODULE --">>$TKGL_LOG
-   echo "-------------------------------------------------------------------------" >>$TKGL_LOG
-   _MODULE_LAUNCH_SCRIPT="$TKGL_ROOT/modules/mod_$MODULE/tkgl_mod_$MODULE.sh"
-  if [ -f "$_MODULE_LAUNCH_SCRIPT" ]
+   echo "-------------------------------------------------------------------------">>$TKGL_LOG
+   echo "-- Module $MODULE_NAME ($MODULE_PRM) --">>$TKGL_LOG
+   echo "-------------------------------------------------------------------------">>$TKGL_LOG
+   _MODULE_LAUNCH_SCRIPT="$TKGL_ROOT/modules/mod_$MODULE_NAME/tkgl_mod_$MODULE_NAME.sh"
+   
+   if [ -f "$_MODULE_LAUNCH_SCRIPT" ]
    then
-      echo "Launch script $_MODULE_LAUNCH_SCRIPT found."
-      sh "$TKGL_ROOT/modules/mod_$MODULE/tkgl_mod_$MODULE.sh"
+      echo "Launch script $_MODULE_LAUNCH_SCRIPT found.">>$TKGL_LOG
+      sh "$TKGL_ROOT/modules/mod_$MODULE_NAME/tkgl_mod_$MODULE_NAME.sh" $MODULE_PRM
    else
-      echo "*** Error : launch script $_MODULE_LAUNCH_SCRIPT not found"
+      echo "*** Error : launch script $_MODULE_LAUNCH_SCRIPT not found">>$TKGL_LOG
    fi
+
 done

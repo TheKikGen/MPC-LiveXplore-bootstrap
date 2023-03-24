@@ -37,7 +37,7 @@ fi
 #IAMFORCE_DRIVER_ID="APCMINIMK2"
 
 # Midimapper Plugin for Launchpad Mini Mk3
-#IAMFORCE_DRIVER_ID="LPMMK3"
+# IAMFORCE_DRIVER_ID="LPMK3"
 
 # Midimapper Plugin for Launchpad X
 #IAMFORCE_DRIVER_ID="LPX"
@@ -98,9 +98,6 @@ TKGL_SETTINGS_MPC=$ASSETS_DIR/Settings_MPC
 SPLASH_SCREEN=$ASSETS_DIR/force_splash270.data
 [ "$DEVICE" == "MPC X" ] && SPLASH_SCREEN=$ASSETS_DIR/force_splash90.data
 
-# MPC binary to run
-MPCBIN=/usr/bin/MPC
-
 # Midimapper library
 # Copied directly in the module directory
 TMMBIN="$SCRIPT_DIR/tkgl_midimapper.so"
@@ -125,6 +122,9 @@ MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 
 # MPC_START sub shell
 MPC_START_SHELL=/run/MPC_START
+
+# MPC binary to run (relatively to mounted img)
+MPCBIN="$ROOT_DIR/mnt/usr/bin/MPC"
 
 echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
 echo "Settings" >> $TKGL_LOG
@@ -172,9 +172,10 @@ mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
 
 #  Mount read-only fs
 #mount --bind  "$ROOT_DIR/mnt/boot" /boot
-mount --bind  "$ROOT_DIR/mnt/usr" /usr
+#  mount --bind  "$ROOT_DIR/mnt/usr" /usr
 #mount --bind  "$ROOT_DIR/mnt/usr/lib" /usr/lib
 #mount --bind  "$ROOT_DIR/mnt/usr/share" /usr/share
+mount --bind "$ROOT_DIR/mnt/usr/share/Akai" "/usr/share/Akai"
 
 # start Force  -------------------------------------------
 
@@ -199,7 +200,6 @@ chmod +x $MPC_START_SHELL
 
 # Bind MPC with our launch script to continue
 mount --bind $MPC_START_SHELL /usr/bin/MPC
-
 
 # reload bus
 #systemctl daemon-reload

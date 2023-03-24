@@ -74,7 +74,7 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 #              : If you use rtpmidid module, this is a recommended setting to avoid conflicts.
 # ---------------------------------------------------------------------------------------------------------
 # iamforce2    : Force software launcher V2 on a MPC using midimapper.so ld_preload library.  It is possible
-#              : to pass the driver id of your midi device with the syntax  : iamforce@<driverid>.
+#              : to pass the driver id of your midi device with the syntax  : iamforce2@<driverid>.
 #              : e.g. TKGL_DOER="playlogo iamforce2@LPMK3"
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC

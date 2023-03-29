@@ -30,6 +30,7 @@
 #              : If you use rtpmidid module, this is a recommended setting to avoid conflicts.
 # ---------------------------------------------------------------------------------------------------------
 # iamforce2    : Force software launcher V2 on a MPC using midimapper.so ld_preload library
+#              : @Parameter : driver id to use
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC
 # ---------------------------------------------------------------------------------------------------------
@@ -40,6 +41,8 @@
 #                  : to trig the update. This is done by exporting a pattern from an empty track. 
 # ---------------------------------------------------------------------------------------------------------
 
-# List here your modules name to launch before the MPC application, separated by a space 
+# List here your modules name to launch before the MPC application, separated by a space
+# you can pass a parameter with the @ separator
+# example : TKGL_DOER="playlogo iamforce2@LPMK3"
 TKGL_DOER="playlogo"
 

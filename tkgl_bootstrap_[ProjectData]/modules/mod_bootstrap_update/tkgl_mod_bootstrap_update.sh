@@ -36,7 +36,6 @@ clean () {
 }
 
 
-
 clean
 mkdir -p $UPDATE_DIR
 
@@ -62,11 +61,13 @@ if [ $? -ne 0 ]; then
 fi
 
 ls -l -R "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main"/* > $TKGL_LOGS/update.log
+clean
 
 echo ""
 echo "IamForce2 assets download from Google drive...">> $TKGL_LOGS/update.log
 
-$TKGL_BIN/curl -o $IAMFORCE_ROOTFS_IMG_FILE_NAME -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
+if [ ! -f $IAMFORCE_ROOTFS_IMG_FILE_NAME ]; then
+  $TKGL_BIN/curl -o $IAMFORCE_ROOTFS_IMG_FILE_NAME -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
+fi
 
-clean
 #reboot

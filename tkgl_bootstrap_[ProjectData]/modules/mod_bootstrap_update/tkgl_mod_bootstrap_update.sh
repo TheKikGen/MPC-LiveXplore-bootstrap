@@ -70,4 +70,4 @@ if [ ! -f $IAMFORCE_ROOTFS_IMG_FILE_NAME ]; then
   $TKGL_BIN/curl -o $IAMFORCE_ROOTFS_IMG_FILE_NAME -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
 fi
 
-#reboot
+reboot

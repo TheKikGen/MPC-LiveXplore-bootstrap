@@ -21,7 +21,7 @@ UPDATE_PACK_FILE=$SCRIPT_DIR/bootstrap-update.zip
 
 #IamForce2 assets download
 IAMFORCE_ROOTFS_IMG_GOOGLE_ID="15cWYw1HbnDBlseqmlPB4_l7IqChBX27I"
-IAMFORCE_ROOTFS_IMG_FILE_NAME="$SCRIPT_DIR/../modules/mod_iamforce2/force-assets/rootfs_force-3.2.3.3-update.img"
+IAMFORCE_ROOTFS_IMG_FILE_NAME="$SCRIPT_DIR/../mod_iamforce2/force-assets/rootfs_force-3.2.3.3-update.img"
 
 # The user can export an empty pattern in the MPC app with that exact name
 # to trig the update

@@ -8,6 +8,7 @@
 # BOOTSTRAP script for MPC device.
 # Bootstrap autoupdate from the github repository
 #------------------------------------------------------------------------------
+touch /media/tkdev/Tkupdate.mpcpattern
 
 SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
@@ -17,6 +18,10 @@ UPDATE_FLAG_FILE=$MOUNT_POINT/"Tkupdate.mpcpattern"
 UPDATE_DIR=$SCRIPT_DIR/update
 UPDATE_URL="https://github.com/TheKikGen/MPC-LiveXplore-bootstrap/archive/refs/heads/main.zip"
 UPDATE_PACK_FILE=$SCRIPT_DIR/bootstrap-update.zip
+
+#IamForce2 assets download
+IAMFORCE_ROOTFS_IMG_GOOGLE_ID="15cWYw1HbnDBlseqmlPB4_l7IqChBX27I"
+IAMFORCE_ROOTFS_IMG_FILE_NAME="$SCRIPT_DIR/../modules/mod_iamforce2/force-assets/rootfs_force-3.2.3.3-update.img"
 
 # The user can export an empty pattern in the MPC app with that exact name
 # to trig the update
@@ -58,5 +63,10 @@ fi
 
 ls -l -R "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main"/* > $TKGL_LOGS/update.log
 
+echo ""
+echo "IamForce2 assets download from Google drive...">> $TKGL_LOGS/update.log
+
+$TKGL_BIN/curl -o $IAMFORCE_ROOTFS_IMG_FILE_NAME -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
+
 clean
-reboot
+#reboot

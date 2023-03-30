@@ -8,7 +8,6 @@
 # BOOTSTRAP script for MPC device.
 # Bootstrap autoupdate from the github repository
 #------------------------------------------------------------------------------
-touch /media/tkdev/Tkupdate.mpcpattern
 
 SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")

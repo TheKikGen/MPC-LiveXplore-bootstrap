@@ -24,6 +24,8 @@ for LINE in $(lsusb) ; do
   elif [[ $LINE == "09e8:0040" ]] ; then DEVICE="Force"          ; break ;
   elif [[ $LINE == "09e8:0046" ]] ; then DEVICE="MPC One"        ; break ;
   elif [[ $LINE == "09e8:0047" ]] ; then DEVICE="MPC Live Mk II" ; break ;
+  elif [[ $LINE == "09e8:004b" ]] ; then DEVICE="MPC Key 61"     ; break ;
+  elif [[ $LINE == "09e8:0052" ]] ; then DEVICE="MPC XL"         ; break ;
   fi
 done
 echo "$DEVICE detected"
@@ -94,11 +96,6 @@ then
  done
 fi
 
-# Launch MPC application as usual, but take command line difference in account
-# The Force has one.., MPCs haven't. Don't know if this is important.
-ARGV=""
-[ "$DEVICE" == "Force" ] && ARGV="$@"
-
 #------------------ original script start here---------------------------------
 # find dfu util info
 DFUUTILINFO=$(dfu-util -l | grep "0x08000000")
@@ -108,12 +105,13 @@ DFUUTILINFO=$(dfu-util -l | grep "0x08000000")
 
 if type systemd-inhibit >/dev/null 2>&1
 then
-    exec systemd-inhibit --what=handle-power-key /usr/bin/MPC $ARGV
+    exec systemd-inhibit --what=handle-power-key /usr/bin/MPC "$@"
 else
     # Reduce the soft stack size limit to 1MiB (from the default 8MiB).  This
     # is used as the default stack size for new threads and since MPC is
     # locked in memory this memory is allocated.  Since the limit is read
     # before main, we cannot set it in the application and must do so here.
     ulimit -S -s 1024
-    exec /usr/bin/MPC $ARGV
+    export MALLOC_ARENA_MAX=1
+    exec setarch -R -- /usr/bin/MPC "$@"
 fi

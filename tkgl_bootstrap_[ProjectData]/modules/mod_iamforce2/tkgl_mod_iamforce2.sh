@@ -185,15 +185,12 @@ echo "">>$MPC_MESSAGEINFO
 echo "Rootfs image file    : $FORCE_ROOTFS_IMAGE">>$MPC_MESSAGEINFO
 echo "Midimapper driver id : $IAMFORCE_DRIVER_ID">>$MPC_MESSAGEINFO
 
-# Make a copy of our MPC binary
-cp $MPCBIN /run/MPC
-
 # Prepare a sub launch script
 echo "#!/bin/sh">$MPC_START_SHELL
-echo "LD_PRELOAD=$TMMBIN /run/MPC $ARGV $TKGL_ARGV">>$MPC_START_SHELL
+echo "LD_PRELOAD=$TMMBIN $MPCBIN $ARGV $TKGL_ARGV">>$MPC_START_SHELL
 
 # insure exec permission
-chmod +x /run/MPC
+chmod +x $MPCBIN
 chmod +x $TMMBIN
 chmod +x $PLUGIN
 chmod +x $MPC_START_SHELL

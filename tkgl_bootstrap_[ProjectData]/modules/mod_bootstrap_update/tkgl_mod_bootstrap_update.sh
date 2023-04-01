@@ -8,7 +8,6 @@
 # BOOTSTRAP script for MPC device.
 # Bootstrap autoupdate from the github repository
 #------------------------------------------------------------------------------
-touch /media/tkdev/Tkupdate.mpcpattern
 
 SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
@@ -70,4 +69,4 @@ if [ ! -f $IAMFORCE_ROOTFS_IMG_FILE_NAME ]; then
   $TKGL_BIN/curl -o $IAMFORCE_ROOTFS_IMG_FILE_NAME -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
 fi
 
-#reboot
+reboot

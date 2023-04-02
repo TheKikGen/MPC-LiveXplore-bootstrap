@@ -90,8 +90,6 @@ fi
 
 echo ">> Copying files to the bootstrap directories. Please wait..."
 
-echo "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main/tkgl_bootstrap_[ProjectData]" "$MOUNT_POINT/"
-
 cp -a "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main/tkgl_bootstrap_[ProjectData]" "$MOUNT_POINT/"
 if [ $? -ne 0 ]; then
   echo "Error while copying bootstrap update files"

@@ -8,7 +8,6 @@
 # BOOTSTRAP script for MPCMAPPER LD_PRELOAD LIBRARY.
 
 # This "low-level" library allows you to run a Force binary on a MPC hardware
-# with all features enabled (and vice versa).
 
 #------------------------------------------------------------------------------
 
@@ -109,7 +108,7 @@ TKGL_ARGV="--tkplg=$PLUGIN"
 
 # Mounting point of the Force OS tkgl internal img
 # Use the /run directory
-ROOT_DIR=/run/tkgl_root
+MNT_DIR=$ASSETS_DIR/mnt
 
 # ext4 root fs Force update image
 ROOTFS_IMG_NAME="$ASSETS_DIR/$FORCE_ROOTFS_IMAGE"
@@ -121,16 +120,16 @@ MPC_CRASHINFO=/media/az01-internal/Settings/MPC/*.crashinfo
 MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 
 # MPC_START sub shell
-MPC_START_SHELL=/run/MPC_START
+MPC_START_SHELL=$ASSETS_DIR/MPC_START
 
 # MPC binary to run (relatively to mounted img)
-MPCBIN="$ROOT_DIR/mnt/usr/bin/MPC"
+MPCBIN="$MNT_DIR/usr/bin/MPC"
 
 echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
 echo "Settings" >> $TKGL_LOG
 echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
 echo "Assets directory                        : $ASSETS_DIR"  >> $TKGL_LOG
-echo "Mounting point of the Force OS img      : $ROOT_DIR/mnt"  >> $TKGL_LOG
+echo "Mounting point of the Force OS img      : $MNT_DIR"  >> $TKGL_LOG
 echo "MPC binary                              : $MPCBIN" >>  $TKGL_LOG
 echo "Root fs Force img file (ro)             : $ROOTFS_IMG_NAME" >>  $TKGL_LOG
 echo "Midimapper path                         : $TMMBIN" >>  $TKGL_LOG
@@ -145,14 +144,14 @@ echo "Prepare Force context..." >>  $TKGL_LOG
 cat $SPLASH_SCREEN>/dev/fb0
 
 # Mount force image, read only
-mkdir -p $ROOT_DIR/mnt
-umount $ROOT_DIR/mnt
-mount -o ro $ROOTFS_IMG_NAME $ROOT_DIR/mnt
+mkdir -p $MNT_DIR
+umount $MNT_DIR
+mount -o ro $ROOTFS_IMG_NAME $MNT_DIR
 if [ $? -ne 0 ]; then
-  echo "Error while mounting $ROOTFS_IMG_NAME $ROOT_DIR/mnt. Abort." >>$TKGL_LOG
+  echo "Error while mounting $ROOTFS_IMG_NAME $MNT_DIR. Abort." >>$TKGL_LOG
   exit 1
 fi
-echo "Mounting rootfs img done ! mount -o ro $ROOTFS_IMG_NAME $ROOT_DIR/mnt" >> $TKGL_LOG
+echo "Mounting rootfs img done ! mount -o ro $ROOTFS_IMG_NAME $MNT_DIR" >> $TKGL_LOG
 
 # Make our etc ovr on top of existing etc ovr at internal-sd
 
@@ -175,7 +174,7 @@ mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
 #  mount --bind  "$ROOT_DIR/mnt/usr" /usr
 #mount --bind  "$ROOT_DIR/mnt/usr/lib" /usr/lib
 #mount --bind  "$ROOT_DIR/mnt/usr/share" /usr/share
-mount --bind "$ROOT_DIR/mnt/usr/share/Akai" "/usr/share/Akai"
+mount --bind "$MNT_DIR/usr/share/Akai" "/usr/share/Akai"
 
 # start Force  -------------------------------------------
 

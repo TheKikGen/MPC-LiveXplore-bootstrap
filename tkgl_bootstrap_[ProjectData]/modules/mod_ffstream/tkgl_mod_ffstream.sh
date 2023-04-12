@@ -26,7 +26,9 @@ source "$SCRIPT_DIR/../../scripts/tkgl_path"
 # temporary script to be launched separately
 TEMP_SCRIPT=/tmp/ffstream.tmp.sh
 # Time before launching the ffmpeg command within the temp script
-WAIT_TIME=10
+WAIT_TIME=30
+# Destination URL
+URL=$1
 
 # Create the temporary script in tmp
 echo "PATH=$PATH:$TKGL_BIN">$TEMP_SCRIPT
@@ -44,10 +46,10 @@ ROTATE=,transpose=1
 
 FILTER=hwdownload,format=bgr0$ROTATE
 
-CMDLINE="-y -f kmsgrab -fflags nobuffer -i - -vf $FILTER -c:v libx264rgb -preset ultrafast -an -f mpegts udp://$1"
+CMDLINE="-y -f kmsgrab -fflags nobuffer -i - -vf $FILTER -c:v libx264rgb -preset ultrafast -an -f mpegts udp://$URL"
 #echo "ffmpeg command line parameters : $CMDLINE">>$TKGL_LOG
 
-echo "sleep 30">>$TEMP_SCRIPT
+echo "sleep $WAIT_TIME">>$TEMP_SCRIPT
 echo "ffmpeg -nostats -loglevel 0 $CMDLINE">>$TEMP_SCRIPT
 echo "Temporary $TEMP_SCRIPT script created :">>$TKGL_LOG
 cat $TEMP_SCRIPT>>$TKGL_LOG

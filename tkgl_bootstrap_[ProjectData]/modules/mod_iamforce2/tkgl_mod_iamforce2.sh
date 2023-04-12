@@ -107,7 +107,6 @@ PLUGIN="$SCRIPT_DIR/tmm-IamForce-$IAMFORCE_DRIVER_ID.so"
 TKGL_ARGV="--tkplg=$PLUGIN"
 
 # Mounting point of the Force OS tkgl internal img
-# Use the /run directory
 MNT_DIR=$ASSETS_DIR/mnt
 
 # ext4 root fs Force update image
@@ -116,6 +115,9 @@ ROOTFS_IMG_NAME="$ASSETS_DIR/$FORCE_ROOTFS_IMAGE"
 # Crash info files
 MPC_CRASHINFO=/media/az01-internal/Settings/MPC/*.crashinfo
 
+# Remote screen. Not allowed for Force.
+MPC_REMOTE_SCREEN=/media/az01-internal/Settings/MPC/remoteScreen
+
 # Message displayed in a popup when the MPC app start
 MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 
@@ -123,7 +125,8 @@ MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 MPC_START_SHELL=$ASSETS_DIR/MPC_START
 
 # MPC binary to run (relatively to mounted img)
-MPCBIN="$MNT_DIR/usr/bin/MPC"
+#MPCBIN="$MNT_DIR/usr/bin/MPC"
+MPCBIN="$SCRIPT_DIR/MPC-F3233-JTPATCH"
 
 echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
 echo "Settings" >> $TKGL_LOG
@@ -177,6 +180,11 @@ mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
 mount --bind "$MNT_DIR/usr/share/Akai" "/usr/share/Akai"
 
 # start Force  -------------------------------------------
+
+# remove eventual remoteScreen file that could stuck us in remote screen mode...
+rm $MPC_REMOTE_SCREEN
+# remove also core dump crash info files
+rm $MPC_CRASHINFO
 
 # Prepare a welcome message
 echo "Welcome to The Kikgen Labs world !">$MPC_MESSAGEINFO

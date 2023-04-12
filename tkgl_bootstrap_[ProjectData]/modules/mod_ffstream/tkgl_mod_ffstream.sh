@@ -26,7 +26,11 @@ source "$SCRIPT_DIR/../../scripts/tkgl_path"
 # temporary script to be launched separately
 TEMP_SCRIPT=/tmp/ffstream.tmp.sh
 # Time before launching the ffmpeg command within the temp script
+<<<<<<< HEAD
 WAIT_TIME=30
+=======
+WAIT_TIME=20
+>>>>>>> 8e92cbd0a0850f768ace8cbdf1cd1ee14f2e90a8
 # Destination URL
 URL=$1
 

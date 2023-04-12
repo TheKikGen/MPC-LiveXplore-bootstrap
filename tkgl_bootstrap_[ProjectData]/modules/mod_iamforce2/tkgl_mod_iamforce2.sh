@@ -125,8 +125,7 @@ MPC_MESSAGEINFO=/media/az01-internal/Settings/MPC/MPC.message
 MPC_START_SHELL=$ASSETS_DIR/MPC_START
 
 # MPC binary to run (relatively to mounted img)
-#MPCBIN="$MNT_DIR/usr/bin/MPC"
-MPCBIN="$SCRIPT_DIR/MPC-F3233-JTPATCH"
+MPCBIN="$MNT_DIR/usr/bin/MPC"
 
 echo "-------------------------------------------------------------------------" >>  $TKGL_LOG
 echo "Settings" >> $TKGL_LOG

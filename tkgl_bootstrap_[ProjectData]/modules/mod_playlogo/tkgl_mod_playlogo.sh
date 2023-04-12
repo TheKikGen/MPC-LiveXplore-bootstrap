@@ -32,11 +32,10 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$TKGL_LIB
 # With sound
 # ffmpeg -i $SCRIPT_DIR/$LOGO_FILE -f alsa default -pix_fmt bgra -f fbdev /dev/fb0 &
 
-
-# 0 = 90° counter-clockwise and vertical flip (default)
-# 1 = 90° clockwise
-# 2 = 90° counter-clockwise
-# 3 = 90° clockwise and vertical flip
+# 0 = 90 counter-clockwise and vertical flip (default)
+# 1 = 90 clockwise
+# 2 = 90 counter-clockwise
+# 3 = 90 clockwise and vertical flip
 # No sound
 
 ROTATE="-vf transpose=2"

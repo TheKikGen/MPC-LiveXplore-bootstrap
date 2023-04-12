@@ -36,6 +36,10 @@
 # ---------------------------------------------------------------------------------------------------------
 # playlogo     : Play an intro video at boot with ffmpeg
 # ---------------------------------------------------------------------------------------------------------
+# ffstream     : Stream the screen to a client via udp. You need to specify the IP address and port adress 
+#              : of the client (e.g. "ffstream@192.168.2.1:23000". On the client side, you can use ffplay 
+#              : to start the stream, e.g. : ffplay -f mpegts udp://(your MPC id addr):23000
+# ---------------------------------------------------------------------------------------------------------
 # bootstrap_update : Automatic update of the bootstrap from the github site.
 #                  : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
 #                  : to trig the update. This is done by exporting a pattern from an empty track. 

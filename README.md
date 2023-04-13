@@ -73,13 +73,18 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 #              : remote session. This module will stop the service (so will disable also Live remote control).
 #              : If you use rtpmidid module, this is a recommended setting to avoid conflicts.
 # ---------------------------------------------------------------------------------------------------------
-# iamforce2    : Force software launcher V2 on a MPC using midimapper.so ld_preload library.  It is possible
-#              : to pass the driver id of your midi device with the syntax  : iamforce2@<driverid>.
-#              : e.g. TKGL_DOER="playlogo iamforce2@LPMK3"
-# ---------------------------------------------------------------------------------------------------------
-# smbnetfs     : Connect to your Windows share from your Force or MPC
+# iamforce2    : Force software launcher V2 on a MPC using midimapper.so ld_preload library
+#              : @Parameter : driver id to use. e.g. : iamforce2@LPMK3
 # ---------------------------------------------------------------------------------------------------------
 # playlogo     : Play an intro video at boot with ffmpeg
+# ---------------------------------------------------------------------------------------------------------
+# ffstream     : Stream the screen to a client via udp. You need to specify the IP address and port adress 
+#              : of the client (e.g. "ffstream@192.168.2.1:23000". On the client side, you can use ffplay 
+#              : to start the stream, e.g. : ffplay -f mpegts udp://(your MPC id addr):23000
+# ---------------------------------------------------------------------------------------------------------
+# smbnetfs     : Connect to your Windows share from your Force or MPC
+#              : @Parameters : '(user name)','(password)','(workgroup'),'(smb server ip)','(share name)'
+#	             : e.g. : smbnetfs@anonymous,'','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
 # ---------------------------------------------------------------------------------------------------------
 # bootstrap_update : Automatic update of the bootstrap from the github site.
 #                  : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 

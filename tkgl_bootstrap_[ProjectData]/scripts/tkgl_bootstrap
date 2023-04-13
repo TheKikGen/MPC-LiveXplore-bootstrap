@@ -30,12 +30,12 @@ fi
 
 source $TKGL_PATH_FILE
 
-
 echo "-------------------------------------------------------------------------">$TKGL_LOG
 echo " TKGL_BOOTSTARP SCRIPT : $TKGL_BOOTSTRAP" >> $TKGL_LOG
 date >> $TKGL_LOG
 uname -a >> $TKGL_LOG
 echo >> $TKGL_LOG
+
 for MODULE in $TKGL_DOER ; do
   
    # Check if a parameter exists in the module name.  Form is <module name>@<parameter value>
@@ -52,7 +52,15 @@ for MODULE in $TKGL_DOER ; do
    if [ -f "$_MODULE_LAUNCH_SCRIPT" ]
    then
       echo "Launch script $_MODULE_LAUNCH_SCRIPT found.">>$TKGL_LOG
-      sh "$TKGL_ROOT/modules/mod_$MODULE_NAME/tkgl_mod_$MODULE_NAME.sh" $MODULE_PRM
+      PRMS=""
+      SAV_IFS=$IFS
+      IFS=","
+      for p in $MODULE_PRM ; do
+         PRMS="$PRMS ${p}"
+      done
+      IFS=$SAV_IFS
+      echo "Parsed parameters : $PRMS">>$TKGL_LOG
+      sh "$TKGL_ROOT/modules/mod_$MODULE_NAME/tkgl_mod_$MODULE_NAME.sh" $PRMS
    else
       echo "*** Error : launch script $_MODULE_LAUNCH_SCRIPT not found">>$TKGL_LOG
    fi

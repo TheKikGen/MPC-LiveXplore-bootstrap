@@ -84,7 +84,7 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC
 #              : @Parameters : '(user name)','(password)','(workgroup'),'(smb server ip)','(share name)'
-#	             : e.g. : smbnetfs@anonymous,'','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
+#	       : e.g. : smbnetfs@anonymous,'','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
 # ---------------------------------------------------------------------------------------------------------
 # bootstrap_update : Automatic update of the bootstrap from the github site.
 #                  : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 

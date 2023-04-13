@@ -105,24 +105,21 @@ fi
 
 # fix auth directive error if any
 chmod 600 "$HOME/.smb/smbnetfs.auth"
+killall -9 smbnetfs
 
 # Launch smbnetfs
 # NB : The static binary needs the "./libs"  in the current directory. Do not move them.
+
+# Our internal smbnetfs mount point
+umount $NETWORK_MNT
+cd $SCRIPT_DIR/bin
+./smbnetfs  -o log_file=$TKGL_LOG $NETWORK_MNT
 if ps | grep smbnetfs | grep -v grep 
 then 
-  echo "smbnetfs is already running">>$TKGL_LOG 
+  echo "smbnetfs successfully loaded">>$TKGL_LOG
 else
-  # Our internal smbnetfs mount point
-  umount $NETWORK_MNT
-  cd $SCRIPT_DIR/bin
-  ./smbnetfs  -o log_file=$TKGL_LOG $NETWORK_MNT
-  if ps | grep smbnetfs | grep -v grep 
-  then 
-    echo "smbnetfs successfully loaded">>$TKGL_LOG
-  else
-    echo "Error while loading smbnetfs">>$TKGL_LOG
-    exit 1
-  fi
+  echo "Error while loading smbnetfs">>$TKGL_LOG
+  exit 1
 fi
 
 # Prepare the smb share mouting point

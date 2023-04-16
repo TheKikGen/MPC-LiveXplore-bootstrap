@@ -86,10 +86,6 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 #              : @Parameters : '(user name)','(password)','(workgroup'),'(smb server ip)','(share name)'
 #	       : e.g. : smbnetfs@anonymous,'','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
 # ---------------------------------------------------------------------------------------------------------
-# bootstrap_update : Automatic update of the bootstrap from the github site.
-#                  : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
-#                  : to trig the update. This is done by exporting a pattern from an empty track. 
-# ---------------------------------------------------------------------------------------------------------
 ````
 
 rtpmidi : Credit to David Moreno.  https://github.com/davidmoreno/rtpmidid

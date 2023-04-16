@@ -50,6 +50,7 @@ ROTATE="90"
 [ "$DEVICE" == "MPC X" ] && ROTATE="0"
 
 echo "framebuffer-vncserver -r $ROTATE $TOUCH_DEVICE $KBD_DEVICE&">>$TEMP_SCRIPT
+echo "sleep 5">>$TEMP_SCRIPT
 
 # kms grab to frame buffer with ffmpeg. In the future, we could avoid that by reading kms directly...the lazy way
 echo "ffmpeg -y -nostats -loglevel 0 -nostdin -f kmsgrab -framerate 100 -fflags nobuffer  -i - -vf 'hwdownload,format=bgr0' -pix_fmt bgra -f fbdev /dev/fb0">>$TEMP_SCRIPT

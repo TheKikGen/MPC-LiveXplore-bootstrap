@@ -48,9 +48,13 @@ else
     exit 0
 fi
 
+[ "$1" == "system" ] && TKGL_BIN=usr/bin
+
 # Check TKGL environment. We need curl...
 if [ ! -f "$TKGL_BIN/curl" ]; then
   echo "Error : $TKGL_BIN/curl is missing. Can't proceed with the bootstrap update."
+  echo "If not running on the MPC, you can use "tkgl_update system" to use the curl system binary."
+  echo "In that case, the sytem will not reboot".
   exit 1
 fi
 
@@ -125,4 +129,4 @@ echo ""
 echo "Update finished correctly. Rebooting MPC..."
 echo "May the IamForce be with you !"
 
-reboot
+[ "$1" ! "system" ] && reboot

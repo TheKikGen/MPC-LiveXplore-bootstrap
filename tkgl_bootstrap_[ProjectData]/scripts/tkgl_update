@@ -39,7 +39,7 @@ echo "                            |___/                               "
 echo ""
 echo "TKGL BOOTSTRAP UPDATE SCRIPT"
 echo "----------------------------------------------------------------------------------------"
-echo "Are you really sure you to update the bootstrap (Y/N) ?" 
+echo "Are you really sure you to update the bootstrap (Y/N) ? " 
 read answer
 if [ "$answer" != "${answer#[Yy]}" ] ;then 
     echo "Proceeding update...."
@@ -48,7 +48,7 @@ else
     exit 0
 fi
 
-[ "$1" == "system" ] && TKGL_BIN=usr/bin
+[ "$1" = "system" ] && TKGL_BIN=/usr/bin
 
 # Check TKGL environment. We need curl...
 if [ ! -f "$TKGL_BIN/curl" ]; then
@@ -129,4 +129,4 @@ echo ""
 echo "Update finished correctly. Rebooting MPC..."
 echo "May the IamForce be with you !"
 
-[ "$1" ! "system" ] && reboot
+[ "$1" != "system" ] && reboot

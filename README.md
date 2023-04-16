@@ -8,6 +8,8 @@
 This "bootstrap" implementation allows Akai MPCs / Force system customization at boot time as linux application launching, data rescue, backup settings,... 
 You need to update your MPC/Force with a modded image that will launch the bootstrap from the internal filesystem, before the MPC application starts.
 
+Check also the "libs" Wiki : https://github.com/TheKikGen/MPCLiveXplore-libs/wiki 
+
 ## How to install :
 
 1. Update as usual (usb procedure) with the last MPC / Force modded image to enable the bootstrap script :

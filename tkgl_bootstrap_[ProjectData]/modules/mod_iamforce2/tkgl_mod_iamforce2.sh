@@ -172,10 +172,6 @@ mkdir -p /media/az01-internal-sd
 mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
 
 #  Mount read-only fs
-#mount --bind  "$ROOT_DIR/mnt/boot" /boot
-#  mount --bind  "$ROOT_DIR/mnt/usr" /usr
-#mount --bind  "$ROOT_DIR/mnt/usr/lib" /usr/lib
-#mount --bind  "$ROOT_DIR/mnt/usr/share" /usr/share
 mount --bind "$MNT_DIR/usr/share/Akai" "/usr/share/Akai"
 
 # start Force  -------------------------------------------
@@ -204,5 +200,3 @@ chmod +x $MPC_START_SHELL
 # Bind MPC with our launch script to continue
 mount --bind $MPC_START_SHELL /usr/bin/MPC
 
-# reload bus
-#systemctl daemon-reload

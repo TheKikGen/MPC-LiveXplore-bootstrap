@@ -44,6 +44,9 @@
 # kms2fb       : Kms graphical driver (mali) to frame buffer /dev/fb0 real time redirection with ffmpeg.
 #              : Start 30 seconds after the boot.
 # ---------------------------------------------------------------------------------------------------------
+# vnc4mpc      : Start a VNC server based on the framebuffer. You need to plug a keyboard if you need to 
+#              : control keystrokes remotely.  Start 30 seconds after the boot.
+# ---------------------------------------------------------------------------------------------------------
 # bootstrap_update : Automatic update of the bootstrap from the github site.
 #                  : It is necessary to create the "Tkupdate.mpcpattern" file at the root of the sdcard, 
 #                  : to trig the update. This is done by exporting a pattern from an empty track. 

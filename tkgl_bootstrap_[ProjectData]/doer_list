@@ -47,7 +47,7 @@
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC
 #              : @Parameters : '(user name)','(password)','(workgroup'),'(smb server ip)','(share name)'
-#	       : e.g. : smbnetfs@anonymous,'','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
+#	       : e.g. : smbnetfs@'anonymous','','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
 # ---------------------------------------------------------------------------------------------------------
 #
 # List here your modules name to launch before the MPC application, separated by a space

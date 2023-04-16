@@ -89,7 +89,7 @@ fi
 
 echo ">> Decompressing files. Please wait..."
 
-unzip $UPDATE_PACK_FILE -o -d $UPDATE_DIR
+unzip $UPDATE_PACK_FILE -d $UPDATE_DIR
 if [ $? -ne 0 ]; then
   echo "Error while attempting to unzip package file $UPDATE_PACK_FILE"
   clean

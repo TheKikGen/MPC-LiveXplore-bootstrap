@@ -43,6 +43,7 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 ## Availables modules
         
 ````  
+# DOER_LIST : Bootstrap modules launcher
 # ---------------------------------------------------------------------------------------------------------
 # Module name  : Description
 # ---------------------------------------------------------------------------------------------------------
@@ -81,11 +82,19 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 # ffstream     : Stream the screen to a client via udp. You need to specify the IP address and port adress 
 #              : of the client (e.g. "ffstream@192.168.2.1:23000". On the client side, you can use ffplay 
 #              : to start the stream, e.g. : ffplay -f mpegts udp://(your MPC id addr):23000
+#              : Streaming starts 30 seconds after the boot.
+# ---------------------------------------------------------------------------------------------------------
+# kms2fb       : Kms graphical driver (mali) to frame buffer /dev/fb0 real time redirection with ffmpeg.
+#              : Start 30 seconds after the boot.
+# ---------------------------------------------------------------------------------------------------------
+# vnc4mpc      : Start a VNC server based on the framebuffer. You need to plug a keyboard if you want to 
+#              : control keystrokes remotely.  Start 30 seconds after the boot.
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC
 #              : @Parameters : '(user name)','(password)','(workgroup'),'(smb server ip)','(share name)'
-#	       : e.g. : smbnetfs@anonymous,'','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
+#	       : e.g. : smbnetfs@'anonymous','','WORKGROUP','192.168.2.128','MUSIC_SHARE'  	 
 # ---------------------------------------------------------------------------------------------------------
+#
 ````
 
 rtpmidi : Credit to David Moreno.  https://github.com/davidmoreno/rtpmidid

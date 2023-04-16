@@ -73,7 +73,9 @@ systemctl stop inmusic-mpc
 clean
 
 # Make a backup of doer_list
-cp $DOER_LIST $DOER_LIST.bak 
+if [ -f "$DOER_LIST" ]; then
+	cp $DOER_LIST ${DOER_LIST}.bak 
+fi
 
 # temp directory for downloads
 mkdir -p $UPDATE_DIR
@@ -108,9 +110,9 @@ fi
 #ls -l -R "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main"/*
 
 # Restore the doer_list file
-cp $DOER_LIST.bak $DOER_LIST 
-if [ $? -ne 0 ]; then
-  echo "Error while restoring bootstrap $DOER_LIST file. The process will continue."
+if [ -f "${DOER_LIST}.bak" ]; then
+	cp ${DOER_LIST}.bak $DOER_LIST
+  rm cp ${DOER_LIST}.bak
 fi
 
 clean

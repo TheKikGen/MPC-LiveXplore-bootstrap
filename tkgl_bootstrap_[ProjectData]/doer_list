@@ -42,7 +42,7 @@
 # kms2fb       : Kms graphical driver (mali) to frame buffer /dev/fb0 real time redirection with ffmpeg.
 #              : Start 30 seconds after the boot.
 # ---------------------------------------------------------------------------------------------------------
-# vnc4mpc      : Start a VNC server based on the framebuffer. You need to plug a keyboard if you need to 
+# vnc4mpc      : Start a VNC server based on the framebuffer. You need to plug a keyboard if you want to 
 #              : control keystrokes remotely.  Start 30 seconds after the boot.
 # ---------------------------------------------------------------------------------------------------------
 # smbnetfs     : Connect to your Windows share from your Force or MPC

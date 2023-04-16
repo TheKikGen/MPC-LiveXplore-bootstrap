@@ -12,7 +12,6 @@
 #
 #  ssh root@192.168.2.25 "sh /media/TKGL_BOOTSTRAP/tkgl_bootstrap_[ProjectData]/scripts/tkgl_update"
 
-
 SCRIPT_NAME=$(readlink -f "$0")
 SCRIPT_DIR=$(dirname "$SCRIPT_NAME")
 
@@ -48,14 +47,14 @@ else
     exit 0
 fi
 
-[ "$1" = "system" ] && TKGL_BIN=/usr/bin
+[ "$1" = "sdcard" ] && TKGL_BIN=/usr/bin
 
 # Check TKGL environment. We need curl...
 if [ ! -f "$TKGL_BIN/curl" ]; then
   echo "Error : $TKGL_BIN/curl is missing. Can't proceed with the bootstrap update."
-  echo "If not running on the MPC, you can use "tkgl_update system" to use the curl system binary."
-  echo "In that case, the sytem will not reboot".
-  exit 1
+  echo "If not running on the MPC, you can use "tkgl_update sdcard" to use the current system curl binary."
+  echo "In that case, the system will not reboot".
+  exit 0
 fi
 
 # Clean function

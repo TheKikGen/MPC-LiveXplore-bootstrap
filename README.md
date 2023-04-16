@@ -21,12 +21,22 @@ You need to update your MPC/Force with a modded image that will launch the boots
 
    The directory MUST be named "tkgl_bootstrap_[ProjectData]" to be recognized by the bootstrap script within the image. This suffix allows to hide the directory when you are using the MPC app.
    
-You can also burn a sdcard by downloading one of the [ready made bootstrap image here](https://drive.google.com/drive/folders/16tqhdznLIwpyl2uw8BjkqHjZw-EEpEF1?usp=sharing).
+You can also burn a sdcard by downloading one of the [ready made bootstrap image here](https://drive.google.com/drive/folders/16tqhdznLIwpyl2uw8BjkqHjZw-EEpEF1?usp=sharing).  I recommend to run an update after installation.
 
 ## Activation of modules at boot
 
 You need to edit the file tkgl_bootstrap_[ProjectData]/doer_list to add a modules list you want to launch at boot time.  
 Follow instructions within the file itself.
+
+## How to update from an existing bootstrap :
+
+Run the script "tkgl_update" in the tkgl_bootstrap_[ProjectData]/scripts directory. 
+You can also open a terminal or a command line and enter : 
+
+````  
+ssh root@(your mpc ip) "/media/TKGL_BOOTSTRAP/tkgl_bootstrap_[ProjectData]/scripts/tkgl_update"
+````  
+
 
 ## Creating your own module 
 

@@ -128,4 +128,4 @@ echo ""
 echo "Update finished correctly. Rebooting MPC..."
 echo "May the IamForce be with you !"
 
-[ "$1" != "system" ] && reboot
+[ "$1" = "sdcard" ] && reboot

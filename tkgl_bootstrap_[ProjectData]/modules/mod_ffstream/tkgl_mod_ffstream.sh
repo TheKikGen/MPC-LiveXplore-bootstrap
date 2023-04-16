@@ -34,7 +34,7 @@ URL=$1
 
 # Create the temporary script in tmp
 echo "PATH=$PATH:$TKGL_BIN">$TEMP_SCRIPT
-echo "LD_LIBRARY_PATH=$TKGL_LIB:usr/lib">>$TEMP_SCRIPT
+echo "LD_LIBRARY_PATH=$TKGL_LIB:$LD_LIBRARY_PATH">>$TEMP_SCRIPT
 
 # 0 = 90 counter-clockwise and vertical flip (default)
 # 1 = 90 clockwise

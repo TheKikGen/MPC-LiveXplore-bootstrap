@@ -72,7 +72,7 @@ If your MPC is stuck, remove the sdcard and reboot.  You will find a log in the 
 #                You'll need to remove the usb key to reactivate ssh.
 # ---------------------------------------------------------------------------------------------------------
 # arp_overlay  : add your own arp patterns on the sdcard.
-#              : Arp patterns are patterns are read only when the MPC app starts.  This module creates an
+#              : Arp patterns are read only when the MPC app starts.  This module creates an
 #              : overlay of the "/usr/share/Akai/SME0/Arp Patterns" directory on the bootstrap sdcard at
 #              : "/media/TKGL_BOOTSTRAP/tkgl_bootstrap_[ProjectData]/modules/mod_arp_overlay/Arp Patterns"
 #              : You must copy your own arp patterns within the "overlay" subdirectory.

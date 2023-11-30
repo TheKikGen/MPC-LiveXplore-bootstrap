@@ -24,38 +24,12 @@ UPDATE_DIR=$SCRIPT_DIR/update
 UPDATE_URL="https://github.com/TheKikGen/MPC-LiveXplore-bootstrap/archive/refs/heads/main.zip"
 UPDATE_PACK_FILE=$SCRIPT_DIR/bootstrap-update.zip
 
-#IamForce2 assets download
-IAMFORCE_ROOTFS_IMG_GOOGLE_ID="15cWYw1HbnDBlseqmlPB4_l7IqChBX27I"
-IAMFORCE_ROOTFS_IMG_FILE_NAME="$SCRIPT_DIR/../modules/mod_iamforce2/force-assets/rootfs_force-3.2.3.3-update.img"
+# 3.3.0.0 rootfs img
+IAMFORCE_ROOTFS_IMG="rootfs_force-3.3.0.0-update.img"
+IAMFORCE_ROOTFS_IMG_GOOGLE_ID="1_6kSrt339YqXNTlWUohYw7gRqdgdqQhS"
+IAMFORCE_ROOTFS_IMG_PATH="$SCRIPT_DIR/../modules/mod_iamforce2/force-assets"
+IAMFORCE_ROOTFS_IMG_FILE_NAME="$IAMFORCE_ROOTFS_IMG_PATH/$IAMFORCE_ROOTFS_IMG"
 
-# Script starts here
-
-echo " _____ _          _  ___ _                   _         _       "
-echo "|_   _| |_  ___  | |/ (_| |____ _ ___ _ _   | |   __ _| |__ ___"
-echo "  | | |   \/ -_) |   <| | / / _  / -_|   \  | |__/ _  |  _ (_-< "
-echo "  |_| |_||_\___| |_|\_|_|_\_\__, \___|_||_| |____\__,_|_.__/__/ "
-echo "                            |___/                               "
-echo ""
-echo "TKGL BOOTSTRAP UPDATE SCRIPT"
-echo "----------------------------------------------------------------------------------------"
-echo "Are you really sure you to update the bootstrap (Y/N) ? " 
-read answer
-if [ "$answer" != "${answer#[Yy]}" ] ;then 
-    echo "Proceeding update...."
-else
-    echo "Update aborted."
-    exit 0
-fi
-
-[ "$1" = "sdcard" ] && TKGL_BIN=/usr/bin
-
-# Check TKGL environment. We need curl...
-if [ ! -f "$TKGL_BIN/curl" ]; then
-  echo "Error : $TKGL_BIN/curl is missing. Can't proceed with the bootstrap update."
-  echo "If not running on the MPC, you can use "tkgl_update sdcard" to use the current system curl binary."
-  echo "In that case, the system will not reboot".
-  exit 0
-fi
 
 # Clean function
 clean () {
@@ -65,20 +39,8 @@ clean () {
   [ -f "$DOER_LIST.bak" ] && rm $DOER_LIST.bak
 }
 
-echo ">> Stop MPC application..."
-
-# stop MPC application
-systemctl stop inmusic-mpc
-
-clean
-
-# Make a backup of doer_list
-if [ -f "$DOER_LIST" ]; then
-	cp $DOER_LIST ${DOER_LIST}.bak 
-fi
-
-# temp directory for downloads
-mkdir -p $UPDATE_DIR
+# Update modules function
+updatefromGithub() {
 
 echo ">> Downloading update from Github, please wait..."
 
@@ -107,27 +69,90 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-#ls -l -R "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main"/*
+}
 
-# Restore the doer_list file
-if [ -f "${DOER_LIST}.bak" ]; then
-	cp ${DOER_LIST}.bak $DOER_LIST
-  rm cp ${DOER_LIST}.bak
+# Update Force OS image
+updateForceAssets() {
+
+  echo ">> IamForce2 $IAMFORCE_ROOTFS_IMG assets download from Google drive..."
+  $TKGL_BIN/curl -o "$UPDATE_DIR/$IAMFORCE_ROOTFS_IMG.zip" -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
+  if [ $? -ne 0 ]; then
+    echo "Error while attempting to download $IAMFORCE_ROOTFS_IMG.zip file"
+    clean
+    exit 1
+  fi
+
+  echo ">> Decompressing file. Please wait..."
+  unzip "$UPDATE_DIR/$IAMFORCE_ROOTFS_IMG.zip" -d $IAMFORCE_ROOTFS_IMG_PATH
+  if [ $? -ne 0 ]; then
+    echo "Error while attempting to unzip file $IAMFORCE_ROOTFS_IMG.zip"
+    clean
+    exit 1
+  fi
+
+}
+
+# Script starts here --------------------------------------------------
+
+echo " _____ _          _  ___ _                   _         _       "
+echo "|_   _| |_  ___  | |/ (_| |____ _ ___ _ _   | |   __ _| |__ ___"
+echo "  | | |   \/ -_) |   <| | / / _  / -_|   \  | |__/ _  |  _ (_-< "
+echo "  |_| |_||_\___| |_|\_|_|_\_\__, \___|_||_| |____\__,_|_.__/__/ "
+echo "                            |___/                               "
+echo ""
+echo "TKGL BOOTSTRAP UPDATE SCRIPT"
+echo Mountpoint    path is : $MOUNT_POINT
+echo TKGL Binaries path is : $TKGL_BIN
+echo "----------------------------------------------------------------------------------------"
+echo "Are you really sure you want to update the bootstrap (Y/N) ? " 
+read answer
+if [ "$answer" != "${answer#[Yy]}" ] ;then 
+    echo "Proceeding update...."
+else
+    echo "Update aborted."
+    exit 0
+fi
+
+[ "$1" = "sdcard" ] && TKGL_BIN=/usr/bin
+
+# Check TKGL environment. We need curl...
+if [ ! -f "$TKGL_BIN/curl" ]; then
+  echo "Error : $TKGL_BIN/curl is missing. Can't proceed with the bootstrap update."
+  echo "If not running on a MPC, you can use 'tkgl_update sdcard' to use the current /usr/bin of your computer."
+  echo "In that case, the system will not reboot.  'noboot' can also be used locally."
+  exit 0
+fi
+
+echo ">> Stop MPC application..."
+
+# stop MPC application
+systemctl stop inmusic-mpc
+
+clean
+
+# Make a backup of doer_list
+if [ -f "$DOER_LIST" ]; then
+	cp $DOER_LIST ${DOER_LIST}.bak 
+fi
+
+# temp directory for downloads
+mkdir -p $UPDATE_DIR
+
+updatefromGithub 
+
+echo ""
+
+if [ ! -f $IAMFORCE_ROOTFS_IMG_FILE_NAME ]; then
+  updateForceAssets
+else
+  echo "IamForce2 assets $IAMFORCE_ROOTFS_IMG_FILE_NAME already on smartcard."
 fi
 
 clean
 
 echo ""
-
-if [ ! -f $IAMFORCE_ROOTFS_IMG_FILE_NAME ]; then
-  echo ">> IamForce2 assets download from Google drive..."
-  $TKGL_BIN/curl -o $IAMFORCE_ROOTFS_IMG_FILE_NAME -L "https://drive.google.com/uc?export=download&confirm=yes&id=$IAMFORCE_ROOTFS_IMG_GOOGLE_ID"
-else
-  echo "IamForce2 assets $IAMFORCE_ROOTFS_IMG_FILE_NAME already on smartcard."
-fi
-echo ""
 echo ""
 echo "Update finished correctly. Rebooting MPC..."
 echo "May the IamForce be with you !"
 
-[ "$1" != "sdcard" ] && reboot
+[ "$1" != "sdcard" ] && [ "$1" != "noboot" ] && reboot

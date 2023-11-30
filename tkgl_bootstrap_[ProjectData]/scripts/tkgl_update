@@ -31,6 +31,21 @@ IAMFORCE_ROOTFS_IMG_PATH="$SCRIPT_DIR/../modules/mod_iamforce2/force-assets"
 IAMFORCE_ROOTFS_IMG_FILE_NAME="$IAMFORCE_ROOTFS_IMG_PATH/$IAMFORCE_ROOTFS_IMG"
 
 
+# doer_list save and restore
+doerSave() {
+  # Make a backup of doer_list
+  if [ -f "$DOER_LIST" ]; then
+	  cp $DOER_LIST $DOER_LIST.bak 
+  fi
+}
+
+doerRestore() {
+  # Restore doer_list from backup 
+  if [ -f "$DOER_LIST.bak" ]; then
+	  cp $DOER_LIST.bak $DOER_LIST 
+  fi
+}
+
 # Clean function
 clean () {
   [ -f "$UPDATE_PACK_FILE" ] && rm $UPDATE_PACK_FILE
@@ -47,6 +62,7 @@ echo ">> Downloading update from Github, please wait..."
 $TKGL_BIN/curl -L $UPDATE_URL --output $UPDATE_PACK_FILE
 if [ $? -ne 0 ]; then
   echo "Curl error while attempting to download update package at $UPDATE_URL"
+  doerRestore
   clean
   exit 1
 fi
@@ -56,6 +72,7 @@ echo ">> Decompressing files. Please wait..."
 unzip $UPDATE_PACK_FILE -d $UPDATE_DIR
 if [ $? -ne 0 ]; then
   echo "Error while attempting to unzip package file $UPDATE_PACK_FILE"
+  doerRestore
   clean
   exit 1
 fi
@@ -66,6 +83,7 @@ cp -a "$UPDATE_DIR/MPC-LiveXplore-bootstrap-main/tkgl_bootstrap_[ProjectData]" "
 if [ $? -ne 0 ]; then
   echo "Error while copying bootstrap update files"
   #clean
+  doerRestore
   exit 1
 fi
 
@@ -130,15 +148,16 @@ systemctl stop inmusic-mpc
 
 clean
 
-# Make a backup of doer_list
-if [ -f "$DOER_LIST" ]; then
-	cp $DOER_LIST ${DOER_LIST}.bak 
-fi
+
 
 # temp directory for downloads
 mkdir -p $UPDATE_DIR
 
+doerSave
+
 updatefromGithub 
+
+doerRestore
 
 echo ""
 

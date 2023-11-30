@@ -76,6 +76,7 @@ then
   exit 1
 fi
 
+
 # Settings ---------------------------------------------------------------------
 
 # Where all force assets are
@@ -142,37 +143,59 @@ echo "-------------------------------------------------------------------------"
 
 echo "Prepare Force context..." >>  $TKGL_LOG
 
-# Show the splash screen
-cat $SPLASH_SCREEN>/dev/fb0
+# Force Image already mounted ?
 
-# Mount force image, read only
-mkdir -p $MNT_DIR
-umount $MNT_DIR
-mount -o ro $ROOTFS_IMG_NAME $MNT_DIR
-if [ $? -ne 0 ]; then
-  echo "Error while mounting $ROOTFS_IMG_NAME $MNT_DIR. Abort." >>$TKGL_LOG
-  exit 1
+if [ ! -f $MPCBIN ]
+then
+  # Show the splash screen
+  cat $SPLASH_SCREEN>/dev/fb0
+
+  # Mount force image, read only
+  mkdir -p $MNT_DIR
+  umount $MNT_DIR
+  mount -o ro $ROOTFS_IMG_NAME $MNT_DIR
+  if [ $? -ne 0 ]; then
+    echo "Error while mounting $ROOTFS_IMG_NAME $MNT_DIR. Abort." >>$TKGL_LOG
+    exit 1
+  fi
+  echo "Mounting rootfs img done ! mount -o ro $ROOTFS_IMG_NAME $MNT_DIR" >> $TKGL_LOG
+
+  # Make our etc ovr on top of existing etc ovr at internal-sd
+  mkdir -p "$OVERLAY_DIR/etc"
+  mkdir -p "$OVERLAY_DIR/var"
+  make_overlay "/etc" "$OVERLAY_DIR/etc"
+  make_overlay "/var" "$OVERLAY_DIR/var"
+
+  # Bind to separate settings from our host settings
+  mkdir -p $TKGL_SETTINGS_MPC
+  mount --bind $TKGL_SETTINGS_MPC /media/az01-internal/Settings/MPC
+
+  # Bind a virtual sd card
+  mkdir -p $TKGL_AZ01_INTERNAL_SD
+  mkdir -p /media/az01-internal-sd
+  mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
+
+  #  Mount read-only fs
+  mount --bind "$MNT_DIR/usr/share/Akai" "/usr/share/Akai"
+
+  # Prepare the laucnhing script
+  touch $MPC_START_SHELL
+
+  # insure exec permission
+  #chmod +x $MPCBIN
+  chmod +x $TMMBIN
+  chmod +x $PLUGIN
+  chmod +x $MPC_START_SHELL
+
+  # Bind MPC with our launch script to continue
+  mount --bind $MPC_START_SHELL /usr/bin/MPC
+
+  echo "Welcome to The Kikgen Labs world !">$MPC_MESSAGEINFO
+
+else
+  echo "IamForce2 context already here (probably a 'new project' requested by user). Nothing to mount.">>$TKGL_LOG
+  echo "Welcome to The Kikgen Labs world (new project) !">$MPC_MESSAGEINFO
 fi
-echo "Mounting rootfs img done ! mount -o ro $ROOTFS_IMG_NAME $MNT_DIR" >> $TKGL_LOG
-
-# Make our etc ovr on top of existing etc ovr at internal-sd
-
-mkdir -p "$OVERLAY_DIR/etc"
-mkdir -p "$OVERLAY_DIR/var"
-make_overlay "/etc" "$OVERLAY_DIR/etc"
-make_overlay "/var" "$OVERLAY_DIR/var"
-
-# Bind to separate settings from our host settings
-mkdir -p $TKGL_SETTINGS_MPC
-mount --bind $TKGL_SETTINGS_MPC /media/az01-internal/Settings/MPC
-
-# Bind a virtual sd card
-mkdir -p $TKGL_AZ01_INTERNAL_SD
-mkdir -p /media/az01-internal-sd
-mount --rbind $TKGL_AZ01_INTERNAL_SD  /media/az01-internal-sd
-
-#  Mount read-only fs
-mount --bind "$MNT_DIR/usr/share/Akai" "/usr/share/Akai"
 
 # start Force  -------------------------------------------
 
@@ -182,21 +205,10 @@ rm $MPC_REMOTE_SCREEN
 rm $MPC_CRASHINFO
 
 # Prepare a welcome message
-echo "Welcome to The Kikgen Labs world !">$MPC_MESSAGEINFO
 echo "">>$MPC_MESSAGEINFO
 echo "Rootfs image file    : $FORCE_ROOTFS_IMAGE">>$MPC_MESSAGEINFO
 echo "Midimapper driver id : $IAMFORCE_DRIVER_ID">>$MPC_MESSAGEINFO
 
-# Prepare a sub launch script
+# Prepare a sub launch script (we rewrite it each time to update the command line)
 echo "#!/bin/sh">$MPC_START_SHELL
-echo "LD_PRELOAD=$TMMBIN $MPCBIN $ARGV $TKGL_ARGV">>$MPC_START_SHELL
-
-# insure exec permission
-chmod +x $MPCBIN
-chmod +x $TMMBIN
-chmod +x $PLUGIN
-chmod +x $MPC_START_SHELL
-
-# Bind MPC with our launch script to continue
-mount --bind $MPC_START_SHELL /usr/bin/MPC
-
+echo "LD_PRELOAD=$TMMBIN $MPCBIN $ARGV $TKGL_ARGV"' "$@"'>>$MPC_START_SHELL

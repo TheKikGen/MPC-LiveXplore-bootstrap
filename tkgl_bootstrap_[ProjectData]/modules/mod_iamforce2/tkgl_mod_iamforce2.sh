@@ -42,7 +42,7 @@ fi
 #IAMFORCE_DRIVER_ID="LPX"
 
 # Image file name (must be copied to force-assets directory)
-FORCE_ROOTFS_IMAGE="rootfs_force-3.2.3.3-update.img"
+FORCE_ROOTFS_IMAGE="rootfs_force-3.3.0.0-update.img"
 
 # Overlay mounting function : make_overlay(low,up)
 make_overlay() {
